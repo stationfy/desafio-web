@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './index.css';
 
 const PullRequest = ({title, body, login, avatar_url, pulls_url, html_url}) => (
@@ -12,6 +12,7 @@ const PullRequest = ({title, body, login, avatar_url, pulls_url, html_url}) => (
 	<img 
 	src={avatar_url}
 	className="user-img"
+	alt="user-img"
 	/>
 	<p className="username">{login}</p>
 	<p className="name"></p>

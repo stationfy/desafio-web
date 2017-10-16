@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {connect} from 'react-redux';
 import './index.css';
 import Fork from 'react-icons/lib/fa/code-fork'
@@ -25,6 +25,7 @@ const Repository = ({name, description, forks, stargazers_count, login, avatar_u
 	<img 
 	src={avatar_url}
 	className="user-img"
+	alt="user-img"
 	/>
 	<p className="username">{login}</p>
 	<p className="name"></p>

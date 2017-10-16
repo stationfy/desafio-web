@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import InfiniteScroll from 'react-infinite-scroller';
 import Repository from '../../components/Repository/'
 
@@ -31,11 +30,11 @@ class RepositoryContainer extends Component {
     const loader = <div className="loader">Loading ...</div>;
     
     var items = [];
-    this.state.items.map((i, k) => {
+    this.state.items.map((i, k) => 
       items.push(
 	<Repository {...i} {...i.owner} key={k}/>
-      );
-    });
+      )
+    );
     
     return (
       <InfiniteScroll
