@@ -53,10 +53,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 50px;    
 }
 
 .user-img{
-    width: 50px;
+    width: 100px;
     margin-bottom: -2px;
     border-radius: 50%;
 }

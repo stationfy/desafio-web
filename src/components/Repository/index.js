@@ -28,7 +28,6 @@ const Repository = ({name, description, forks, stargazers_count, login, avatar_u
 	alt="user-img"
 	/>
 	<p className="username">{login}</p>
-	<p className="name"></p>
       </div>
     </div>
   </Link>
