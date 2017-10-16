@@ -76,6 +76,7 @@
 .Repository-title{
     font-size: 15px;
     color: blue;
+    text-decoration: none;
 }
 
 .Repository-description{

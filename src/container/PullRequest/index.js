@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import InfiniteScroll from 'react-infinite-scroller';
 import PullRequest from '../../components/PullRequest/'
+import {connect} from 'react-redux';
 
 class PullRequestContainer extends Component {
   constructor(props) {
@@ -10,9 +11,11 @@ class PullRequestContainer extends Component {
       items: [],
     };
   }
-  
+
+  //facebook - state.owner
+  //react    - state.project
   componentDidMount() {
-    fetch(`https://api.github.com/repos/facebook/react/pulls`, {
+    fetch(`https://api.github.com/repos/${this.props.list.owner}/${this.props.list.project}/pulls`, {
       method: 'get'
     }).then((response) => {
       return response.json()
@@ -37,4 +40,10 @@ class PullRequestContainer extends Component {
   }
 };
 
-export default PullRequestContainer
+let mapStateToProps = (state) =>{
+  return {
+    list: state
+  }
+}
+
+export default connect(mapStateToProps)(PullRequestContainer);

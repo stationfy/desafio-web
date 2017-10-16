@@ -21,7 +21,7 @@ class App extends Component {
 	  </div>
 	</div>
 	<div className="App-body">
-	  <Repository/>
+	  {this.props.children}
         </div>
       </div>
     );
