@@ -1,0 +1,38 @@
+.App {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.App-header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-color: #37373B;
+    color: white;
+}
+
+.App-header-title {
+    display: flex;
+    font-size: 20px;
+    color: #ffffff;
+    flex:5;
+    align-items: center;
+}
+
+.App-body {
+    display: flex;
+    font-size: large;
+    flex: 9;
+    flex-direction: column;
+}
+
+.icon-wrapper{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+}

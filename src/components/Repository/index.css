@@ -1,0 +1,124 @@
+.App {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.App-header {
+    display: flex;
+    flex: 1;
+    background-color: #222;
+    color: white;
+}
+
+.App-body {
+    display: flex;
+    font-size: large;
+    flex: 9;
+}
+
+.icon-wrapper{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.Repository-wrapper{
+    width: 100%;
+    height: 120px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-bottom-color: gray;
+    margin-left: 10px;
+    flex-direction: row;
+    display: flex;
+}
+
+.Repository-infos{
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.Repository-user{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;    
+}
+
+.user-img{
+    width: 100px;
+    margin-bottom: -2px;
+    border-radius: 50%;
+}
+
+.username{
+    color: black;
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.name{
+    color: gray;
+    font-size: 13px;
+    line-height: 0px;
+    margin-top: -1px;
+}
+
+.Repository-title{
+    font-size: 15px;
+    color: #416DAA;
+    font-weight: 900;
+}
+
+.Repository-description{
+    font-size: 13px;
+    color: black;
+    width: 200px;
+    height: 28px;
+    white-space: wrap;
+    overflow: hidden;
+    
+}
+
+.Repository-user{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fork-number{
+    color: #DE920C;
+    font-size: 16px;
+}
+
+.star-number{
+    color: #DE920C;
+    font-size: 16px;
+}
+
+.Repository-status{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -12px;
+}
+.Repository-texts{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+import './index.css';
+
+const Repository = ({title, body, login, avatar_url, pulls_url, html_url}) => (
+  <div className="Repository-wrapper" onClick={()=>window.location = html_url}>
+    <div className="Repository-infos">
+      <div className="Repository-texts">
+	<p className="Repository-title">{title}</p>
+	<p className="Repository-description">{body}</p>
+      </div>
+      <div className="Repository-user">
+	<img 
+	src={avatar_url}
+	className="user-img"
+	/>
+	<p className="username">{login}</p>
+	<p className="name"></p>
+      </div>
+    </div>
+  </div>
+);
+
+export default Repository;
