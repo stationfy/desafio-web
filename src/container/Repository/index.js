@@ -1,44 +1,53 @@
 import React, { Component } from 'react';
-import './index.css';
-import Fork from 'react-icons/lib/fa/code-fork'
-import Star from 'react-icons/lib/fa/star'
+import ReactDOM from 'react-dom';
+import InfiniteScroll from 'react-infinite-scroller';
 import Repository from '../../components/Repository/'
 
-class RepositoryContainer extends Component{
-
-  constructor(){
-    super();
+class RepositoryContainer extends Component {
+  constructor(props) {
+    super(props);
+    
     this.state = {
       items: [],
     };
   }
-
-  componentDidMount(){
-    const _this = this;
-    fetch('https://api.github.com/search/repositories?q=language:Javascript&sort=stars&page=2', {
+  
+  loadItems(page) {
+    fetch(`https://api.github.com/search/repositories?q=language:Javascript&sort=stars&page=${page}`, {
       method: 'get'
     }).then((response) => {
       return response.json()
     }).then((responseJson) => {
-      console.log(responseJson.items[0]);
       this.setState({
-	items: responseJson.items
+	items: this.state.items.concat(responseJson.items),
       });
     }).catch((err) => {
       // Error :(
     });
   }
+  
+  render() {
+    const loader = <div className="loader">Loading ...</div>;
+    
+    var items = [];
+    this.state.items.map((i, k) => {
+      items.push(
+	<Repository {...i} {...i.owner} key={k}/>
+      );
+    });
+    
+    return (
+      <InfiniteScroll
+        pageStart={0}
+        loadMore={this.loadItems.bind(this)}
+        hasMore={true}
+        loader={loader}>
 
-  render(){
-    return(
-      <div>
-	{this.state.items.length == 0 ?<p>wait</p> :this.state.items.map((i)=>
-	  <Repository {...i} {...i.owner} />
-	)}
-      </div>
+        {items}
+
+      </InfiniteScroll>
     );
   }
-
 };
 
-export default RepositoryContainer;
+export default RepositoryContainer
