@@ -9,11 +9,7 @@ class RepositoryContainer extends Component{
   constructor(){
     super();
     this.state = {
-      repoName: '',
-      forkNumber: 0,
-      starNumber: 0,
-      ownerName:'',
-      avatarUrl:''
+      items: [],
     };
   }
 
@@ -26,12 +22,7 @@ class RepositoryContainer extends Component{
     }).then((responseJson) => {
       console.log(responseJson.items[0]);
       this.setState({
-	repoName: responseJson.items[0].name,
-	repoDesc: responseJson.items[0].description,
-	forkNumber: responseJson.items[0].forks,
-	starNumber: responseJson.items[0].stargazers_count,
-	ownerName: responseJson.items[0].owner.login,
-	avatarUrl: responseJson.items[0].owner.avatar_url
+	items: responseJson.items
       });
     }).catch((err) => {
       // Error :(
@@ -41,7 +32,9 @@ class RepositoryContainer extends Component{
   render(){
     return(
       <div>
-        <Repository {...this.state} />
+	{this.state.items.length == 0 ?<p>wait</p> :this.state.items.map((i)=>
+	  <Repository {...i} {...i.owner} />
+	)}
       </div>
     );
   }
