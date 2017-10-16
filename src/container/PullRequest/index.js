@@ -10,8 +10,6 @@ class PullRequestContainer extends Component {
     };
   }
 
-  //facebook - state.owner
-  //react    - state.project
   componentDidMount() {
     fetch(`https://api.github.com/repos/${this.props.list.owner}/${this.props.list.project}/pulls`, {
       method: 'get'
@@ -30,9 +28,11 @@ class PullRequestContainer extends Component {
   render() {
     return (
       <div>
-	{this.state.items.map((i, k)=>
+	{this.state.items.length ? this.state.items.map((i, k)=>
 	  <PullRequest {...i.user} {...i} key={k}/>
-	)}
+	):
+	 <p>Loading...</p>
+	}
       </div>
     );
   }

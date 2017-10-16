@@ -35,10 +35,11 @@
 }
 
 .username{
-    color: blue;
-    font-size: 15px;
+    color: #416DAA;
+    font-size: 12px;
     line-height: 0px;
     margin-left: 10px;
+    font-weight: 700;
 }
 
 .name{
@@ -50,12 +51,13 @@
 
 .PullRequest-title{
     font-size: 15px;
-    color: blue;
+    color: #416DAA;
+    font-weight: 900;
 }
 
 .PullRequest-description{
     font-size: 13px;
-    color: gray;
+    color: black;
     width: 200px;
     height: 28px;
     white-space: wrap;

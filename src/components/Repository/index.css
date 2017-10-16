@@ -77,13 +77,13 @@
 
 .Repository-title{
     font-size: 15px;
-    color: blue;
-    text-decoration: none;
+    color: #416DAA;
+    font-weight: 900;
 }
 
 .Repository-description{
     font-size: 13px;
-    color: gray;
+    color: black;
     width: 200px;
     height: 28px;
     white-space: wrap;

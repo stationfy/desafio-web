@@ -22,7 +22,7 @@ class RepositoryContainer extends Component {
       });
       console.log(responseJson);
     }).catch((err) => {
-      // Error :(
+      console.log(err)
     });
   }
   

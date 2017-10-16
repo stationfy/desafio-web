@@ -1,6 +1,10 @@
 import {CLICK} from '../constants';
 
-export const listReducer = (state={}, action)=>{
+export const listReducer = (state={
+  project:'react',
+  owner:'facebook',
+  pulls:false
+}, action)=>{
   switch(action.type){
     case CLICK:
       console.log('action.project', action.project);
