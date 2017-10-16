@@ -3,7 +3,7 @@ import './index.css';
 import Fork from 'react-icons/lib/fa/code-fork'
 import Star from 'react-icons/lib/fa/star'
 
-const Repository = ({name, description, forks, stargazers_count, login, avatar_url}) => (
+const Repository = ({name, description, forks, stargazers_count, login, avatar_url, pulls_url}) => (
   <div className="Repository-wrapper">
     <div className="Repository-infos">
       <div className="Repository-texts">

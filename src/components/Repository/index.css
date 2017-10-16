@@ -43,6 +43,7 @@
     flex: 8;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .Repository-user{
@@ -80,6 +81,11 @@
 .Repository-description{
     font-size: 13px;
     color: gray;
+    width: 200px;
+    height: 28px;
+    white-space: wrap;
+    overflow: hidden;
+    
 }
 
 .Repository-user{

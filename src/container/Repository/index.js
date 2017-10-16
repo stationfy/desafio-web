@@ -21,6 +21,7 @@ class RepositoryContainer extends Component {
       this.setState({
 	items: this.state.items.concat(responseJson.items),
       });
+      console.log(responseJson);
     }).catch((err) => {
       // Error :(
     });
