@@ -7,7 +7,7 @@ import {click} from '../../actions';
 import {Link} from 'react-router';
 
 const Repository = ({name, description, forks, stargazers_count, login, avatar_url, pulls_url, click}) => (
-  <Link to="/pulls">
+  <Link to="/pulls" style={{ textDecoration: 'none' }}>
     <div className="Repository-wrapper" onClick={()=>click(name, login, true)}>
       <div className="Repository-infos">
 	<div className="Repository-texts">
