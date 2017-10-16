@@ -25,15 +25,15 @@ class PullRequestContainer extends Component {
 	items: responseJson,
       });
     }).catch((err) => {
-      // Error :(
+      console.log(err);
     });
   }
   
   render() {
     return (
       <div>
-	{this.state.items.map((i)=>
-	  <PullRequest {...i.user} {...i}/>
+	{this.state.items.map((i, k)=>
+	  <PullRequest {...i.user} {...i} key={k}/>
 	)}
       </div>
     );

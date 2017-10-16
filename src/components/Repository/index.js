@@ -3,12 +3,12 @@ import {connect} from 'react-redux';
 import './index.css';
 import Fork from 'react-icons/lib/fa/code-fork'
 import Star from 'react-icons/lib/fa/star'
-import {click} from '../../actions/counter';
+import {click} from '../../actions';
 import {Link} from 'react-router';
 
 const Repository = ({name, description, forks, stargazers_count, login, avatar_url, pulls_url, click}) => (
   <Link to="/pulls">
-    <div className="Repository-wrapper" onClick={()=>click(name, login)}>
+    <div className="Repository-wrapper" onClick={()=>click(name, login, true)}>
       <div className="Repository-infos">
 	<div className="Repository-texts">
 	  <p className="Repository-title">{name}</p>
