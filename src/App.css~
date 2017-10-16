@@ -1,0 +1,29 @@
+.App {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.App-header {
+    display: flex;
+    flex: 1;
+    background-color: #222;
+    color: white;
+}
+
+.App-body {
+    display: flex;
+    font-size: large;
+    flex: 9;
+    flex-direction: column;
+}
+
+.icon-wrapper{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
