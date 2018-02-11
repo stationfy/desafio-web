@@ -1,8 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import { Provider } from "react-redux";
+import store from "./store";
+
+import { Router, hashHistory, Route } from "react-router";
+
+import Repository from "./components/repositories/Repository";
+import PullRequests from './components/pullRequests/PullRequests';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={hashHistory}>
+      <Route path="/" component={Repository} />
+      <Route path="pulls/:creator/:repo" component={PullRequests} />
+    </Router>
+  </Provider>,
+  document.getElementById("root")
+);
