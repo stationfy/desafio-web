@@ -47,7 +47,7 @@ class PullRequests extends Component {
           {messageError || fetching ? (
             <Errors messageError={messageError} />
           ) : (
-            <div>{this.renderPullRequests()}</div>
+            <div style={{ width: '100%'}}>{this.renderPullRequests()}</div>
           )}
         </PullRequestsWrapper>
       </div>
