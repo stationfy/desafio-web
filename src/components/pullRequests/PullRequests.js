@@ -29,20 +29,22 @@ class PullRequests extends Component {
 
   renderPullRequests() {
       const { pullRequests } = this.props;
+      const { creator, repo } = this.props.params;
       return pullRequests.map((pullRequest, index) => {
           return (
-              <PullRequestItem key={index} pullRequest={pullRequest}/>
+              <PullRequestItem key={index} pullRequest={pullRequest} creator={creator} repo={repo}/>
           );
       });
-      console.log(this.props.pullRequests)
   }
 
   render() {
     const loader = <LoadingInfiniteScroll />;
     const { messageError, fetching} = this.props;
+    const { repo } = this.props.params;
+
     return (
       <div>
-        <Header />
+        <Header title={repo} initialPage/>
         <PullRequestsWrapper>
           {messageError || fetching ? (
             <Errors messageError={messageError} />

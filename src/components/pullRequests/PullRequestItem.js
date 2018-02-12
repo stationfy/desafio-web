@@ -58,15 +58,12 @@ const PullRequestItem = props => {
   const { title, body, number, created_at } = props.pullRequest;
   const { login, avatar_url } = props.pullRequest.user;
   const { ref } = props.pullRequest.head;
+  const { creator, repo } = props;
 
-  console.log(props.pullRequest);
-  console.log(body);
   return (
     <PullRequestWrapper>
       <PullRequestInfosDetail>
-        <Link>
-          <Name>{title}</Name>
-        </Link>
+          <Name onClick={() => window.open(`https://github.com/${creator}/${repo}/pull/${number}`)}>{title}</Name>
         <Description>
           #{number} {login} wants to merge {ref} to {props.pullRequest.base.ref}{" "}
           <em>{moment(new Date(created_at)).fromNow()}</em>

@@ -47,7 +47,7 @@ class Repository extends Component {
 
     return (
       <div >
-        <Header />
+        <Header title="Github JavaPop" initialPage={false} />
         <RepositoryWrapper>
           {this.props.messageError ? (
             <Errors messageError={this.props.messageError}/>

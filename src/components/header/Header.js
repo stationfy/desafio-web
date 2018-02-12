@@ -1,11 +1,11 @@
 import React from "react";
 import Menu from "react-icons/lib/md/menu";
+import FaArrowLeft from 'react-icons/lib/fa/arrow-left';
+import { hashHistory } from "react-router";
 
 import styled from "styled-components";
 
-const HeaderWrapper = styled.div`
-    width: 100%;
-`;
+const HeaderWrapper = styled.div`width: 100%;`;
 
 const HeaderContent = styled.div`
   display: flex;
@@ -30,16 +30,20 @@ const Icon = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 25px;
 `;
 
 const Header = props => {
+  const { title } = props;
   return (
     <HeaderWrapper>
       <HeaderContent>
         <Icon>
-          <Menu size="35" />
+          {
+            props.initialPage ? <FaArrowLeft size="20" onClick={() => hashHistory.push("/")} /> : <Menu size="20" />
+          }
         </Icon>
-        <TitleWrapper>Github JavaPop</TitleWrapper>
+        <TitleWrapper>{title}</TitleWrapper>
       </HeaderContent>
     </HeaderWrapper>
   );
