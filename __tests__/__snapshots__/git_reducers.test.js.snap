@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get reducer should return the pullRequests 1`] = `
+Object {
+  "fetching": false,
+  "messageError": false,
+  "pullRequests": Array [],
+  "repositories": Array [],
+}
+`;
+
+exports[`get reducer should return the repositories 1`] = `
+Object {
+  "fetching": false,
+  "messageError": false,
+  "pullRequests": Array [],
+  "repositories": Array [],
+}
+`;
