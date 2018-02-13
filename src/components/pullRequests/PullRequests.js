@@ -4,7 +4,8 @@ import { fetchPullRequests } from "../../actions/git_action";
 
 import Header from "../header/Header";
 import Errors from "../errors/Errors";
-import PullRequestItem from './PullRequestItem'
+import PullRequestItem from './PullRequestItem';
+import Loading from '../loader/Loading';
 
 import styled from "styled-components";
 
@@ -24,29 +25,32 @@ class PullRequests extends Component {
   }
 
   renderPullRequests() {
-      const { pullRequests } = this.props;
-      const { creator, repo } = this.props.params;
-      return pullRequests.map((pullRequest, index) => {
-          return (
-              <PullRequestItem key={index} pullRequest={pullRequest} creator={creator} repo={repo}/>
-          );
-      });
+    const { pullRequests } = this.props;
+    const { creator, repo } = this.props.params;
+    return pullRequests.map((pullRequest, index) => {
+      return (
+        <PullRequestItem key={index} pullRequest={pullRequest} creator={creator} repo={repo} />
+      );
+    });
   }
 
   render() {
-    const { messageError, fetching} = this.props;
+    const { messageError, fetching } = this.props;
     const { repo } = this.props.params;
 
     return (
       <div>
-        <Header title={`${repo}`} initialPage/>
-        <PullRequestsWrapper>
-          {messageError || fetching ? (
-            <Errors messageError={messageError} />
-          ) : (
-            <div style={{ width: '100%'}}>{this.renderPullRequests()}</div>
-          )}
-        </PullRequestsWrapper>
+        <Header title={`${repo}`} initialPage />
+        {
+          fetching ? <Loading /> : <PullRequestsWrapper>
+            {messageError ? (
+              <Errors messageError={messageError} />
+            ) : (
+                <div style={{ width: '100%' }}>{this.renderPullRequests()}</div>
+              )}
+          </PullRequestsWrapper>
+        }
+
       </div>
     );
   }

@@ -19,9 +19,9 @@ export default function(state = INITIAL_STATE, action) {
     case FETCH_REPOSITORIES:
       return { ...state, fetching: true };
     case FETCH_REPOSITORIES_SUCCESS:
-      return { ...state, repositories: action.payload.data };
+      return { ...state, fetching: false, repositories: action.payload.data };
     case FETCH_REPOSITORIES_FAIL:
-      return { ...state, messageError: action.payload };
+      return { ...state, fetching: false, messageError: action.payload };
     case FETCH_PULL_REQUESTS:
       return { ...state, fetching: true };
     case FETCH_PULL_REQUESTS_SUCCESS:

@@ -392,7 +392,7 @@ ShallowWrapper {
                 staging
                  
                 <em>
-                        4 hours ago
+                        8 hours ago
                 </em>
         </styled.p>
         <styled.div>
@@ -428,7 +428,7 @@ ShallowWrapper {
             staging
              
             <em>
-                        4 hours ago
+                        8 hours ago
             </em>
 </styled.p>,
           <styled.div>
@@ -471,7 +471,7 @@ ShallowWrapper {
               "staging",
               " ",
               <em>
-                4 hours ago
+                8 hours ago
 </em>,
             ],
           },
@@ -491,10 +491,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "4 hours ago",
+                "children": "8 hours ago",
               },
               "ref": null,
-              "rendered": "4 hours ago",
+              "rendered": "8 hours ago",
               "type": "em",
             },
           ],
@@ -569,7 +569,7 @@ ShallowWrapper {
                     staging
                      
                     <em>
-                              4 hours ago
+                              8 hours ago
                     </em>
           </styled.p>
           <styled.div>
@@ -605,7 +605,7 @@ ShallowWrapper {
               staging
                
               <em>
-                            4 hours ago
+                            8 hours ago
               </em>
 </styled.p>,
             <styled.div>
@@ -648,7 +648,7 @@ ShallowWrapper {
                 "staging",
                 " ",
                 <em>
-                  4 hours ago
+                  8 hours ago
 </em>,
               ],
             },
@@ -668,10 +668,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "4 hours ago",
+                  "children": "8 hours ago",
                 },
                 "ref": null,
-                "rendered": "4 hours ago",
+                "rendered": "8 hours ago",
                 "type": "em",
               },
             ],
@@ -1126,7 +1126,7 @@ ShallowWrapper {
                 staging
                  
                 <em>
-                        4 hours ago
+                        8 hours ago
                 </em>
         </styled.p>
         <styled.div>
@@ -1162,7 +1162,7 @@ ShallowWrapper {
             staging
              
             <em>
-                        4 hours ago
+                        8 hours ago
             </em>
 </styled.p>,
           <styled.div>
@@ -1205,7 +1205,7 @@ ShallowWrapper {
               "staging",
               " ",
               <em>
-                4 hours ago
+                8 hours ago
 </em>,
             ],
           },
@@ -1225,10 +1225,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "4 hours ago",
+                "children": "8 hours ago",
               },
               "ref": null,
-              "rendered": "4 hours ago",
+              "rendered": "8 hours ago",
               "type": "em",
             },
           ],
@@ -1303,7 +1303,7 @@ ShallowWrapper {
                     staging
                      
                     <em>
-                              4 hours ago
+                              8 hours ago
                     </em>
           </styled.p>
           <styled.div>
@@ -1339,7 +1339,7 @@ ShallowWrapper {
               staging
                
               <em>
-                            4 hours ago
+                            8 hours ago
               </em>
 </styled.p>,
             <styled.div>
@@ -1382,7 +1382,7 @@ ShallowWrapper {
                 "staging",
                 " ",
                 <em>
-                  4 hours ago
+                  8 hours ago
 </em>,
               ],
             },
@@ -1402,10 +1402,10 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "4 hours ago",
+                  "children": "8 hours ago",
                 },
                 "ref": null,
-                "rendered": "4 hours ago",
+                "rendered": "8 hours ago",
                 "type": "em",
               },
             ],
