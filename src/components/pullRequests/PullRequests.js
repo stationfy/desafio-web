@@ -44,7 +44,7 @@ class PullRequests extends Component {
 
     return (
       <div>
-        <Header title={repo} initialPage/>
+        <Header title={`${repo}`} initialPage/>
         <PullRequestsWrapper>
           {messageError || fetching ? (
             <Errors messageError={messageError} />

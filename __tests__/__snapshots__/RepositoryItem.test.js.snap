@@ -1,0 +1,2825 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing RepositoryItem component should render corretly with props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryItem
+    repository={
+        Object {
+            "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/branches{/branch}",
+            "clone_url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+            "collaborators_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/comments{/number}",
+            "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors",
+            "created_at": "2014-12-24T17:49:19Z",
+            "default_branch": "staging",
+            "deployments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/deployments",
+            "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+            "downloads_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/downloads",
+            "events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/events",
+            "fork": false,
+            "forks": 13448,
+            "forks_count": 13448,
+            "forks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/forks",
+            "full_name": "freeCodeCamp/freeCodeCamp",
+            "git_commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/tags{/sha}",
+            "git_url": "git://github.com/freeCodeCamp/freeCodeCamp.git",
+            "has_downloads": true,
+            "has_issues": true,
+            "has_pages": false,
+            "has_projects": true,
+            "has_wiki": false,
+            "homepage": "",
+            "hooks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/hooks",
+            "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "id": 28457823,
+            "issue_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues{/number}",
+            "keys_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels{/name}",
+            "language": "JavaScript",
+            "languages_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/languages",
+            "license": Object {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \\"New\\" or \\"Revised\\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+            },
+            "merges_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/merges",
+            "milestones_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/milestones{/number}",
+            "mirror_url": null,
+            "name": "freeCodeCamp",
+            "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
+            "open_issues": 210,
+            "open_issues_count": 210,
+            "owner": Object {
+              "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+              "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+              "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+              "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/freeCodeCamp",
+              "id": 9892522,
+              "login": "freeCodeCamp",
+              "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+              "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+              "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+              "type": "Organization",
+              "url": "https://api.github.com/users/freeCodeCamp",
+            },
+            "private": false,
+            "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
+            "pushed_at": "2018-02-13T00:17:23Z",
+            "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
+            "score": 1,
+            "size": 32545,
+            "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
+            "stargazers_count": 291622,
+            "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
+            "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
+            "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
+            "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/tags",
+            "teams_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/teams",
+            "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
+            "updated_at": "2018-02-13T02:35:52Z",
+            "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+            "watchers": 291622,
+            "watchers_count": 291622,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div>
+          <div>
+                    <Link
+                              onlyActiveOnIndex={false}
+                              style={Object {}}
+                              to="pulls/freeCodeCamp/freeCodeCamp"
+                    >
+                              <styled.h1>
+                                        freeCodeCamp
+                              </styled.h1>
+                    </Link>
+                    <styled.p>
+                              The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                    </styled.p>
+          </div>
+          <styled.div>
+                    <FaCodeFork
+                              color="#DE920C"
+                    />
+                    <styled.p>
+                              13448
+                    </styled.p>
+                    <FaStar
+                              color="#DE920C"
+                              style={
+                                        Object {
+                                                  "marginLeft": 15,
+                                                }
+                              }
+                    />
+                    <styled.p>
+                               
+                              291622
+                    </styled.p>
+          </styled.div>
+</styled.div>,
+        <styled.div>
+          <styled.img
+                    src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+          />
+          <styled.p>
+                    freeCodeCamp
+          </styled.p>
+</styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <div>
+              <Link
+                            onlyActiveOnIndex={false}
+                            style={Object {}}
+                            to="pulls/freeCodeCamp/freeCodeCamp"
+              >
+                            <styled.h1>
+                                          freeCodeCamp
+                            </styled.h1>
+              </Link>
+              <styled.p>
+                            The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+              </styled.p>
+</div>,
+            <styled.div>
+              <FaCodeFork
+                            color="#DE920C"
+              />
+              <styled.p>
+                            13448
+              </styled.p>
+              <FaStar
+                            color="#DE920C"
+                            style={
+                                          Object {
+                                                        "marginLeft": 15,
+                                                      }
+                            }
+              />
+              <styled.p>
+                             
+                            291622
+              </styled.p>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  onlyActiveOnIndex={false}
+                  style={Object {}}
+                  to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                  <styled.h1>
+                                    freeCodeCamp
+                  </styled.h1>
+</Link>,
+                <styled.p>
+                  The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <styled.h1>
+                    freeCodeCamp
+</styled.h1>,
+                  "onlyActiveOnIndex": false,
+                  "style": Object {},
+                  "to": "pulls/freeCodeCamp/freeCodeCamp",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": "freeCodeCamp",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                },
+                "ref": null,
+                "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <FaCodeFork
+                  color="#DE920C"
+/>,
+                <styled.p>
+                  13448
+</styled.p>,
+                <FaStar
+                  color="#DE920C"
+                  style={
+                                    Object {
+                                                      "marginLeft": 15,
+                                                    }
+                  }
+/>,
+                <styled.p>
+                   
+                  291622
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 13448,
+                },
+                "ref": null,
+                "rendered": 13448,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                  "style": Object {
+                    "marginLeft": 15,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    291622,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  291622,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.img
+              src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+            <styled.p>
+              freeCodeCamp
+</styled.p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "freeCodeCamp",
+            },
+            "ref": null,
+            "rendered": "freeCodeCamp",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div>
+            <div>
+                        <Link
+                                    onlyActiveOnIndex={false}
+                                    style={Object {}}
+                                    to="pulls/freeCodeCamp/freeCodeCamp"
+                        >
+                                    <styled.h1>
+                                                freeCodeCamp
+                                    </styled.h1>
+                        </Link>
+                        <styled.p>
+                                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                        </styled.p>
+            </div>
+            <styled.div>
+                        <FaCodeFork
+                                    color="#DE920C"
+                        />
+                        <styled.p>
+                                    13448
+                        </styled.p>
+                        <FaStar
+                                    color="#DE920C"
+                                    style={
+                                                Object {
+                                                            "marginLeft": 15,
+                                                          }
+                                    }
+                        />
+                        <styled.p>
+                                     
+                                    291622
+                        </styled.p>
+            </styled.div>
+</styled.div>,
+          <styled.div>
+            <styled.img
+                        src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+            />
+            <styled.p>
+                        freeCodeCamp
+            </styled.p>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <div>
+                <Link
+                                onlyActiveOnIndex={false}
+                                style={Object {}}
+                                to="pulls/freeCodeCamp/freeCodeCamp"
+                >
+                                <styled.h1>
+                                                freeCodeCamp
+                                </styled.h1>
+                </Link>
+                <styled.p>
+                                The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                </styled.p>
+</div>,
+              <styled.div>
+                <FaCodeFork
+                                color="#DE920C"
+                />
+                <styled.p>
+                                13448
+                </styled.p>
+                <FaStar
+                                color="#DE920C"
+                                style={
+                                                Object {
+                                                                "marginLeft": 15,
+                                                              }
+                                }
+                />
+                <styled.p>
+                                 
+                                291622
+                </styled.p>
+</styled.div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    onlyActiveOnIndex={false}
+                    style={Object {}}
+                    to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                    <styled.h1>
+                                        freeCodeCamp
+                    </styled.h1>
+</Link>,
+                  <styled.p>
+                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <styled.h1>
+                      freeCodeCamp
+</styled.h1>,
+                    "onlyActiveOnIndex": false,
+                    "style": Object {},
+                    "to": "pulls/freeCodeCamp/freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "freeCodeCamp",
+                    },
+                    "ref": null,
+                    "rendered": "freeCodeCamp",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  },
+                  "ref": null,
+                  "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <FaCodeFork
+                    color="#DE920C"
+/>,
+                  <styled.p>
+                    13448
+</styled.p>,
+                  <FaStar
+                    color="#DE920C"
+                    style={
+                                        Object {
+                                                            "marginLeft": 15,
+                                                          }
+                    }
+/>,
+                  <styled.p>
+                     
+                    291622
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 13448,
+                  },
+                  "ref": null,
+                  "rendered": 13448,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                    "style": Object {
+                      "marginLeft": 15,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      291622,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    291622,
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.img
+                src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+              <styled.p>
+                freeCodeCamp
+</styled.p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "freeCodeCamp",
+              },
+              "ref": null,
+              "rendered": "freeCodeCamp",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing RepositoryItem component should render corretly with props 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryItem
+    repository={
+        Object {
+            "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/branches{/branch}",
+            "clone_url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+            "collaborators_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/comments{/number}",
+            "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors",
+            "created_at": "2014-12-24T17:49:19Z",
+            "default_branch": "staging",
+            "deployments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/deployments",
+            "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+            "downloads_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/downloads",
+            "events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/events",
+            "fork": false,
+            "forks": 13448,
+            "forks_count": 13448,
+            "forks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/forks",
+            "full_name": "freeCodeCamp/freeCodeCamp",
+            "git_commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/tags{/sha}",
+            "git_url": "git://github.com/freeCodeCamp/freeCodeCamp.git",
+            "has_downloads": true,
+            "has_issues": true,
+            "has_pages": false,
+            "has_projects": true,
+            "has_wiki": false,
+            "homepage": "",
+            "hooks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/hooks",
+            "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "id": 28457823,
+            "issue_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues{/number}",
+            "keys_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels{/name}",
+            "language": "JavaScript",
+            "languages_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/languages",
+            "license": Object {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \\"New\\" or \\"Revised\\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+            },
+            "merges_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/merges",
+            "milestones_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/milestones{/number}",
+            "mirror_url": null,
+            "name": "freeCodeCamp",
+            "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
+            "open_issues": 210,
+            "open_issues_count": 210,
+            "owner": Object {
+              "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+              "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+              "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+              "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/freeCodeCamp",
+              "id": 9892522,
+              "login": "freeCodeCamp",
+              "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+              "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+              "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+              "type": "Organization",
+              "url": "https://api.github.com/users/freeCodeCamp",
+            },
+            "private": false,
+            "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
+            "pushed_at": "2018-02-13T00:17:23Z",
+            "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
+            "score": 1,
+            "size": 32545,
+            "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
+            "stargazers_count": 291622,
+            "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
+            "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
+            "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
+            "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/tags",
+            "teams_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/teams",
+            "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
+            "updated_at": "2018-02-13T02:35:52Z",
+            "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+            "watchers": 291622,
+            "watchers_count": 291622,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div>
+          <div>
+                    <Link
+                              onlyActiveOnIndex={false}
+                              style={Object {}}
+                              to="pulls/freeCodeCamp/freeCodeCamp"
+                    >
+                              <styled.h1>
+                                        freeCodeCamp
+                              </styled.h1>
+                    </Link>
+                    <styled.p>
+                              The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                    </styled.p>
+          </div>
+          <styled.div>
+                    <FaCodeFork
+                              color="#DE920C"
+                    />
+                    <styled.p>
+                              13448
+                    </styled.p>
+                    <FaStar
+                              color="#DE920C"
+                              style={
+                                        Object {
+                                                  "marginLeft": 15,
+                                                }
+                              }
+                    />
+                    <styled.p>
+                               
+                              291622
+                    </styled.p>
+          </styled.div>
+</styled.div>,
+        <styled.div>
+          <styled.img
+                    src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+          />
+          <styled.p>
+                    freeCodeCamp
+          </styled.p>
+</styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <div>
+              <Link
+                            onlyActiveOnIndex={false}
+                            style={Object {}}
+                            to="pulls/freeCodeCamp/freeCodeCamp"
+              >
+                            <styled.h1>
+                                          freeCodeCamp
+                            </styled.h1>
+              </Link>
+              <styled.p>
+                            The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+              </styled.p>
+</div>,
+            <styled.div>
+              <FaCodeFork
+                            color="#DE920C"
+              />
+              <styled.p>
+                            13448
+              </styled.p>
+              <FaStar
+                            color="#DE920C"
+                            style={
+                                          Object {
+                                                        "marginLeft": 15,
+                                                      }
+                            }
+              />
+              <styled.p>
+                             
+                            291622
+              </styled.p>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  onlyActiveOnIndex={false}
+                  style={Object {}}
+                  to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                  <styled.h1>
+                                    freeCodeCamp
+                  </styled.h1>
+</Link>,
+                <styled.p>
+                  The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <styled.h1>
+                    freeCodeCamp
+</styled.h1>,
+                  "onlyActiveOnIndex": false,
+                  "style": Object {},
+                  "to": "pulls/freeCodeCamp/freeCodeCamp",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": "freeCodeCamp",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                },
+                "ref": null,
+                "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <FaCodeFork
+                  color="#DE920C"
+/>,
+                <styled.p>
+                  13448
+</styled.p>,
+                <FaStar
+                  color="#DE920C"
+                  style={
+                                    Object {
+                                                      "marginLeft": 15,
+                                                    }
+                  }
+/>,
+                <styled.p>
+                   
+                  291622
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 13448,
+                },
+                "ref": null,
+                "rendered": 13448,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                  "style": Object {
+                    "marginLeft": 15,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    291622,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  291622,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.img
+              src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+            <styled.p>
+              freeCodeCamp
+</styled.p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "freeCodeCamp",
+            },
+            "ref": null,
+            "rendered": "freeCodeCamp",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div>
+            <div>
+                        <Link
+                                    onlyActiveOnIndex={false}
+                                    style={Object {}}
+                                    to="pulls/freeCodeCamp/freeCodeCamp"
+                        >
+                                    <styled.h1>
+                                                freeCodeCamp
+                                    </styled.h1>
+                        </Link>
+                        <styled.p>
+                                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                        </styled.p>
+            </div>
+            <styled.div>
+                        <FaCodeFork
+                                    color="#DE920C"
+                        />
+                        <styled.p>
+                                    13448
+                        </styled.p>
+                        <FaStar
+                                    color="#DE920C"
+                                    style={
+                                                Object {
+                                                            "marginLeft": 15,
+                                                          }
+                                    }
+                        />
+                        <styled.p>
+                                     
+                                    291622
+                        </styled.p>
+            </styled.div>
+</styled.div>,
+          <styled.div>
+            <styled.img
+                        src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+            />
+            <styled.p>
+                        freeCodeCamp
+            </styled.p>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <div>
+                <Link
+                                onlyActiveOnIndex={false}
+                                style={Object {}}
+                                to="pulls/freeCodeCamp/freeCodeCamp"
+                >
+                                <styled.h1>
+                                                freeCodeCamp
+                                </styled.h1>
+                </Link>
+                <styled.p>
+                                The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                </styled.p>
+</div>,
+              <styled.div>
+                <FaCodeFork
+                                color="#DE920C"
+                />
+                <styled.p>
+                                13448
+                </styled.p>
+                <FaStar
+                                color="#DE920C"
+                                style={
+                                                Object {
+                                                                "marginLeft": 15,
+                                                              }
+                                }
+                />
+                <styled.p>
+                                 
+                                291622
+                </styled.p>
+</styled.div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    onlyActiveOnIndex={false}
+                    style={Object {}}
+                    to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                    <styled.h1>
+                                        freeCodeCamp
+                    </styled.h1>
+</Link>,
+                  <styled.p>
+                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <styled.h1>
+                      freeCodeCamp
+</styled.h1>,
+                    "onlyActiveOnIndex": false,
+                    "style": Object {},
+                    "to": "pulls/freeCodeCamp/freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "freeCodeCamp",
+                    },
+                    "ref": null,
+                    "rendered": "freeCodeCamp",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  },
+                  "ref": null,
+                  "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <FaCodeFork
+                    color="#DE920C"
+/>,
+                  <styled.p>
+                    13448
+</styled.p>,
+                  <FaStar
+                    color="#DE920C"
+                    style={
+                                        Object {
+                                                            "marginLeft": 15,
+                                                          }
+                    }
+/>,
+                  <styled.p>
+                     
+                    291622
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 13448,
+                  },
+                  "ref": null,
+                  "rendered": 13448,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                    "style": Object {
+                      "marginLeft": 15,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      291622,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    291622,
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.img
+                src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+              <styled.p>
+                freeCodeCamp
+</styled.p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "freeCodeCamp",
+              },
+              "ref": null,
+              "rendered": "freeCodeCamp",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing counter component should render corretly with props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryItem
+    repository={
+        Object {
+            "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/branches{/branch}",
+            "clone_url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+            "collaborators_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/comments{/number}",
+            "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors",
+            "created_at": "2014-12-24T17:49:19Z",
+            "default_branch": "staging",
+            "deployments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/deployments",
+            "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+            "downloads_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/downloads",
+            "events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/events",
+            "fork": false,
+            "forks": 13448,
+            "forks_count": 13448,
+            "forks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/forks",
+            "full_name": "freeCodeCamp/freeCodeCamp",
+            "git_commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/tags{/sha}",
+            "git_url": "git://github.com/freeCodeCamp/freeCodeCamp.git",
+            "has_downloads": true,
+            "has_issues": true,
+            "has_pages": false,
+            "has_projects": true,
+            "has_wiki": false,
+            "homepage": "",
+            "hooks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/hooks",
+            "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "id": 28457823,
+            "issue_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues{/number}",
+            "keys_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels{/name}",
+            "language": "JavaScript",
+            "languages_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/languages",
+            "license": Object {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \\"New\\" or \\"Revised\\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+            },
+            "merges_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/merges",
+            "milestones_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/milestones{/number}",
+            "mirror_url": null,
+            "name": "freeCodeCamp",
+            "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
+            "open_issues": 210,
+            "open_issues_count": 210,
+            "owner": Object {
+              "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+              "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+              "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+              "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/freeCodeCamp",
+              "id": 9892522,
+              "login": "freeCodeCamp",
+              "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+              "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+              "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+              "type": "Organization",
+              "url": "https://api.github.com/users/freeCodeCamp",
+            },
+            "private": false,
+            "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
+            "pushed_at": "2018-02-13T00:17:23Z",
+            "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
+            "score": 1,
+            "size": 32545,
+            "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
+            "stargazers_count": 291622,
+            "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
+            "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
+            "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
+            "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/tags",
+            "teams_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/teams",
+            "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
+            "updated_at": "2018-02-13T02:35:52Z",
+            "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+            "watchers": 291622,
+            "watchers_count": 291622,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div>
+          <div>
+                    <Link
+                              onlyActiveOnIndex={false}
+                              style={Object {}}
+                              to="pulls/freeCodeCamp/freeCodeCamp"
+                    >
+                              <styled.h1>
+                                        freeCodeCamp
+                              </styled.h1>
+                    </Link>
+                    <styled.p>
+                              The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                    </styled.p>
+          </div>
+          <styled.div>
+                    <FaCodeFork
+                              color="#DE920C"
+                    />
+                    <styled.p>
+                              13448
+                    </styled.p>
+                    <FaStar
+                              color="#DE920C"
+                              style={
+                                        Object {
+                                                  "marginLeft": 15,
+                                                }
+                              }
+                    />
+                    <styled.p>
+                               
+                              291622
+                    </styled.p>
+          </styled.div>
+</styled.div>,
+        <styled.div>
+          <styled.img
+                    src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+          />
+          <styled.p>
+                    freeCodeCamp
+          </styled.p>
+</styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <div>
+              <Link
+                            onlyActiveOnIndex={false}
+                            style={Object {}}
+                            to="pulls/freeCodeCamp/freeCodeCamp"
+              >
+                            <styled.h1>
+                                          freeCodeCamp
+                            </styled.h1>
+              </Link>
+              <styled.p>
+                            The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+              </styled.p>
+</div>,
+            <styled.div>
+              <FaCodeFork
+                            color="#DE920C"
+              />
+              <styled.p>
+                            13448
+              </styled.p>
+              <FaStar
+                            color="#DE920C"
+                            style={
+                                          Object {
+                                                        "marginLeft": 15,
+                                                      }
+                            }
+              />
+              <styled.p>
+                             
+                            291622
+              </styled.p>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  onlyActiveOnIndex={false}
+                  style={Object {}}
+                  to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                  <styled.h1>
+                                    freeCodeCamp
+                  </styled.h1>
+</Link>,
+                <styled.p>
+                  The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <styled.h1>
+                    freeCodeCamp
+</styled.h1>,
+                  "onlyActiveOnIndex": false,
+                  "style": Object {},
+                  "to": "pulls/freeCodeCamp/freeCodeCamp",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": "freeCodeCamp",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                },
+                "ref": null,
+                "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <FaCodeFork
+                  color="#DE920C"
+/>,
+                <styled.p>
+                  13448
+</styled.p>,
+                <FaStar
+                  color="#DE920C"
+                  style={
+                                    Object {
+                                                      "marginLeft": 15,
+                                                    }
+                  }
+/>,
+                <styled.p>
+                   
+                  291622
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 13448,
+                },
+                "ref": null,
+                "rendered": 13448,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                  "style": Object {
+                    "marginLeft": 15,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    291622,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  291622,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.img
+              src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+            <styled.p>
+              freeCodeCamp
+</styled.p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "freeCodeCamp",
+            },
+            "ref": null,
+            "rendered": "freeCodeCamp",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div>
+            <div>
+                        <Link
+                                    onlyActiveOnIndex={false}
+                                    style={Object {}}
+                                    to="pulls/freeCodeCamp/freeCodeCamp"
+                        >
+                                    <styled.h1>
+                                                freeCodeCamp
+                                    </styled.h1>
+                        </Link>
+                        <styled.p>
+                                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                        </styled.p>
+            </div>
+            <styled.div>
+                        <FaCodeFork
+                                    color="#DE920C"
+                        />
+                        <styled.p>
+                                    13448
+                        </styled.p>
+                        <FaStar
+                                    color="#DE920C"
+                                    style={
+                                                Object {
+                                                            "marginLeft": 15,
+                                                          }
+                                    }
+                        />
+                        <styled.p>
+                                     
+                                    291622
+                        </styled.p>
+            </styled.div>
+</styled.div>,
+          <styled.div>
+            <styled.img
+                        src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+            />
+            <styled.p>
+                        freeCodeCamp
+            </styled.p>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <div>
+                <Link
+                                onlyActiveOnIndex={false}
+                                style={Object {}}
+                                to="pulls/freeCodeCamp/freeCodeCamp"
+                >
+                                <styled.h1>
+                                                freeCodeCamp
+                                </styled.h1>
+                </Link>
+                <styled.p>
+                                The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                </styled.p>
+</div>,
+              <styled.div>
+                <FaCodeFork
+                                color="#DE920C"
+                />
+                <styled.p>
+                                13448
+                </styled.p>
+                <FaStar
+                                color="#DE920C"
+                                style={
+                                                Object {
+                                                                "marginLeft": 15,
+                                                              }
+                                }
+                />
+                <styled.p>
+                                 
+                                291622
+                </styled.p>
+</styled.div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    onlyActiveOnIndex={false}
+                    style={Object {}}
+                    to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                    <styled.h1>
+                                        freeCodeCamp
+                    </styled.h1>
+</Link>,
+                  <styled.p>
+                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <styled.h1>
+                      freeCodeCamp
+</styled.h1>,
+                    "onlyActiveOnIndex": false,
+                    "style": Object {},
+                    "to": "pulls/freeCodeCamp/freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "freeCodeCamp",
+                    },
+                    "ref": null,
+                    "rendered": "freeCodeCamp",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  },
+                  "ref": null,
+                  "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <FaCodeFork
+                    color="#DE920C"
+/>,
+                  <styled.p>
+                    13448
+</styled.p>,
+                  <FaStar
+                    color="#DE920C"
+                    style={
+                                        Object {
+                                                            "marginLeft": 15,
+                                                          }
+                    }
+/>,
+                  <styled.p>
+                     
+                    291622
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 13448,
+                  },
+                  "ref": null,
+                  "rendered": 13448,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                    "style": Object {
+                      "marginLeft": 15,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      291622,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    291622,
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.img
+                src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+              <styled.p>
+                freeCodeCamp
+</styled.p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "freeCodeCamp",
+              },
+              "ref": null,
+              "rendered": "freeCodeCamp",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing counter component should render corretly with props 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RepositoryItem
+    repository={
+        Object {
+            "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
+            "archived": false,
+            "assignees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/assignees{/user}",
+            "blobs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/blobs{/sha}",
+            "branches_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/branches{/branch}",
+            "clone_url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+            "collaborators_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/collaborators{/collaborator}",
+            "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/comments{/number}",
+            "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/commits{/sha}",
+            "compare_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/compare/{base}...{head}",
+            "contents_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contents/{+path}",
+            "contributors_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors",
+            "created_at": "2014-12-24T17:49:19Z",
+            "default_branch": "staging",
+            "deployments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/deployments",
+            "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+            "downloads_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/downloads",
+            "events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/events",
+            "fork": false,
+            "forks": 13448,
+            "forks_count": 13448,
+            "forks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/forks",
+            "full_name": "freeCodeCamp/freeCodeCamp",
+            "git_commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/refs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/tags{/sha}",
+            "git_url": "git://github.com/freeCodeCamp/freeCodeCamp.git",
+            "has_downloads": true,
+            "has_issues": true,
+            "has_pages": false,
+            "has_projects": true,
+            "has_wiki": false,
+            "homepage": "",
+            "hooks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/hooks",
+            "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "id": 28457823,
+            "issue_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/comments{/number}",
+            "issue_events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/events{/number}",
+            "issues_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues{/number}",
+            "keys_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/keys{/key_id}",
+            "labels_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels{/name}",
+            "language": "JavaScript",
+            "languages_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/languages",
+            "license": Object {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \\"New\\" or \\"Revised\\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+            },
+            "merges_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/merges",
+            "milestones_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/milestones{/number}",
+            "mirror_url": null,
+            "name": "freeCodeCamp",
+            "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
+            "open_issues": 210,
+            "open_issues_count": 210,
+            "owner": Object {
+              "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+              "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+              "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+              "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/freeCodeCamp",
+              "id": 9892522,
+              "login": "freeCodeCamp",
+              "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+              "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+              "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+              "type": "Organization",
+              "url": "https://api.github.com/users/freeCodeCamp",
+            },
+            "private": false,
+            "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
+            "pushed_at": "2018-02-13T00:17:23Z",
+            "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
+            "score": 1,
+            "size": 32545,
+            "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
+            "stargazers_count": 291622,
+            "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
+            "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
+            "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
+            "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
+            "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+            "tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/tags",
+            "teams_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/teams",
+            "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
+            "updated_at": "2018-02-13T02:35:52Z",
+            "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+            "watchers": 291622,
+            "watchers_count": 291622,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div>
+          <div>
+                    <Link
+                              onlyActiveOnIndex={false}
+                              style={Object {}}
+                              to="pulls/freeCodeCamp/freeCodeCamp"
+                    >
+                              <styled.h1>
+                                        freeCodeCamp
+                              </styled.h1>
+                    </Link>
+                    <styled.p>
+                              The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                    </styled.p>
+          </div>
+          <styled.div>
+                    <FaCodeFork
+                              color="#DE920C"
+                    />
+                    <styled.p>
+                              13448
+                    </styled.p>
+                    <FaStar
+                              color="#DE920C"
+                              style={
+                                        Object {
+                                                  "marginLeft": 15,
+                                                }
+                              }
+                    />
+                    <styled.p>
+                               
+                              291622
+                    </styled.p>
+          </styled.div>
+</styled.div>,
+        <styled.div>
+          <styled.img
+                    src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+          />
+          <styled.p>
+                    freeCodeCamp
+          </styled.p>
+</styled.div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <div>
+              <Link
+                            onlyActiveOnIndex={false}
+                            style={Object {}}
+                            to="pulls/freeCodeCamp/freeCodeCamp"
+              >
+                            <styled.h1>
+                                          freeCodeCamp
+                            </styled.h1>
+              </Link>
+              <styled.p>
+                            The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+              </styled.p>
+</div>,
+            <styled.div>
+              <FaCodeFork
+                            color="#DE920C"
+              />
+              <styled.p>
+                            13448
+              </styled.p>
+              <FaStar
+                            color="#DE920C"
+                            style={
+                                          Object {
+                                                        "marginLeft": 15,
+                                                      }
+                            }
+              />
+              <styled.p>
+                             
+                            291622
+              </styled.p>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Link
+                  onlyActiveOnIndex={false}
+                  style={Object {}}
+                  to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                  <styled.h1>
+                                    freeCodeCamp
+                  </styled.h1>
+</Link>,
+                <styled.p>
+                  The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <styled.h1>
+                    freeCodeCamp
+</styled.h1>,
+                  "onlyActiveOnIndex": false,
+                  "style": Object {},
+                  "to": "pulls/freeCodeCamp/freeCodeCamp",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": "freeCodeCamp",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                },
+                "ref": null,
+                "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <FaCodeFork
+                  color="#DE920C"
+/>,
+                <styled.p>
+                  13448
+</styled.p>,
+                <FaStar
+                  color="#DE920C"
+                  style={
+                                    Object {
+                                                      "marginLeft": 15,
+                                                    }
+                  }
+/>,
+                <styled.p>
+                   
+                  291622
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": 13448,
+                },
+                "ref": null,
+                "rendered": 13448,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "color": "#DE920C",
+                  "style": Object {
+                    "marginLeft": 15,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    291622,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  291622,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.img
+              src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+            <styled.p>
+              freeCodeCamp
+</styled.p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "freeCodeCamp",
+            },
+            "ref": null,
+            "rendered": "freeCodeCamp",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div>
+            <div>
+                        <Link
+                                    onlyActiveOnIndex={false}
+                                    style={Object {}}
+                                    to="pulls/freeCodeCamp/freeCodeCamp"
+                        >
+                                    <styled.h1>
+                                                freeCodeCamp
+                                    </styled.h1>
+                        </Link>
+                        <styled.p>
+                                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                        </styled.p>
+            </div>
+            <styled.div>
+                        <FaCodeFork
+                                    color="#DE920C"
+                        />
+                        <styled.p>
+                                    13448
+                        </styled.p>
+                        <FaStar
+                                    color="#DE920C"
+                                    style={
+                                                Object {
+                                                            "marginLeft": 15,
+                                                          }
+                                    }
+                        />
+                        <styled.p>
+                                     
+                                    291622
+                        </styled.p>
+            </styled.div>
+</styled.div>,
+          <styled.div>
+            <styled.img
+                        src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+            />
+            <styled.p>
+                        freeCodeCamp
+            </styled.p>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <div>
+                <Link
+                                onlyActiveOnIndex={false}
+                                style={Object {}}
+                                to="pulls/freeCodeCamp/freeCodeCamp"
+                >
+                                <styled.h1>
+                                                freeCodeCamp
+                                </styled.h1>
+                </Link>
+                <styled.p>
+                                The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+                </styled.p>
+</div>,
+              <styled.div>
+                <FaCodeFork
+                                color="#DE920C"
+                />
+                <styled.p>
+                                13448
+                </styled.p>
+                <FaStar
+                                color="#DE920C"
+                                style={
+                                                Object {
+                                                                "marginLeft": 15,
+                                                              }
+                                }
+                />
+                <styled.p>
+                                 
+                                291622
+                </styled.p>
+</styled.div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    onlyActiveOnIndex={false}
+                    style={Object {}}
+                    to="pulls/freeCodeCamp/freeCodeCamp"
+>
+                    <styled.h1>
+                                        freeCodeCamp
+                    </styled.h1>
+</Link>,
+                  <styled.p>
+                    The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <styled.h1>
+                      freeCodeCamp
+</styled.h1>,
+                    "onlyActiveOnIndex": false,
+                    "style": Object {},
+                    "to": "pulls/freeCodeCamp/freeCodeCamp",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "freeCodeCamp",
+                    },
+                    "ref": null,
+                    "rendered": "freeCodeCamp",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  },
+                  "ref": null,
+                  "rendered": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <FaCodeFork
+                    color="#DE920C"
+/>,
+                  <styled.p>
+                    13448
+</styled.p>,
+                  <FaStar
+                    color="#DE920C"
+                    style={
+                                        Object {
+                                                            "marginLeft": 15,
+                                                          }
+                    }
+/>,
+                  <styled.p>
+                     
+                    291622
+</styled.p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": 13448,
+                  },
+                  "ref": null,
+                  "rendered": 13448,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "color": "#DE920C",
+                    "style": Object {
+                      "marginLeft": 15,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      291622,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    291622,
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.img
+                src="https://avatars0.githubusercontent.com/u/9892522?v=4"
+/>,
+              <styled.p>
+                freeCodeCamp
+</styled.p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "src": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "freeCodeCamp",
+              },
+              "ref": null,
+              "rendered": "freeCodeCamp",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -55,6 +55,7 @@ const Status = styled.div`
 const StatusText = styled.p`
   color: #de920c;
   font-size: 14px;
+  padding-left: 2px;  
 `;
 
 const Img = styled.img`
@@ -86,7 +87,7 @@ const RepositoryItem = props => {
           <Fork color="#DE920C" />
           <StatusText>{forks_count}</StatusText>
           <Star color="#DE920C" style={{ marginLeft: 15 }} />
-          <StatusText>{stargazers_count}</StatusText>
+          <StatusText> {stargazers_count}</StatusText>
         </Status>
       </RepositoryDetails>
       <RepositoryUserDetail>

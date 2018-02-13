@@ -25,12 +25,14 @@
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.4.0",
+    "expect": "^22.2.2",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "moment": "^2.20.1",
+    "moxios": "^0.4.0",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
@@ -45,7 +47,9 @@
     "react-moment": "^0.7.0",
     "react-redux": "^5.0.6",
     "react-router": "^3.2.0",
+    "react-test-renderer": "^16.2.0",
     "redux": "^3.7.2",
+    "redux-mock-store": "^1.5.1",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
     "style-loader": "0.19.0",
@@ -67,11 +71,11 @@
       "src/**/*.{js,jsx,mjs}"
     ],
     "setupFiles": [
-      "<rootDir>/config/polyfills.js"
+      "<rootDir>/config/polyfills.js",
+      "<rootDir>/__tests__/setup.js"
     ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+      "<rootDir>/__tests__/**/?(*.)(spec|test).js?(*)"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",

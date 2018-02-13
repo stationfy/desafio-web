@@ -1,0 +1,1469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing RepositoryItem component should render corretly with props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PullRequestItem
+    creator="facebook"
+    pullRequest={
+        Object {
+            "_links": Object {
+              "comments": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708/comments",
+              },
+              "commits": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/commits",
+              },
+              "html": Object {
+                "href": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708",
+              },
+              "issue": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708",
+              },
+              "review_comment": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/comments{/number}",
+              },
+              "review_comments": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/comments",
+              },
+              "self": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708",
+              },
+              "statuses": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/e4e64430a00a9ef21ebf0e6d8c107fb1a944fae1",
+              },
+            },
+            "assignee": null,
+            "assignees": Array [],
+            "author_association": "CONTRIBUTOR",
+            "base": Object {
+              "label": "freeCodeCamp:staging",
+              "ref": "staging",
+              "repo": Object {
+                "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
+                "archived": false,
+                "assignees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/assignees{/user}",
+                "blobs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/blobs{/sha}",
+                "branches_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/branches{/branch}",
+                "clone_url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+                "collaborators_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/collaborators{/collaborator}",
+                "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/comments{/number}",
+                "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/commits{/sha}",
+                "compare_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/compare/{base}...{head}",
+                "contents_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contents/{+path}",
+                "contributors_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors",
+                "created_at": "2014-12-24T17:49:19Z",
+                "default_branch": "staging",
+                "deployments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/deployments",
+                "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "downloads_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/downloads",
+                "events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/events",
+                "fork": false,
+                "forks": 13448,
+                "forks_count": 13448,
+                "forks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/forks",
+                "full_name": "freeCodeCamp/freeCodeCamp",
+                "git_commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/commits{/sha}",
+                "git_refs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/refs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/tags{/sha}",
+                "git_url": "git://github.com/freeCodeCamp/freeCodeCamp.git",
+                "has_downloads": true,
+                "has_issues": true,
+                "has_pages": false,
+                "has_projects": true,
+                "has_wiki": false,
+                "homepage": "",
+                "hooks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/hooks",
+                "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+                "id": 28457823,
+                "issue_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/comments{/number}",
+                "issue_events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/events{/number}",
+                "issues_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues{/number}",
+                "keys_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/keys{/key_id}",
+                "labels_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels{/name}",
+                "language": "JavaScript",
+                "languages_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/languages",
+                "license": Object {
+                  "key": "bsd-3-clause",
+                  "name": "BSD 3-Clause \\"New\\" or \\"Revised\\" License",
+                  "spdx_id": "BSD-3-Clause",
+                  "url": "https://api.github.com/licenses/bsd-3-clause",
+                },
+                "merges_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/merges",
+                "milestones_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/milestones{/number}",
+                "mirror_url": null,
+                "name": "freeCodeCamp",
+                "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
+                "open_issues": 210,
+                "open_issues_count": 210,
+                "owner": Object {
+                  "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+                  "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+                  "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+                  "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+                  "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+                  "gravatar_id": "",
+                  "html_url": "https://github.com/freeCodeCamp",
+                  "id": 9892522,
+                  "login": "freeCodeCamp",
+                  "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+                  "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+                  "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+                  "site_admin": false,
+                  "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+                  "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+                  "type": "Organization",
+                  "url": "https://api.github.com/users/freeCodeCamp",
+                },
+                "private": false,
+                "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
+                "pushed_at": "2018-02-13T14:09:45Z",
+                "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
+                "size": 32549,
+                "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
+                "stargazers_count": 291627,
+                "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
+                "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
+                "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
+                "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
+                "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+                "tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/tags",
+                "teams_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/teams",
+                "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
+                "updated_at": "2018-02-13T13:42:08Z",
+                "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+                "watchers": 291627,
+                "watchers_count": 291627,
+              },
+              "sha": "71974d697236cf8f79c5e19fde58f3337fd6f1ed",
+              "user": Object {
+                "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+                "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+                "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+                "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+                "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+                "gravatar_id": "",
+                "html_url": "https://github.com/freeCodeCamp",
+                "id": 9892522,
+                "login": "freeCodeCamp",
+                "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+                "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+                "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+                "site_admin": false,
+                "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+                "type": "Organization",
+                "url": "https://api.github.com/users/freeCodeCamp",
+              },
+            },
+            "body": "test description
+        
+        <!-- freeCodeCamp Pull Request Template -->
+        
+        <!-- IMPORTANT Please review https://github.com/freeCodeCamp/freeCodeCamp/blob/staging/CONTRIBUTING.md for detailed contributing guidelines -->
+        <!-- Help with PRs can be found at https://gitter.im/FreeCodeCamp/Contributors -->
+        <!-- Make sure that your PR is not a duplicate -->
+        
+        #### Pre-Submission Checklist
+        <!-- Go over all points below, and after creating the PR, tick all the checkboxes that apply. -->
+        <!-- All points should be verified, otherwise, read the CONTRIBUTING guidelines from above-->
+        <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+        - [x] Your pull request targets the \`staging\` branch of freeCodeCamp.
+        - [x] Branch starts with either \`fix/\`, \`feature/\`, or \`translate/\` (e.g. \`fix/signin-issue\`)
+        - [x] You have only one commit (if not, [squash](http://forum.freecodecamp.org/t/how-to-squash-multiple-commits-into-one-with-git/13231) them into one commit).
+        - [x] All new and existing tests pass the command \`npm test\`. Use \`git commit --amend\` to amend any fixes.
+        
+        #### Type of Change
+        <!-- What type of change does your code introduce? After creating the PR, tick the checkboxes that apply. -->
+        - [x] Small bug fix (non-breaking change which fixes an issue)
+        - [ ] New feature (non-breaking change which adds new functionality)
+        - [ ] Breaking change (fix or feature that would change existing functionality)
+        - [ ] Add new translation (feature adding new translations)
+        
+        #### Checklist:
+        <!-- Go over all points below, and after creating the PR, tick the checkboxes that apply. -->
+        <!-- If you're unsure about any of these, don't hesitate to ask in the Contributors room linked above. We're here to help! -->
+        - [x] Tested changes locally.
+        - [ ] Addressed currently open issue (replace XXXXX with an issue no in next line)
+        
+        Closes #XXXXX
+        
+        #### Description
+        <!-- Describe your changes in detail -->
+        the word 'have' was misspelled as 'khave'. this typo is corrected with this PR
+        ",
+            "closed_at": null,
+            "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708/comments",
+            "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/commits",
+            "created_at": "2018-02-13T13:41:04Z",
+            "diff_url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708.diff",
+            "head": Object {
+              "label": "ahmadabdolsaheb:fix/test-typo",
+              "ref": "fix/test-typo",
+              "repo": Object {
+                "archive_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/{archive_format}{/ref}",
+                "archived": false,
+                "assignees_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/assignees{/user}",
+                "blobs_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/blobs{/sha}",
+                "branches_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/branches{/branch}",
+                "clone_url": "https://github.com/ahmadabdolsaheb/freeCodeCamp.git",
+                "collaborators_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/collaborators{/collaborator}",
+                "comments_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/comments{/number}",
+                "commits_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/commits{/sha}",
+                "compare_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/compare/{base}...{head}",
+                "contents_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/contents/{+path}",
+                "contributors_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/contributors",
+                "created_at": "2018-01-11T12:08:09Z",
+                "default_branch": "staging",
+                "deployments_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/deployments",
+                "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "downloads_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/downloads",
+                "events_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/events",
+                "fork": true,
+                "forks": 0,
+                "forks_count": 0,
+                "forks_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/forks",
+                "full_name": "ahmadabdolsaheb/freeCodeCamp",
+                "git_commits_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/commits{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/refs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/tags{/sha}",
+                "git_url": "git://github.com/ahmadabdolsaheb/freeCodeCamp.git",
+                "has_downloads": true,
+                "has_issues": false,
+                "has_pages": false,
+                "has_projects": true,
+                "has_wiki": false,
+                "homepage": "",
+                "hooks_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/hooks",
+                "html_url": "https://github.com/ahmadabdolsaheb/freeCodeCamp",
+                "id": 117095347,
+                "issue_comment_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/issues/comments{/number}",
+                "issue_events_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/issues/events{/number}",
+                "issues_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/issues{/number}",
+                "keys_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/keys{/key_id}",
+                "labels_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/labels{/name}",
+                "language": "JavaScript",
+                "languages_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/languages",
+                "license": null,
+                "merges_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/merges",
+                "milestones_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/milestones{/number}",
+                "mirror_url": null,
+                "name": "freeCodeCamp",
+                "notifications_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/notifications{?since,all,participating}",
+                "open_issues": 0,
+                "open_issues_count": 0,
+                "owner": Object {
+                  "avatar_url": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+                  "events_url": "https://api.github.com/users/ahmadabdolsaheb/events{/privacy}",
+                  "followers_url": "https://api.github.com/users/ahmadabdolsaheb/followers",
+                  "following_url": "https://api.github.com/users/ahmadabdolsaheb/following{/other_user}",
+                  "gists_url": "https://api.github.com/users/ahmadabdolsaheb/gists{/gist_id}",
+                  "gravatar_id": "",
+                  "html_url": "https://github.com/ahmadabdolsaheb",
+                  "id": 4591597,
+                  "login": "ahmadabdolsaheb",
+                  "organizations_url": "https://api.github.com/users/ahmadabdolsaheb/orgs",
+                  "received_events_url": "https://api.github.com/users/ahmadabdolsaheb/received_events",
+                  "repos_url": "https://api.github.com/users/ahmadabdolsaheb/repos",
+                  "site_admin": false,
+                  "starred_url": "https://api.github.com/users/ahmadabdolsaheb/starred{/owner}{/repo}",
+                  "subscriptions_url": "https://api.github.com/users/ahmadabdolsaheb/subscriptions",
+                  "type": "User",
+                  "url": "https://api.github.com/users/ahmadabdolsaheb",
+                },
+                "private": false,
+                "pulls_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/pulls{/number}",
+                "pushed_at": "2018-02-13T13:36:00Z",
+                "releases_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/releases{/id}",
+                "size": 32509,
+                "ssh_url": "git@github.com:ahmadabdolsaheb/freeCodeCamp.git",
+                "stargazers_count": 0,
+                "stargazers_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/stargazers",
+                "statuses_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/statuses/{sha}",
+                "subscribers_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/subscribers",
+                "subscription_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/subscription",
+                "svn_url": "https://github.com/ahmadabdolsaheb/freeCodeCamp",
+                "tags_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/tags",
+                "teams_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/teams",
+                "trees_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/trees{/sha}",
+                "updated_at": "2018-01-11T12:08:13Z",
+                "url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp",
+                "watchers": 0,
+                "watchers_count": 0,
+              },
+              "sha": "e4e64430a00a9ef21ebf0e6d8c107fb1a944fae1",
+              "user": Object {
+                "avatar_url": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+                "events_url": "https://api.github.com/users/ahmadabdolsaheb/events{/privacy}",
+                "followers_url": "https://api.github.com/users/ahmadabdolsaheb/followers",
+                "following_url": "https://api.github.com/users/ahmadabdolsaheb/following{/other_user}",
+                "gists_url": "https://api.github.com/users/ahmadabdolsaheb/gists{/gist_id}",
+                "gravatar_id": "",
+                "html_url": "https://github.com/ahmadabdolsaheb",
+                "id": 4591597,
+                "login": "ahmadabdolsaheb",
+                "organizations_url": "https://api.github.com/users/ahmadabdolsaheb/orgs",
+                "received_events_url": "https://api.github.com/users/ahmadabdolsaheb/received_events",
+                "repos_url": "https://api.github.com/users/ahmadabdolsaheb/repos",
+                "site_admin": false,
+                "starred_url": "https://api.github.com/users/ahmadabdolsaheb/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/ahmadabdolsaheb/subscriptions",
+                "type": "User",
+                "url": "https://api.github.com/users/ahmadabdolsaheb",
+              },
+            },
+            "html_url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708",
+            "id": 168847121,
+            "issue_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708",
+            "labels": Array [
+              Object {
+                "color": "006b75",
+                "default": false,
+                "id": 199856930,
+                "name": "status: ready for QA",
+                "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels/status:%20ready%20for%20QA",
+              },
+            ],
+            "locked": false,
+            "merge_commit_sha": "dad785ff864f246b4eb2adb2d5f91736ff733085",
+            "merged_at": null,
+            "milestone": null,
+            "number": 16708,
+            "patch_url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708.patch",
+            "requested_reviewers": Array [],
+            "requested_teams": Array [],
+            "review_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/comments{/number}",
+            "review_comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/comments",
+            "state": "open",
+            "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/e4e64430a00a9ef21ebf0e6d8c107fb1a944fae1",
+            "title": "fix(seed): Typo in test message",
+            "updated_at": "2018-02-13T14:15:40Z",
+            "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708",
+            "user": Object {
+              "avatar_url": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+              "events_url": "https://api.github.com/users/ahmadabdolsaheb/events{/privacy}",
+              "followers_url": "https://api.github.com/users/ahmadabdolsaheb/followers",
+              "following_url": "https://api.github.com/users/ahmadabdolsaheb/following{/other_user}",
+              "gists_url": "https://api.github.com/users/ahmadabdolsaheb/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/ahmadabdolsaheb",
+              "id": 4591597,
+              "login": "ahmadabdolsaheb",
+              "organizations_url": "https://api.github.com/users/ahmadabdolsaheb/orgs",
+              "received_events_url": "https://api.github.com/users/ahmadabdolsaheb/received_events",
+              "repos_url": "https://api.github.com/users/ahmadabdolsaheb/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/ahmadabdolsaheb/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/ahmadabdolsaheb/subscriptions",
+              "type": "User",
+              "url": "https://api.github.com/users/ahmadabdolsaheb",
+            },
+          }
+    }
+    repo="react"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <styled.div>
+        <styled.h1
+                onClick={[Function]}
+        >
+                fix(seed): Typo in test message
+        </styled.h1>
+        <styled.p>
+                #
+                16708
+                 
+                ahmadabdolsaheb
+                 wants to merge 
+                fix/test-typo
+                 to 
+                staging
+                 
+                <em>
+                        4 hours ago
+                </em>
+        </styled.p>
+        <styled.div>
+                <styled.img
+                        src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+                />
+                <styled.p>
+                        ahmadabdolsaheb
+                </styled.p>
+        </styled.div>
+</styled.div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.h1
+            onClick={[Function]}
+>
+            fix(seed): Typo in test message
+</styled.h1>,
+          <styled.p>
+            #
+            16708
+             
+            ahmadabdolsaheb
+             wants to merge 
+            fix/test-typo
+             to 
+            staging
+             
+            <em>
+                        4 hours ago
+            </em>
+</styled.p>,
+          <styled.div>
+            <styled.img
+                        src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+            />
+            <styled.p>
+                        ahmadabdolsaheb
+            </styled.p>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "fix(seed): Typo in test message",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "fix(seed): Typo in test message",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "#",
+              16708,
+              " ",
+              "ahmadabdolsaheb",
+              " wants to merge ",
+              "fix/test-typo",
+              " to ",
+              "staging",
+              " ",
+              <em>
+                4 hours ago
+</em>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "#",
+            16708,
+            " ",
+            "ahmadabdolsaheb",
+            " wants to merge ",
+            "fix/test-typo",
+            " to ",
+            "staging",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "4 hours ago",
+              },
+              "ref": null,
+              "rendered": "4 hours ago",
+              "type": "em",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.img
+                src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+/>,
+              <styled.p>
+                ahmadabdolsaheb
+</styled.p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "src": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "ahmadabdolsaheb",
+              },
+              "ref": null,
+              "rendered": "ahmadabdolsaheb",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.div>
+          <styled.h1
+                    onClick={[Function]}
+          >
+                    fix(seed): Typo in test message
+          </styled.h1>
+          <styled.p>
+                    #
+                    16708
+                     
+                    ahmadabdolsaheb
+                     wants to merge 
+                    fix/test-typo
+                     to 
+                    staging
+                     
+                    <em>
+                              4 hours ago
+                    </em>
+          </styled.p>
+          <styled.div>
+                    <styled.img
+                              src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+                    />
+                    <styled.p>
+                              ahmadabdolsaheb
+                    </styled.p>
+          </styled.div>
+</styled.div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.h1
+              onClick={[Function]}
+>
+              fix(seed): Typo in test message
+</styled.h1>,
+            <styled.p>
+              #
+              16708
+               
+              ahmadabdolsaheb
+               wants to merge 
+              fix/test-typo
+               to 
+              staging
+               
+              <em>
+                            4 hours ago
+              </em>
+</styled.p>,
+            <styled.div>
+              <styled.img
+                            src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+              />
+              <styled.p>
+                            ahmadabdolsaheb
+              </styled.p>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "fix(seed): Typo in test message",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "fix(seed): Typo in test message",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "#",
+                16708,
+                " ",
+                "ahmadabdolsaheb",
+                " wants to merge ",
+                "fix/test-typo",
+                " to ",
+                "staging",
+                " ",
+                <em>
+                  4 hours ago
+</em>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "#",
+              16708,
+              " ",
+              "ahmadabdolsaheb",
+              " wants to merge ",
+              "fix/test-typo",
+              " to ",
+              "staging",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "4 hours ago",
+                },
+                "ref": null,
+                "rendered": "4 hours ago",
+                "type": "em",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <styled.img
+                  src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+/>,
+                <styled.p>
+                  ahmadabdolsaheb
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "src": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "ahmadabdolsaheb",
+                },
+                "ref": null,
+                "rendered": "ahmadabdolsaheb",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Testing RepositoryItem component should render corretly with props 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PullRequestItem
+    creator="freeCodeCamp"
+    pullRequest={
+        Object {
+            "_links": Object {
+              "comments": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708/comments",
+              },
+              "commits": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/commits",
+              },
+              "html": Object {
+                "href": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708",
+              },
+              "issue": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708",
+              },
+              "review_comment": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/comments{/number}",
+              },
+              "review_comments": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/comments",
+              },
+              "self": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708",
+              },
+              "statuses": Object {
+                "href": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/e4e64430a00a9ef21ebf0e6d8c107fb1a944fae1",
+              },
+            },
+            "assignee": null,
+            "assignees": Array [],
+            "author_association": "CONTRIBUTOR",
+            "base": Object {
+              "label": "freeCodeCamp:staging",
+              "ref": "staging",
+              "repo": Object {
+                "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
+                "archived": false,
+                "assignees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/assignees{/user}",
+                "blobs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/blobs{/sha}",
+                "branches_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/branches{/branch}",
+                "clone_url": "https://github.com/freeCodeCamp/freeCodeCamp.git",
+                "collaborators_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/collaborators{/collaborator}",
+                "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/comments{/number}",
+                "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/commits{/sha}",
+                "compare_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/compare/{base}...{head}",
+                "contents_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contents/{+path}",
+                "contributors_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/contributors",
+                "created_at": "2014-12-24T17:49:19Z",
+                "default_branch": "staging",
+                "deployments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/deployments",
+                "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "downloads_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/downloads",
+                "events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/events",
+                "fork": false,
+                "forks": 13448,
+                "forks_count": 13448,
+                "forks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/forks",
+                "full_name": "freeCodeCamp/freeCodeCamp",
+                "git_commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/commits{/sha}",
+                "git_refs_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/refs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/tags{/sha}",
+                "git_url": "git://github.com/freeCodeCamp/freeCodeCamp.git",
+                "has_downloads": true,
+                "has_issues": true,
+                "has_pages": false,
+                "has_projects": true,
+                "has_wiki": false,
+                "homepage": "",
+                "hooks_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/hooks",
+                "html_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+                "id": 28457823,
+                "issue_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/comments{/number}",
+                "issue_events_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/events{/number}",
+                "issues_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues{/number}",
+                "keys_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/keys{/key_id}",
+                "labels_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels{/name}",
+                "language": "JavaScript",
+                "languages_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/languages",
+                "license": Object {
+                  "key": "bsd-3-clause",
+                  "name": "BSD 3-Clause \\"New\\" or \\"Revised\\" License",
+                  "spdx_id": "BSD-3-Clause",
+                  "url": "https://api.github.com/licenses/bsd-3-clause",
+                },
+                "merges_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/merges",
+                "milestones_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/milestones{/number}",
+                "mirror_url": null,
+                "name": "freeCodeCamp",
+                "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
+                "open_issues": 210,
+                "open_issues_count": 210,
+                "owner": Object {
+                  "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+                  "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+                  "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+                  "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+                  "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+                  "gravatar_id": "",
+                  "html_url": "https://github.com/freeCodeCamp",
+                  "id": 9892522,
+                  "login": "freeCodeCamp",
+                  "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+                  "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+                  "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+                  "site_admin": false,
+                  "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+                  "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+                  "type": "Organization",
+                  "url": "https://api.github.com/users/freeCodeCamp",
+                },
+                "private": false,
+                "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
+                "pushed_at": "2018-02-13T14:09:45Z",
+                "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
+                "size": 32549,
+                "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
+                "stargazers_count": 291627,
+                "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
+                "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
+                "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
+                "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
+                "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
+                "tags_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/tags",
+                "teams_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/teams",
+                "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
+                "updated_at": "2018-02-13T13:42:08Z",
+                "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
+                "watchers": 291627,
+                "watchers_count": 291627,
+              },
+              "sha": "71974d697236cf8f79c5e19fde58f3337fd6f1ed",
+              "user": Object {
+                "avatar_url": "https://avatars0.githubusercontent.com/u/9892522?v=4",
+                "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
+                "followers_url": "https://api.github.com/users/freeCodeCamp/followers",
+                "following_url": "https://api.github.com/users/freeCodeCamp/following{/other_user}",
+                "gists_url": "https://api.github.com/users/freeCodeCamp/gists{/gist_id}",
+                "gravatar_id": "",
+                "html_url": "https://github.com/freeCodeCamp",
+                "id": 9892522,
+                "login": "freeCodeCamp",
+                "organizations_url": "https://api.github.com/users/freeCodeCamp/orgs",
+                "received_events_url": "https://api.github.com/users/freeCodeCamp/received_events",
+                "repos_url": "https://api.github.com/users/freeCodeCamp/repos",
+                "site_admin": false,
+                "starred_url": "https://api.github.com/users/freeCodeCamp/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/freeCodeCamp/subscriptions",
+                "type": "Organization",
+                "url": "https://api.github.com/users/freeCodeCamp",
+              },
+            },
+            "body": "test description
+        
+        <!-- freeCodeCamp Pull Request Template -->
+        
+        <!-- IMPORTANT Please review https://github.com/freeCodeCamp/freeCodeCamp/blob/staging/CONTRIBUTING.md for detailed contributing guidelines -->
+        <!-- Help with PRs can be found at https://gitter.im/FreeCodeCamp/Contributors -->
+        <!-- Make sure that your PR is not a duplicate -->
+        
+        #### Pre-Submission Checklist
+        <!-- Go over all points below, and after creating the PR, tick all the checkboxes that apply. -->
+        <!-- All points should be verified, otherwise, read the CONTRIBUTING guidelines from above-->
+        <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
+        - [x] Your pull request targets the \`staging\` branch of freeCodeCamp.
+        - [x] Branch starts with either \`fix/\`, \`feature/\`, or \`translate/\` (e.g. \`fix/signin-issue\`)
+        - [x] You have only one commit (if not, [squash](http://forum.freecodecamp.org/t/how-to-squash-multiple-commits-into-one-with-git/13231) them into one commit).
+        - [x] All new and existing tests pass the command \`npm test\`. Use \`git commit --amend\` to amend any fixes.
+        
+        #### Type of Change
+        <!-- What type of change does your code introduce? After creating the PR, tick the checkboxes that apply. -->
+        - [x] Small bug fix (non-breaking change which fixes an issue)
+        - [ ] New feature (non-breaking change which adds new functionality)
+        - [ ] Breaking change (fix or feature that would change existing functionality)
+        - [ ] Add new translation (feature adding new translations)
+        
+        #### Checklist:
+        <!-- Go over all points below, and after creating the PR, tick the checkboxes that apply. -->
+        <!-- If you're unsure about any of these, don't hesitate to ask in the Contributors room linked above. We're here to help! -->
+        - [x] Tested changes locally.
+        - [ ] Addressed currently open issue (replace XXXXX with an issue no in next line)
+        
+        Closes #XXXXX
+        
+        #### Description
+        <!-- Describe your changes in detail -->
+        the word 'have' was misspelled as 'khave'. this typo is corrected with this PR
+        ",
+            "closed_at": null,
+            "comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708/comments",
+            "commits_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/commits",
+            "created_at": "2018-02-13T13:41:04Z",
+            "diff_url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708.diff",
+            "head": Object {
+              "label": "ahmadabdolsaheb:fix/test-typo",
+              "ref": "fix/test-typo",
+              "repo": Object {
+                "archive_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/{archive_format}{/ref}",
+                "archived": false,
+                "assignees_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/assignees{/user}",
+                "blobs_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/blobs{/sha}",
+                "branches_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/branches{/branch}",
+                "clone_url": "https://github.com/ahmadabdolsaheb/freeCodeCamp.git",
+                "collaborators_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/collaborators{/collaborator}",
+                "comments_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/comments{/number}",
+                "commits_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/commits{/sha}",
+                "compare_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/compare/{base}...{head}",
+                "contents_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/contents/{+path}",
+                "contributors_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/contributors",
+                "created_at": "2018-01-11T12:08:09Z",
+                "default_branch": "staging",
+                "deployments_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/deployments",
+                "description": "The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.",
+                "downloads_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/downloads",
+                "events_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/events",
+                "fork": true,
+                "forks": 0,
+                "forks_count": 0,
+                "forks_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/forks",
+                "full_name": "ahmadabdolsaheb/freeCodeCamp",
+                "git_commits_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/commits{/sha}",
+                "git_refs_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/refs{/sha}",
+                "git_tags_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/tags{/sha}",
+                "git_url": "git://github.com/ahmadabdolsaheb/freeCodeCamp.git",
+                "has_downloads": true,
+                "has_issues": false,
+                "has_pages": false,
+                "has_projects": true,
+                "has_wiki": false,
+                "homepage": "",
+                "hooks_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/hooks",
+                "html_url": "https://github.com/ahmadabdolsaheb/freeCodeCamp",
+                "id": 117095347,
+                "issue_comment_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/issues/comments{/number}",
+                "issue_events_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/issues/events{/number}",
+                "issues_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/issues{/number}",
+                "keys_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/keys{/key_id}",
+                "labels_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/labels{/name}",
+                "language": "JavaScript",
+                "languages_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/languages",
+                "license": null,
+                "merges_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/merges",
+                "milestones_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/milestones{/number}",
+                "mirror_url": null,
+                "name": "freeCodeCamp",
+                "notifications_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/notifications{?since,all,participating}",
+                "open_issues": 0,
+                "open_issues_count": 0,
+                "owner": Object {
+                  "avatar_url": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+                  "events_url": "https://api.github.com/users/ahmadabdolsaheb/events{/privacy}",
+                  "followers_url": "https://api.github.com/users/ahmadabdolsaheb/followers",
+                  "following_url": "https://api.github.com/users/ahmadabdolsaheb/following{/other_user}",
+                  "gists_url": "https://api.github.com/users/ahmadabdolsaheb/gists{/gist_id}",
+                  "gravatar_id": "",
+                  "html_url": "https://github.com/ahmadabdolsaheb",
+                  "id": 4591597,
+                  "login": "ahmadabdolsaheb",
+                  "organizations_url": "https://api.github.com/users/ahmadabdolsaheb/orgs",
+                  "received_events_url": "https://api.github.com/users/ahmadabdolsaheb/received_events",
+                  "repos_url": "https://api.github.com/users/ahmadabdolsaheb/repos",
+                  "site_admin": false,
+                  "starred_url": "https://api.github.com/users/ahmadabdolsaheb/starred{/owner}{/repo}",
+                  "subscriptions_url": "https://api.github.com/users/ahmadabdolsaheb/subscriptions",
+                  "type": "User",
+                  "url": "https://api.github.com/users/ahmadabdolsaheb",
+                },
+                "private": false,
+                "pulls_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/pulls{/number}",
+                "pushed_at": "2018-02-13T13:36:00Z",
+                "releases_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/releases{/id}",
+                "size": 32509,
+                "ssh_url": "git@github.com:ahmadabdolsaheb/freeCodeCamp.git",
+                "stargazers_count": 0,
+                "stargazers_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/stargazers",
+                "statuses_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/statuses/{sha}",
+                "subscribers_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/subscribers",
+                "subscription_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/subscription",
+                "svn_url": "https://github.com/ahmadabdolsaheb/freeCodeCamp",
+                "tags_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/tags",
+                "teams_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/teams",
+                "trees_url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp/git/trees{/sha}",
+                "updated_at": "2018-01-11T12:08:13Z",
+                "url": "https://api.github.com/repos/ahmadabdolsaheb/freeCodeCamp",
+                "watchers": 0,
+                "watchers_count": 0,
+              },
+              "sha": "e4e64430a00a9ef21ebf0e6d8c107fb1a944fae1",
+              "user": Object {
+                "avatar_url": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+                "events_url": "https://api.github.com/users/ahmadabdolsaheb/events{/privacy}",
+                "followers_url": "https://api.github.com/users/ahmadabdolsaheb/followers",
+                "following_url": "https://api.github.com/users/ahmadabdolsaheb/following{/other_user}",
+                "gists_url": "https://api.github.com/users/ahmadabdolsaheb/gists{/gist_id}",
+                "gravatar_id": "",
+                "html_url": "https://github.com/ahmadabdolsaheb",
+                "id": 4591597,
+                "login": "ahmadabdolsaheb",
+                "organizations_url": "https://api.github.com/users/ahmadabdolsaheb/orgs",
+                "received_events_url": "https://api.github.com/users/ahmadabdolsaheb/received_events",
+                "repos_url": "https://api.github.com/users/ahmadabdolsaheb/repos",
+                "site_admin": false,
+                "starred_url": "https://api.github.com/users/ahmadabdolsaheb/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/ahmadabdolsaheb/subscriptions",
+                "type": "User",
+                "url": "https://api.github.com/users/ahmadabdolsaheb",
+              },
+            },
+            "html_url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708",
+            "id": 168847121,
+            "issue_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/issues/16708",
+            "labels": Array [
+              Object {
+                "color": "006b75",
+                "default": false,
+                "id": 199856930,
+                "name": "status: ready for QA",
+                "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/labels/status:%20ready%20for%20QA",
+              },
+            ],
+            "locked": false,
+            "merge_commit_sha": "dad785ff864f246b4eb2adb2d5f91736ff733085",
+            "merged_at": null,
+            "milestone": null,
+            "number": 16708,
+            "patch_url": "https://github.com/freeCodeCamp/freeCodeCamp/pull/16708.patch",
+            "requested_reviewers": Array [],
+            "requested_teams": Array [],
+            "review_comment_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/comments{/number}",
+            "review_comments_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708/comments",
+            "state": "open",
+            "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/e4e64430a00a9ef21ebf0e6d8c107fb1a944fae1",
+            "title": "fix(seed): Typo in test message",
+            "updated_at": "2018-02-13T14:15:40Z",
+            "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls/16708",
+            "user": Object {
+              "avatar_url": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+              "events_url": "https://api.github.com/users/ahmadabdolsaheb/events{/privacy}",
+              "followers_url": "https://api.github.com/users/ahmadabdolsaheb/followers",
+              "following_url": "https://api.github.com/users/ahmadabdolsaheb/following{/other_user}",
+              "gists_url": "https://api.github.com/users/ahmadabdolsaheb/gists{/gist_id}",
+              "gravatar_id": "",
+              "html_url": "https://github.com/ahmadabdolsaheb",
+              "id": 4591597,
+              "login": "ahmadabdolsaheb",
+              "organizations_url": "https://api.github.com/users/ahmadabdolsaheb/orgs",
+              "received_events_url": "https://api.github.com/users/ahmadabdolsaheb/received_events",
+              "repos_url": "https://api.github.com/users/ahmadabdolsaheb/repos",
+              "site_admin": false,
+              "starred_url": "https://api.github.com/users/ahmadabdolsaheb/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/ahmadabdolsaheb/subscriptions",
+              "type": "User",
+              "url": "https://api.github.com/users/ahmadabdolsaheb",
+            },
+          }
+    }
+    repo="freeCodeCamp"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <styled.div>
+        <styled.h1
+                onClick={[Function]}
+        >
+                fix(seed): Typo in test message
+        </styled.h1>
+        <styled.p>
+                #
+                16708
+                 
+                ahmadabdolsaheb
+                 wants to merge 
+                fix/test-typo
+                 to 
+                staging
+                 
+                <em>
+                        4 hours ago
+                </em>
+        </styled.p>
+        <styled.div>
+                <styled.img
+                        src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+                />
+                <styled.p>
+                        ahmadabdolsaheb
+                </styled.p>
+        </styled.div>
+</styled.div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.h1
+            onClick={[Function]}
+>
+            fix(seed): Typo in test message
+</styled.h1>,
+          <styled.p>
+            #
+            16708
+             
+            ahmadabdolsaheb
+             wants to merge 
+            fix/test-typo
+             to 
+            staging
+             
+            <em>
+                        4 hours ago
+            </em>
+</styled.p>,
+          <styled.div>
+            <styled.img
+                        src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+            />
+            <styled.p>
+                        ahmadabdolsaheb
+            </styled.p>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "fix(seed): Typo in test message",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "fix(seed): Typo in test message",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "#",
+              16708,
+              " ",
+              "ahmadabdolsaheb",
+              " wants to merge ",
+              "fix/test-typo",
+              " to ",
+              "staging",
+              " ",
+              <em>
+                4 hours ago
+</em>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "#",
+            16708,
+            " ",
+            "ahmadabdolsaheb",
+            " wants to merge ",
+            "fix/test-typo",
+            " to ",
+            "staging",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "4 hours ago",
+              },
+              "ref": null,
+              "rendered": "4 hours ago",
+              "type": "em",
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.img
+                src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+/>,
+              <styled.p>
+                ahmadabdolsaheb
+</styled.p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "src": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "ahmadabdolsaheb",
+              },
+              "ref": null,
+              "rendered": "ahmadabdolsaheb",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.div>
+          <styled.h1
+                    onClick={[Function]}
+          >
+                    fix(seed): Typo in test message
+          </styled.h1>
+          <styled.p>
+                    #
+                    16708
+                     
+                    ahmadabdolsaheb
+                     wants to merge 
+                    fix/test-typo
+                     to 
+                    staging
+                     
+                    <em>
+                              4 hours ago
+                    </em>
+          </styled.p>
+          <styled.div>
+                    <styled.img
+                              src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+                    />
+                    <styled.p>
+                              ahmadabdolsaheb
+                    </styled.p>
+          </styled.div>
+</styled.div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.h1
+              onClick={[Function]}
+>
+              fix(seed): Typo in test message
+</styled.h1>,
+            <styled.p>
+              #
+              16708
+               
+              ahmadabdolsaheb
+               wants to merge 
+              fix/test-typo
+               to 
+              staging
+               
+              <em>
+                            4 hours ago
+              </em>
+</styled.p>,
+            <styled.div>
+              <styled.img
+                            src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+              />
+              <styled.p>
+                            ahmadabdolsaheb
+              </styled.p>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "fix(seed): Typo in test message",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "fix(seed): Typo in test message",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "#",
+                16708,
+                " ",
+                "ahmadabdolsaheb",
+                " wants to merge ",
+                "fix/test-typo",
+                " to ",
+                "staging",
+                " ",
+                <em>
+                  4 hours ago
+</em>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "#",
+              16708,
+              " ",
+              "ahmadabdolsaheb",
+              " wants to merge ",
+              "fix/test-typo",
+              " to ",
+              "staging",
+              " ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "4 hours ago",
+                },
+                "ref": null,
+                "rendered": "4 hours ago",
+                "type": "em",
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <styled.img
+                  src="https://avatars3.githubusercontent.com/u/4591597?v=4"
+/>,
+                <styled.p>
+                  ahmadabdolsaheb
+</styled.p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "src": "https://avatars3.githubusercontent.com/u/4591597?v=4",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "ahmadabdolsaheb",
+                },
+                "ref": null,
+                "rendered": "ahmadabdolsaheb",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
