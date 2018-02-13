@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get Repositories from page 1 creates FETCH_REPOSITORIES_SUCCESS after successfuly fetching response 1`] = `[Function]`;
+
+exports[`get pull requests from creator and repo create FETCH_PULL_REQUESTS_SUCCESS after successfuly fetching response 1`] = `[Function]`;
