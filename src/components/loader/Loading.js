@@ -15,7 +15,7 @@ const Spinner = styled.div`
 
 
 
-const LoadingInfiteScroll = props => {
+const Loading = props => {
   return (
     <Spinner>
       <FaSpinner fontSize={25}/>
@@ -23,4 +23,4 @@ const LoadingInfiteScroll = props => {
   );
 };
 
-export default LoadingInfiteScroll;
+export default Loading;

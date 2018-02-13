@@ -5,7 +5,7 @@ import { fetchRepositories } from "../../actions/git_action";
 import InfiniteScroll from "react-infinite-scroller";
 import RepositoryItem from "./RepositoryItem";
 import Header from "../header/Header";
-import LoadingInfiniteScroll from "../loader/LoadingInfiniteScroll.js";
+import Loading from "../loader/Loading.js";
 import Errors from '../errors/Errors';
 
 import styled from "styled-components";
@@ -43,7 +43,7 @@ class Repository extends Component {
   }
 
   render() {
-    const loader = <LoadingInfiniteScroll key={1} />;
+    const loader = <Loading key={1} />;
 
     return (
       <div >

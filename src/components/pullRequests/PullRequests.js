@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { fetchPullRequests } from "../../actions/git_action";
 
 import Header from "../header/Header";
-import LoadingInfiniteScroll from "../loader/LoadingInfiniteScroll.js";
 import Errors from "../errors/Errors";
 import PullRequestItem from './PullRequestItem'
 
@@ -38,7 +37,6 @@ class PullRequests extends Component {
   }
 
   render() {
-    const loader = <LoadingInfiniteScroll />;
     const { messageError, fetching} = this.props;
     const { repo } = this.props.params;
 
