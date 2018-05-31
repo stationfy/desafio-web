@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sunflower', sans-serif;
+}
+.content{
+    padding: 0 0 0 4vw;
+}
+.flex-child{
+    padding:0 1vh;
+    vertical-align: middle;
+}
+.title{
+    font-size: 1.2em;
+}
+.sub-title{
+    font-size: 1em;
+    font-weight: bold;
+}
+.card-body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.blue-text{
+    color: #4377AA;
+}
+.light-gray-text{
+    color: #C7C5C7;
+}
+.user-content{
+    text-align: center;
+    .avatar-image{
+        width: 32px;
+        height: 32px;
+    }
+    h3{
+        font-size:16px;
+    }
+    p{
+        font-size:12px;
+    }
+}
