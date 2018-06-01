@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render Card 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    body="xpto"
+    contentSize={100}
+    title="xpto"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <styled.div
+          contentSize={100}
+>
+          <h1
+                    className="sub-title blue-text"
+          >
+                    xpto
+          </h1>
+          <p
+                    className="card-body"
+          >
+                    xpto
+          </p>
+</styled.div>,
+        "",
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="sub-title blue-text"
+>
+              xpto
+</h1>,
+            <p
+              className="card-body"
+>
+              xpto
+</p>,
+          ],
+          "contentSize": 100,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "xpto",
+              "className": "sub-title blue-text",
+            },
+            "ref": null,
+            "rendered": "xpto",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "xpto",
+              "className": "card-body",
+            },
+            "ref": null,
+            "rendered": "xpto",
+            "type": "p",
+          },
+        ],
+        "type": [Function],
+      },
+      "",
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.div
+            contentSize={100}
+>
+            <h1
+                        className="sub-title blue-text"
+            >
+                        xpto
+            </h1>
+            <p
+                        className="card-body"
+            >
+                        xpto
+            </p>
+</styled.div>,
+          "",
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="sub-title blue-text"
+>
+                xpto
+</h1>,
+              <p
+                className="card-body"
+>
+                xpto
+</p>,
+            ],
+            "contentSize": 100,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "xpto",
+                "className": "sub-title blue-text",
+              },
+              "ref": null,
+              "rendered": "xpto",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "xpto",
+                "className": "card-body",
+              },
+              "ref": null,
+              "rendered": "xpto",
+              "type": "p",
+            },
+          ],
+          "type": [Function],
+        },
+        "",
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

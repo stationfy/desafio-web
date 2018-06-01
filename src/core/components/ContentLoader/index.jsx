@@ -20,7 +20,7 @@ const ContentLoaderWrapper = styled.section`
 const Loader = ({ loaders }) => (
   <ContentLoaderWrapper>
     {Array.from(Array(loaders)).map(() => (
-      <div className="listWrapper" key={Math.random()}>
+      <div className="listWrapper" key={0}>
         <ContentLoader
           height={160}
           width={400}

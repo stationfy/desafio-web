@@ -1,0 +1,3333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentLoader should render ContentLoader 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Loader
+    loaders={5}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <div
+          className="listWrapper"
+>
+          <ContentLoader
+                    height={160}
+                    primaryColor="#f3f3f3"
+                    secondaryColor="#ecebeb"
+                    speed={2}
+                    width={400}
+          >
+                    <rect
+                              height="12.95"
+                              rx="3"
+                              ry="3"
+                              width="183.3"
+                              x="17"
+                              y="16"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="70.8"
+                              x="62"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="88"
+                              x="194"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="372"
+                              x="17"
+                              y="43.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="267"
+                              x="17"
+                              y="74.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="28"
+                              x="152"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="31"
+                              x="18"
+                              y="125"
+                    />
+          </ContentLoader>
+</div>,
+        <div
+          className="listWrapper"
+>
+          <ContentLoader
+                    height={160}
+                    primaryColor="#f3f3f3"
+                    secondaryColor="#ecebeb"
+                    speed={2}
+                    width={400}
+          >
+                    <rect
+                              height="12.95"
+                              rx="3"
+                              ry="3"
+                              width="183.3"
+                              x="17"
+                              y="16"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="70.8"
+                              x="62"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="88"
+                              x="194"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="372"
+                              x="17"
+                              y="43.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="267"
+                              x="17"
+                              y="74.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="28"
+                              x="152"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="31"
+                              x="18"
+                              y="125"
+                    />
+          </ContentLoader>
+</div>,
+        <div
+          className="listWrapper"
+>
+          <ContentLoader
+                    height={160}
+                    primaryColor="#f3f3f3"
+                    secondaryColor="#ecebeb"
+                    speed={2}
+                    width={400}
+          >
+                    <rect
+                              height="12.95"
+                              rx="3"
+                              ry="3"
+                              width="183.3"
+                              x="17"
+                              y="16"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="70.8"
+                              x="62"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="88"
+                              x="194"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="372"
+                              x="17"
+                              y="43.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="267"
+                              x="17"
+                              y="74.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="28"
+                              x="152"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="31"
+                              x="18"
+                              y="125"
+                    />
+          </ContentLoader>
+</div>,
+        <div
+          className="listWrapper"
+>
+          <ContentLoader
+                    height={160}
+                    primaryColor="#f3f3f3"
+                    secondaryColor="#ecebeb"
+                    speed={2}
+                    width={400}
+          >
+                    <rect
+                              height="12.95"
+                              rx="3"
+                              ry="3"
+                              width="183.3"
+                              x="17"
+                              y="16"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="70.8"
+                              x="62"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="88"
+                              x="194"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="372"
+                              x="17"
+                              y="43.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="267"
+                              x="17"
+                              y="74.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="28"
+                              x="152"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="31"
+                              x="18"
+                              y="125"
+                    />
+          </ContentLoader>
+</div>,
+        <div
+          className="listWrapper"
+>
+          <ContentLoader
+                    height={160}
+                    primaryColor="#f3f3f3"
+                    secondaryColor="#ecebeb"
+                    speed={2}
+                    width={400}
+          >
+                    <rect
+                              height="12.95"
+                              rx="3"
+                              ry="3"
+                              width="183.3"
+                              x="17"
+                              y="16"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="70.8"
+                              x="62"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="88"
+                              x="194"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="372"
+                              x="17"
+                              y="43.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="267"
+                              x="17"
+                              y="74.27"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="28"
+                              x="152"
+                              y="125"
+                    />
+                    <rect
+                              height="21"
+                              rx="0"
+                              ry="0"
+                              width="31"
+                              x="18"
+                              y="125"
+                    />
+          </ContentLoader>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ContentLoader
+            height={160}
+            primaryColor="#f3f3f3"
+            secondaryColor="#ecebeb"
+            speed={2}
+            width={400}
+>
+            <rect
+                        height="12.95"
+                        rx="3"
+                        ry="3"
+                        width="183.3"
+                        x="17"
+                        y="16"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="70.8"
+                        x="62"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="88"
+                        x="194"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="372"
+                        x="17"
+                        y="43.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="267"
+                        x="17"
+                        y="74.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="28"
+                        x="152"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="31"
+                        x="18"
+                        y="125"
+            />
+</ContentLoader>,
+          "className": "listWrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <rect
+                height="12.95"
+                rx="3"
+                ry="3"
+                width="183.3"
+                x="17"
+                y="16"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="70.8"
+                x="62"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="88"
+                x="194"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="372"
+                x="17"
+                y="43.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="267"
+                x="17"
+                y="74.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="28"
+                x="152"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="31"
+                x="18"
+                y="125"
+/>,
+            ],
+            "height": 160,
+            "primaryColor": "#f3f3f3",
+            "secondaryColor": "#ecebeb",
+            "speed": 2,
+            "width": 400,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "12.95",
+                "rx": "3",
+                "ry": "3",
+                "width": "183.3",
+                "x": "17",
+                "y": "16",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "70.8",
+                "x": "62",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "88",
+                "x": "194",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "372",
+                "x": "17",
+                "y": "43.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "267",
+                "x": "17",
+                "y": "74.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "28",
+                "x": "152",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "31",
+                "x": "18",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ContentLoader
+            height={160}
+            primaryColor="#f3f3f3"
+            secondaryColor="#ecebeb"
+            speed={2}
+            width={400}
+>
+            <rect
+                        height="12.95"
+                        rx="3"
+                        ry="3"
+                        width="183.3"
+                        x="17"
+                        y="16"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="70.8"
+                        x="62"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="88"
+                        x="194"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="372"
+                        x="17"
+                        y="43.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="267"
+                        x="17"
+                        y="74.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="28"
+                        x="152"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="31"
+                        x="18"
+                        y="125"
+            />
+</ContentLoader>,
+          "className": "listWrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <rect
+                height="12.95"
+                rx="3"
+                ry="3"
+                width="183.3"
+                x="17"
+                y="16"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="70.8"
+                x="62"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="88"
+                x="194"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="372"
+                x="17"
+                y="43.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="267"
+                x="17"
+                y="74.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="28"
+                x="152"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="31"
+                x="18"
+                y="125"
+/>,
+            ],
+            "height": 160,
+            "primaryColor": "#f3f3f3",
+            "secondaryColor": "#ecebeb",
+            "speed": 2,
+            "width": 400,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "12.95",
+                "rx": "3",
+                "ry": "3",
+                "width": "183.3",
+                "x": "17",
+                "y": "16",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "70.8",
+                "x": "62",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "88",
+                "x": "194",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "372",
+                "x": "17",
+                "y": "43.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "267",
+                "x": "17",
+                "y": "74.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "28",
+                "x": "152",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "31",
+                "x": "18",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ContentLoader
+            height={160}
+            primaryColor="#f3f3f3"
+            secondaryColor="#ecebeb"
+            speed={2}
+            width={400}
+>
+            <rect
+                        height="12.95"
+                        rx="3"
+                        ry="3"
+                        width="183.3"
+                        x="17"
+                        y="16"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="70.8"
+                        x="62"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="88"
+                        x="194"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="372"
+                        x="17"
+                        y="43.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="267"
+                        x="17"
+                        y="74.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="28"
+                        x="152"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="31"
+                        x="18"
+                        y="125"
+            />
+</ContentLoader>,
+          "className": "listWrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <rect
+                height="12.95"
+                rx="3"
+                ry="3"
+                width="183.3"
+                x="17"
+                y="16"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="70.8"
+                x="62"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="88"
+                x="194"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="372"
+                x="17"
+                y="43.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="267"
+                x="17"
+                y="74.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="28"
+                x="152"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="31"
+                x="18"
+                y="125"
+/>,
+            ],
+            "height": 160,
+            "primaryColor": "#f3f3f3",
+            "secondaryColor": "#ecebeb",
+            "speed": 2,
+            "width": 400,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "12.95",
+                "rx": "3",
+                "ry": "3",
+                "width": "183.3",
+                "x": "17",
+                "y": "16",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "70.8",
+                "x": "62",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "88",
+                "x": "194",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "372",
+                "x": "17",
+                "y": "43.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "267",
+                "x": "17",
+                "y": "74.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "28",
+                "x": "152",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "31",
+                "x": "18",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ContentLoader
+            height={160}
+            primaryColor="#f3f3f3"
+            secondaryColor="#ecebeb"
+            speed={2}
+            width={400}
+>
+            <rect
+                        height="12.95"
+                        rx="3"
+                        ry="3"
+                        width="183.3"
+                        x="17"
+                        y="16"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="70.8"
+                        x="62"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="88"
+                        x="194"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="372"
+                        x="17"
+                        y="43.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="267"
+                        x="17"
+                        y="74.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="28"
+                        x="152"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="31"
+                        x="18"
+                        y="125"
+            />
+</ContentLoader>,
+          "className": "listWrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <rect
+                height="12.95"
+                rx="3"
+                ry="3"
+                width="183.3"
+                x="17"
+                y="16"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="70.8"
+                x="62"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="88"
+                x="194"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="372"
+                x="17"
+                y="43.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="267"
+                x="17"
+                y="74.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="28"
+                x="152"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="31"
+                x="18"
+                y="125"
+/>,
+            ],
+            "height": 160,
+            "primaryColor": "#f3f3f3",
+            "secondaryColor": "#ecebeb",
+            "speed": 2,
+            "width": 400,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "12.95",
+                "rx": "3",
+                "ry": "3",
+                "width": "183.3",
+                "x": "17",
+                "y": "16",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "70.8",
+                "x": "62",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "88",
+                "x": "194",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "372",
+                "x": "17",
+                "y": "43.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "267",
+                "x": "17",
+                "y": "74.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "28",
+                "x": "152",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "31",
+                "x": "18",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "host",
+        "props": Object {
+          "children": <ContentLoader
+            height={160}
+            primaryColor="#f3f3f3"
+            secondaryColor="#ecebeb"
+            speed={2}
+            width={400}
+>
+            <rect
+                        height="12.95"
+                        rx="3"
+                        ry="3"
+                        width="183.3"
+                        x="17"
+                        y="16"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="70.8"
+                        x="62"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="88"
+                        x="194"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="372"
+                        x="17"
+                        y="43.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="267"
+                        x="17"
+                        y="74.27"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="28"
+                        x="152"
+                        y="125"
+            />
+            <rect
+                        height="21"
+                        rx="0"
+                        ry="0"
+                        width="31"
+                        x="18"
+                        y="125"
+            />
+</ContentLoader>,
+          "className": "listWrapper",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <rect
+                height="12.95"
+                rx="3"
+                ry="3"
+                width="183.3"
+                x="17"
+                y="16"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="70.8"
+                x="62"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="88"
+                x="194"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="372"
+                x="17"
+                y="43.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="267"
+                x="17"
+                y="74.27"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="28"
+                x="152"
+                y="125"
+/>,
+              <rect
+                height="21"
+                rx="0"
+                ry="0"
+                width="31"
+                x="18"
+                y="125"
+/>,
+            ],
+            "height": 160,
+            "primaryColor": "#f3f3f3",
+            "secondaryColor": "#ecebeb",
+            "speed": 2,
+            "width": 400,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "12.95",
+                "rx": "3",
+                "ry": "3",
+                "width": "183.3",
+                "x": "17",
+                "y": "16",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "70.8",
+                "x": "62",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "88",
+                "x": "194",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "372",
+                "x": "17",
+                "y": "43.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "267",
+                "x": "17",
+                "y": "74.27",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "28",
+                "x": "152",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "height": "21",
+                "rx": "0",
+                "ry": "0",
+                "width": "31",
+                "x": "18",
+                "y": "125",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "rect",
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <div
+            className="listWrapper"
+>
+            <ContentLoader
+                        height={160}
+                        primaryColor="#f3f3f3"
+                        secondaryColor="#ecebeb"
+                        speed={2}
+                        width={400}
+            >
+                        <rect
+                                    height="12.95"
+                                    rx="3"
+                                    ry="3"
+                                    width="183.3"
+                                    x="17"
+                                    y="16"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="70.8"
+                                    x="62"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="88"
+                                    x="194"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="372"
+                                    x="17"
+                                    y="43.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="267"
+                                    x="17"
+                                    y="74.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="28"
+                                    x="152"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="31"
+                                    x="18"
+                                    y="125"
+                        />
+            </ContentLoader>
+</div>,
+          <div
+            className="listWrapper"
+>
+            <ContentLoader
+                        height={160}
+                        primaryColor="#f3f3f3"
+                        secondaryColor="#ecebeb"
+                        speed={2}
+                        width={400}
+            >
+                        <rect
+                                    height="12.95"
+                                    rx="3"
+                                    ry="3"
+                                    width="183.3"
+                                    x="17"
+                                    y="16"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="70.8"
+                                    x="62"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="88"
+                                    x="194"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="372"
+                                    x="17"
+                                    y="43.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="267"
+                                    x="17"
+                                    y="74.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="28"
+                                    x="152"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="31"
+                                    x="18"
+                                    y="125"
+                        />
+            </ContentLoader>
+</div>,
+          <div
+            className="listWrapper"
+>
+            <ContentLoader
+                        height={160}
+                        primaryColor="#f3f3f3"
+                        secondaryColor="#ecebeb"
+                        speed={2}
+                        width={400}
+            >
+                        <rect
+                                    height="12.95"
+                                    rx="3"
+                                    ry="3"
+                                    width="183.3"
+                                    x="17"
+                                    y="16"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="70.8"
+                                    x="62"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="88"
+                                    x="194"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="372"
+                                    x="17"
+                                    y="43.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="267"
+                                    x="17"
+                                    y="74.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="28"
+                                    x="152"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="31"
+                                    x="18"
+                                    y="125"
+                        />
+            </ContentLoader>
+</div>,
+          <div
+            className="listWrapper"
+>
+            <ContentLoader
+                        height={160}
+                        primaryColor="#f3f3f3"
+                        secondaryColor="#ecebeb"
+                        speed={2}
+                        width={400}
+            >
+                        <rect
+                                    height="12.95"
+                                    rx="3"
+                                    ry="3"
+                                    width="183.3"
+                                    x="17"
+                                    y="16"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="70.8"
+                                    x="62"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="88"
+                                    x="194"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="372"
+                                    x="17"
+                                    y="43.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="267"
+                                    x="17"
+                                    y="74.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="28"
+                                    x="152"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="31"
+                                    x="18"
+                                    y="125"
+                        />
+            </ContentLoader>
+</div>,
+          <div
+            className="listWrapper"
+>
+            <ContentLoader
+                        height={160}
+                        primaryColor="#f3f3f3"
+                        secondaryColor="#ecebeb"
+                        speed={2}
+                        width={400}
+            >
+                        <rect
+                                    height="12.95"
+                                    rx="3"
+                                    ry="3"
+                                    width="183.3"
+                                    x="17"
+                                    y="16"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="70.8"
+                                    x="62"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="88"
+                                    x="194"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="372"
+                                    x="17"
+                                    y="43.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="267"
+                                    x="17"
+                                    y="74.27"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="28"
+                                    x="152"
+                                    y="125"
+                        />
+                        <rect
+                                    height="21"
+                                    rx="0"
+                                    ry="0"
+                                    width="31"
+                                    x="18"
+                                    y="125"
+                        />
+            </ContentLoader>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ContentLoader
+              height={160}
+              primaryColor="#f3f3f3"
+              secondaryColor="#ecebeb"
+              speed={2}
+              width={400}
+>
+              <rect
+                            height="12.95"
+                            rx="3"
+                            ry="3"
+                            width="183.3"
+                            x="17"
+                            y="16"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="70.8"
+                            x="62"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="88"
+                            x="194"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="372"
+                            x="17"
+                            y="43.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="267"
+                            x="17"
+                            y="74.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="28"
+                            x="152"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="31"
+                            x="18"
+                            y="125"
+              />
+</ContentLoader>,
+            "className": "listWrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <rect
+                  height="12.95"
+                  rx="3"
+                  ry="3"
+                  width="183.3"
+                  x="17"
+                  y="16"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="70.8"
+                  x="62"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="88"
+                  x="194"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="372"
+                  x="17"
+                  y="43.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="267"
+                  x="17"
+                  y="74.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="28"
+                  x="152"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="31"
+                  x="18"
+                  y="125"
+/>,
+              ],
+              "height": 160,
+              "primaryColor": "#f3f3f3",
+              "secondaryColor": "#ecebeb",
+              "speed": 2,
+              "width": 400,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "12.95",
+                  "rx": "3",
+                  "ry": "3",
+                  "width": "183.3",
+                  "x": "17",
+                  "y": "16",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "70.8",
+                  "x": "62",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "88",
+                  "x": "194",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "372",
+                  "x": "17",
+                  "y": "43.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "267",
+                  "x": "17",
+                  "y": "74.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "28",
+                  "x": "152",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "31",
+                  "x": "18",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ContentLoader
+              height={160}
+              primaryColor="#f3f3f3"
+              secondaryColor="#ecebeb"
+              speed={2}
+              width={400}
+>
+              <rect
+                            height="12.95"
+                            rx="3"
+                            ry="3"
+                            width="183.3"
+                            x="17"
+                            y="16"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="70.8"
+                            x="62"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="88"
+                            x="194"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="372"
+                            x="17"
+                            y="43.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="267"
+                            x="17"
+                            y="74.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="28"
+                            x="152"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="31"
+                            x="18"
+                            y="125"
+              />
+</ContentLoader>,
+            "className": "listWrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <rect
+                  height="12.95"
+                  rx="3"
+                  ry="3"
+                  width="183.3"
+                  x="17"
+                  y="16"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="70.8"
+                  x="62"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="88"
+                  x="194"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="372"
+                  x="17"
+                  y="43.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="267"
+                  x="17"
+                  y="74.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="28"
+                  x="152"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="31"
+                  x="18"
+                  y="125"
+/>,
+              ],
+              "height": 160,
+              "primaryColor": "#f3f3f3",
+              "secondaryColor": "#ecebeb",
+              "speed": 2,
+              "width": 400,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "12.95",
+                  "rx": "3",
+                  "ry": "3",
+                  "width": "183.3",
+                  "x": "17",
+                  "y": "16",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "70.8",
+                  "x": "62",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "88",
+                  "x": "194",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "372",
+                  "x": "17",
+                  "y": "43.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "267",
+                  "x": "17",
+                  "y": "74.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "28",
+                  "x": "152",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "31",
+                  "x": "18",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ContentLoader
+              height={160}
+              primaryColor="#f3f3f3"
+              secondaryColor="#ecebeb"
+              speed={2}
+              width={400}
+>
+              <rect
+                            height="12.95"
+                            rx="3"
+                            ry="3"
+                            width="183.3"
+                            x="17"
+                            y="16"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="70.8"
+                            x="62"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="88"
+                            x="194"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="372"
+                            x="17"
+                            y="43.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="267"
+                            x="17"
+                            y="74.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="28"
+                            x="152"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="31"
+                            x="18"
+                            y="125"
+              />
+</ContentLoader>,
+            "className": "listWrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <rect
+                  height="12.95"
+                  rx="3"
+                  ry="3"
+                  width="183.3"
+                  x="17"
+                  y="16"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="70.8"
+                  x="62"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="88"
+                  x="194"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="372"
+                  x="17"
+                  y="43.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="267"
+                  x="17"
+                  y="74.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="28"
+                  x="152"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="31"
+                  x="18"
+                  y="125"
+/>,
+              ],
+              "height": 160,
+              "primaryColor": "#f3f3f3",
+              "secondaryColor": "#ecebeb",
+              "speed": 2,
+              "width": 400,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "12.95",
+                  "rx": "3",
+                  "ry": "3",
+                  "width": "183.3",
+                  "x": "17",
+                  "y": "16",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "70.8",
+                  "x": "62",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "88",
+                  "x": "194",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "372",
+                  "x": "17",
+                  "y": "43.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "267",
+                  "x": "17",
+                  "y": "74.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "28",
+                  "x": "152",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "31",
+                  "x": "18",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ContentLoader
+              height={160}
+              primaryColor="#f3f3f3"
+              secondaryColor="#ecebeb"
+              speed={2}
+              width={400}
+>
+              <rect
+                            height="12.95"
+                            rx="3"
+                            ry="3"
+                            width="183.3"
+                            x="17"
+                            y="16"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="70.8"
+                            x="62"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="88"
+                            x="194"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="372"
+                            x="17"
+                            y="43.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="267"
+                            x="17"
+                            y="74.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="28"
+                            x="152"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="31"
+                            x="18"
+                            y="125"
+              />
+</ContentLoader>,
+            "className": "listWrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <rect
+                  height="12.95"
+                  rx="3"
+                  ry="3"
+                  width="183.3"
+                  x="17"
+                  y="16"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="70.8"
+                  x="62"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="88"
+                  x="194"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="372"
+                  x="17"
+                  y="43.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="267"
+                  x="17"
+                  y="74.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="28"
+                  x="152"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="31"
+                  x="18"
+                  y="125"
+/>,
+              ],
+              "height": 160,
+              "primaryColor": "#f3f3f3",
+              "secondaryColor": "#ecebeb",
+              "speed": 2,
+              "width": 400,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "12.95",
+                  "rx": "3",
+                  "ry": "3",
+                  "width": "183.3",
+                  "x": "17",
+                  "y": "16",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "70.8",
+                  "x": "62",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "88",
+                  "x": "194",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "372",
+                  "x": "17",
+                  "y": "43.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "267",
+                  "x": "17",
+                  "y": "74.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "28",
+                  "x": "152",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "31",
+                  "x": "18",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": <ContentLoader
+              height={160}
+              primaryColor="#f3f3f3"
+              secondaryColor="#ecebeb"
+              speed={2}
+              width={400}
+>
+              <rect
+                            height="12.95"
+                            rx="3"
+                            ry="3"
+                            width="183.3"
+                            x="17"
+                            y="16"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="70.8"
+                            x="62"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="88"
+                            x="194"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="372"
+                            x="17"
+                            y="43.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="267"
+                            x="17"
+                            y="74.27"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="28"
+                            x="152"
+                            y="125"
+              />
+              <rect
+                            height="21"
+                            rx="0"
+                            ry="0"
+                            width="31"
+                            x="18"
+                            y="125"
+              />
+</ContentLoader>,
+            "className": "listWrapper",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <rect
+                  height="12.95"
+                  rx="3"
+                  ry="3"
+                  width="183.3"
+                  x="17"
+                  y="16"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="70.8"
+                  x="62"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="88"
+                  x="194"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="372"
+                  x="17"
+                  y="43.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="267"
+                  x="17"
+                  y="74.27"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="28"
+                  x="152"
+                  y="125"
+/>,
+                <rect
+                  height="21"
+                  rx="0"
+                  ry="0"
+                  width="31"
+                  x="18"
+                  y="125"
+/>,
+              ],
+              "height": 160,
+              "primaryColor": "#f3f3f3",
+              "secondaryColor": "#ecebeb",
+              "speed": 2,
+              "width": 400,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "12.95",
+                  "rx": "3",
+                  "ry": "3",
+                  "width": "183.3",
+                  "x": "17",
+                  "y": "16",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "70.8",
+                  "x": "62",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "88",
+                  "x": "194",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "372",
+                  "x": "17",
+                  "y": "43.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "267",
+                  "x": "17",
+                  "y": "74.27",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "28",
+                  "x": "152",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "height": "21",
+                  "rx": "0",
+                  "ry": "0",
+                  "width": "31",
+                  "x": "18",
+                  "y": "125",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "rect",
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
