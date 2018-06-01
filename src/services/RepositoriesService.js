@@ -17,4 +17,11 @@ export default class RepositoriesService {
       params,
     });
   }
+
+  one(creator, repository, params = {}) {
+    this.endpoint = `/repos/${creator}/${repository}/pulls`;
+    return this.axiosInstance.get(this.endpoint, {
+      params,
+    });
+  }
 }

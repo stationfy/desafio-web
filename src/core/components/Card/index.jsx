@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import './style.scss';
 
-const Styled = styled.section`
+const CardWrapper = styled.section`
   overflow-wrap: break-word;
   height:auto;
   padding: 20px 0;
@@ -16,24 +15,35 @@ const Styled = styled.section`
   }
 `;
 
-const Card = ({ title, body, children }) => (
-  <Styled>
-    <div className="card-content">
+const CardContent = styled.div`
+  max-width:${props => props.contentSize}%;
+`;
+
+const Card = ({
+  title,
+  body,
+  children,
+  contentSize,
+}) => (
+  <CardWrapper>
+    <CardContent contentSize={contentSize}>
       <h1 className="sub-title blue-text">{title}</h1>
       <p className="card-body">{body}</p>
-    </div>
+    </CardContent>
     {children}
-  </Styled>
+  </CardWrapper>
 );
 
 Card.defaultProps = {
   children: '',
+  contentSize: 65,
 };
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   body: PropTypes.string.isRequired,
   children: PropTypes.node,
+  contentSize: PropTypes.number,
 };
 
 export default Card;

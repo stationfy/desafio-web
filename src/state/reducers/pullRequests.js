@@ -8,17 +8,17 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'REPOSITORIES/SET_LOADING':
+    case 'PULL_REQUESTS/SET_LOADING':
       return {
         ...state,
         isLoading: action.payload,
         isEmpty: false,
         isError: false,
       };
-    case 'REPOSITORIES/SET_REPOSITORIES':
+    case 'PULL_REQUESTS/SET_PULL_REQUESTS':
       return {
         ...state,
-        edges: [...state.edges, ...action.payload],
+        edges: action.payload,
         isLoading: false,
         isEmpty: false,
         isError: false,

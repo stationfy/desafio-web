@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Styled = styled.section`
+const CardFooterWrapper = styled.section`
   width:60%;
   padding:10px 0 0 0;
   margin-top: -10px;
@@ -17,9 +17,9 @@ const Styled = styled.section`
 `;
 
 const CardFooter = ({ children }) => (
-  <Styled>
+  <CardFooterWrapper>
     {children}
-  </Styled>
+  </CardFooterWrapper>
 );
 
 CardFooter.propTypes = {

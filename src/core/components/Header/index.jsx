@@ -14,6 +14,9 @@ const Styled = styled.header`
   &:first-child{
     padding:0 0 0 10px;
   }
+  i{
+    color:white;
+  }
 `;
 
 const Header = ({ children }) => (

@@ -3,10 +3,15 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     font-family: 'Sunflower', sans-serif;
+}
+a{
+    color: gray;
 }
 .content{
     padding: 0 0 0 4vw;
+    min-height:100%;
 }
 .flex-child{
     padding:0 1vh;
@@ -40,5 +45,19 @@
     }
     p{
         font-size:12px;
+    }
+}
+.user-inline{
+    text-align: left;
+    display:flex;
+    margin: 5px 0 0 0;
+    div{
+        padding: 10px 0 0 0;
+        margin: 0 5px 0 0;
+    }
+    .avatar-image{
+        width: 36px;
+        height: 36px;
+        border-radius:50%;
     }
 }
