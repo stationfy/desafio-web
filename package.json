@@ -59,7 +59,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "jest"
+    "test": "jest",
+    "pre-build": "eslint 'src/**/*.{js,jsx}' --ignore-pattern *.spec.js --quiet && npm run test --coverage"
   },
   "jest": {
     "collectCoverageFrom": [
