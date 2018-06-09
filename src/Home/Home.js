@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import fetch from 'node-fetch';
 
-import RepoItem from '../components/RepoItem';
+import RepoItem from '../components/RepoItem/RepoItem';
 import './Home.scss';
 
 class Home extends Component {
@@ -15,29 +15,33 @@ class Home extends Component {
 
   componentDidMount() {
     fetch(`https://api.github.com/search/repositories?q=language:Javascript&sort=stars&page=1`)
-    .then(res => res.json())
-    .then(json => {
-      this.setState({ repoList: json });
-    })
-    .catch(error => {
-      alert(`GitHub is now running on Azure, please move to GitLab ou BitBucket.`)
-    });
+      .then(res => res.json())
+      .then(json => {
+        this.setState({ repoList: json });
+      })
+      .catch(error => {
+        alert(`${error} GitHub is down! PS: It's a M$ feature, please move to GitLab ou BitBucket.`)
+      });
   }
 
   renderRepoItem(item) {
     return (
-      <RepoItem data={item} />
-    )
+      <RepoItem key={ item.id } data={ item } />
+    );
   }
 
   renderRepoList(list) {
-    return list.map(item => this.renderRepoItem(item));
+    if (list.items) {
+      return list.items.map(item => this.renderRepoItem(item));
+    } else {
+      return (<p></p>);
+    }
   }
 
   render() {
     return (
       <div>
-        { renderRepoList(this.state.repoList) }
+        { this.renderRepoList(this.state.repoList) }
       </div>
     )
   }

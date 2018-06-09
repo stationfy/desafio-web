@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import fetch from 'node-fetch';
 
-import PRItem from '../components/PRItem';
+import PRItem from '../components/PRItem/PRItem';
 import './PRList.scss';
+import queryString from 'query-string'
 
 class PRList extends Component {
 
@@ -14,20 +15,20 @@ class PRList extends Component {
   }
 
   componentDidMount() {
-    const data = { ...this.props };
-    fetch(`https://api.github.com/repos/${data.user}/${data.repository}/pulls`)
+    const urlParam = queryString.parse(this.props.location.search)
+    fetch(`https://api.github.com/repos/${urlParam.q}/pulls`)
       .then(res => res.json())
       .then(json => {
         this.setState({ prList: json });
       })
       .catch(error => {
-        alert(`GitHub is now running on Azure, please move to GitLab ou BitBucket.`)
+        alert(`GitHub is down! PS: It's a M$ feature, please move to GitLab ou BitBucket.`)
       });
   }
 
-  renderRepoItem(item) {
+  renderPRItem(item) {
     return (
-      <PRItem data={item} />
+      <PRItem key={ item.id } data={ item } />
     )
   }
 
@@ -38,7 +39,7 @@ class PRList extends Component {
   render() {
     return (
       <div>
-        { renderRepoList(this.state.prList) }
+        { this.renderPRList(this.state.prList) }
       </div>
     )
   }
