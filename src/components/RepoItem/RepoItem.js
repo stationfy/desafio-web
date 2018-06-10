@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import fetch from 'node-fetch';
 import { Link } from 'react-router-dom';
 
-import './RepoItem.scss';
+
+import './RepoItem.css';
 
 class RepoItem extends Component {
 
@@ -13,8 +13,8 @@ class RepoItem extends Component {
   render() {
     const data = { ...this.props.data };
     return (
-      <div className="row">
-        <div className="col-xs-8">
+      <div className="row repoitem">
+        <div className="col-md-9 col-sm-9 row flex-column">
           <Link to={`/pr-list?q=${data.full_name}`}>
             <p className="repoitem-title">{ data.name }</p>
           </Link>
@@ -30,8 +30,10 @@ class RepoItem extends Component {
             </span>
           </div>
         </div>
-        <div className="col-xs-3">
-          <img className="" src={ data.owner.avatar_url } />
+        <div className="col-md-3 col-sm-3 repoitem-avatar-block">
+          <div className="repoitem-user">
+            <img className="repoitem-user-img" src={ data.owner.avatar_url } />
+          </div>
           <p className="repoitem-name">{ data.name }</p>
           <p className="repoitem-fullname">{ data.full_name }</p>
         </div>

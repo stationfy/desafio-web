@@ -1,0 +1,48 @@
+.repoitem {
+  border-bottom: 2px solid #e1e1e1;
+  margin-left: 15px;
+  padding: 10px 0px 5px; }
+
+.repoitem-title {
+  font-weight: bold;
+  color: #4a77aa; }
+
+.repoitem-user {
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 5px auto; }
+
+.repoitem-user-img {
+  width: 50px;
+  height: 50px; }
+
+.repoitem-avatar-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.repoitem-name {
+  font-size: 0.9em;
+  color: #4a77aa; }
+
+.repoitem-fullname {
+  margin-top: -15px;
+  font-size: 0.65em;
+  color: #6a737d; }
+
+.repoitem-rating-block {
+  color: #df9305;
+  font-weight: bold; }
+
+.repoitem-fork-number {
+  margin-left: 5px; }
+
+.repoitem-starsgazers {
+  margin-left: 15px; }
+
+.repoitem-starsgazers-number {
+  margin-left: 5px; }
+
+.repoitem-description {
+  font-size: 0.8em;
+  margin-top: -15px; }

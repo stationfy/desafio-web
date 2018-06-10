@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import fetch from 'node-fetch';
 
-import './PRItem.scss';
+import './PRItem.css';
 
 class PRItem extends Component {
 
@@ -11,17 +11,20 @@ class PRItem extends Component {
 
   render() {
     const data = { ...this.props.data };
+    const full_name = { ...this.props.fullName };
     return (
-      <div className="row">
+      <div className="row pritem">
         <div className="col-xs-12">
-          <p className="repoitem-name">{ data.title }</p>
+          <p className="pritem-name">{ data.title }</p>
           <p className="pritem-body">{ data.body }</p>
         </div>
-        <div className="col-xs-6">
-          <img className="" src={ data.user.avatar_url } />
+        <div className="col-xs-6 row">
           <div className="pritem-user">
-            <p className="repoitem-name">{ data.user.login }</p>
-            <p className="repoitem-fullname">{ data.full_name }</p>
+            <img className="pritem-user-img" src={ data.user.avatar_url } />
+          </div>
+          <div className="pritem-user-block">
+            <p className="pritem-username">{ data.user.login }</p>
+            <p className="pritem-fullname">{ full_name.q }</p>
           </div>
         </div>
       </div>

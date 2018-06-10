@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import fetch from 'node-fetch';
 
 import RepoItem from '../components/RepoItem/RepoItem';
-import './Home.scss';
+import './Home.css';
 
 class Home extends Component {
 
@@ -40,7 +40,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="content home">
         { this.renderRepoList(this.state.repoList) }
       </div>
     )

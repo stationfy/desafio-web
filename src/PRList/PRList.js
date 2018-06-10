@@ -15,7 +15,7 @@ class PRList extends Component {
   }
 
   componentDidMount() {
-    const urlParam = queryString.parse(this.props.location.search)
+    const urlParam = queryString.parse(this.props.location.search);
     fetch(`https://api.github.com/repos/${urlParam.q}/pulls`)
       .then(res => res.json())
       .then(json => {
@@ -27,8 +27,9 @@ class PRList extends Component {
   }
 
   renderPRItem(item) {
+    const urlParam = queryString.parse(this.props.location.search);
     return (
-      <PRItem key={ item.id } data={ item } />
+      <PRItem key={ item.id } data={ item } fullName={ urlParam }/>
     )
   }
 
