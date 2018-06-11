@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import './RepoItem.css';
@@ -11,11 +11,9 @@ class RepoItem extends Component {
     return (
       <div className="row repoitem">
         <div className="col-md-9 col-sm-9 row flex-column">
-          <BrowserRouter>
-            <Link to={`/pr-list?q=${data.full_name}`}>
-              <p className="repoitem-title">{ data.name }</p>
-            </Link>
-          </BrowserRouter>
+          <Link to={`/pr-list?q=${data.full_name}`}>
+            <p className="repoitem-title">{ data.name }</p>
+          </Link>
           <div className="text ellipsis">
             <span className="repoitem-description">{ data.description }</span>
           </div>
