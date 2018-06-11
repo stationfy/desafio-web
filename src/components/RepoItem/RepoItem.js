@@ -1,24 +1,24 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 
 import './RepoItem.css';
 
 class RepoItem extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const data = { ...this.props.data };
     return (
       <div className="row repoitem">
         <div className="col-md-9 col-sm-9 row flex-column">
-          <Link to={`/pr-list?q=${data.full_name}`}>
-            <p className="repoitem-title">{ data.name }</p>
-          </Link>
-          <p className="repoitem-description">{ data.description }</p>
+          <BrowserRouter>
+            <Link to={`/pr-list?q=${data.full_name}`}>
+              <p className="repoitem-title">{ data.name }</p>
+            </Link>
+          </BrowserRouter>
+          <div className="text ellipsis">
+            <span className="repoitem-description">{ data.description }</span>
+          </div>
           <div className="repoitem-rating-block">
             <span className="repoitem-fork">
               <i className="fa fa-code-fork" aria-hidden="true"></i>
@@ -32,7 +32,7 @@ class RepoItem extends Component {
         </div>
         <div className="col-md-3 col-sm-3 repoitem-avatar-block">
           <div className="repoitem-user">
-            <img className="repoitem-user-img" src={ data.owner.avatar_url } />
+            <img className="repoitem-user-img" src={ data.owner.avatar_url } alt={ data.name }/>
           </div>
           <p className="repoitem-name">{ data.name }</p>
           <p className="repoitem-fullname">{ data.full_name }</p>

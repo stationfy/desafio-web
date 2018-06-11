@@ -1,0 +1,13 @@
+.prliststatus {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 10px 10px;
+  border-left: 2px solid #f0f0f0;
+  border-right: 2px solid #f0f0f0; }
+
+.prliststatus-opened {
+  color: #df9305; }
+
+.prliststatus-block {
+  margin-left: 15px; }

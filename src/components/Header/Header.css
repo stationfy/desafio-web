@@ -1,0 +1,17 @@
+.header {
+  background-color: #343438;
+  font-size: 1.2em;
+  padding: 10px 50px;
+  color: #ffffff;
+  border-left: 2px solid #343438;
+  border-right: 2px solid #343438; }
+
+.header-title-block {
+  margin-left: 15px;
+  padding: 35px 0px 5px; }
+
+.header-title {
+  margin-left: 5px; }
+
+.header-back {
+  color: #ffffff; }

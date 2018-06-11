@@ -1,2 +1,7 @@
 .home {
-  border: 2px solid #e1e1e1; }
+  border: 2px solid #e1e1e1;
+  border-top: none; }
+
+.loader {
+  text-align: center;
+  padding: 15px; }
