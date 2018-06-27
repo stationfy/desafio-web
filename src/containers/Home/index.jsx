@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+// import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { repositoriesActions } from '../../store/actions';
 
 class Home extends Component {
   componentWillMount() {
     const { props } = this;
-    props.getRepositories();
+    if (!props.repositories.length) {
+      props.getRepositories();
+    }
   }
 
   render() {
@@ -14,14 +18,16 @@ class Home extends Component {
       <div>
         Repositories
         <p>
-          {props.repositories.error ? props.repositories.error : ''}
+          {props.error ? props.error : ''}
         </p>
         <p>
-          {props.repositories.isLoading ? 'Loading...' : ''}
+          {props.isLoading ? 'Loading...' : ''}
         </p>
-        {props.repositories.items && props.repositories.items.map(repository => (
+        {props.repositories && props.repositories.map(repository => (
           <div key={repository.id}>
-            {repository.name}
+            <NavLink to={`pullrequests/${repository.owner.login}/${repository.name}`}>
+              {repository.name}
+            </NavLink>
             <strong>
               {repository.id}
             </strong>
@@ -36,7 +42,12 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = state => ({ ...state });
+const mapStateToProps = state => ({
+  repositories: state.repositories.items,
+  isLoading: state.repositories.isLoading,
+  isError: state.repositories.isError,
+  error: state.repositories.error,
+});
 
 const mapActionsToProps = {
   getRepositories: page => repositoriesActions.getRepositories(page),

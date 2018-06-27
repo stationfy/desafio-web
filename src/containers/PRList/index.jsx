@@ -3,17 +3,19 @@ import { connect } from 'react-redux';
 import { pullRequestsActions } from '../../store/actions';
 
 class PRList extends Component {
-  componentDidMount() {
+  componentWillMount() {
     const { props } = this;
-    props.getPullRequests();
+    const { creator, repository } = props.match.params;
+    props.getPullRequests(creator, repository);
   }
 
   render() {
     const { props } = this;
+    const { repository: repositoryTitle } = props.match.params;
     return (
       <div>
         <p>
-          Pull requests
+          {repositoryTitle.toUpperCase()}
         </p>
         <p>
           {props.error && props.error}
@@ -21,7 +23,7 @@ class PRList extends Component {
         <p>
           {props.isLoading ? 'Loading...' : ''}
         </p>
-        {props.pullRequests && props.pullRequests.map(repository => (
+        {(props.pullRequests && !props.isLoading) && props.pullRequests.map(repository => (
           <div key={repository.id}>
             {repository.title}
             <p>

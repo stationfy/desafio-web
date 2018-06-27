@@ -19,7 +19,7 @@ const getPullRequestsSucess = (state, { payload }) => ({
   error: null,
   isError: false,
   isLoading: false,
-  items: [...state.items, ...payload],
+  items: [...payload],
 });
 
 const getPullRequestsFail = (state, { payload }) => ({

@@ -8,7 +8,7 @@ export default () => (
     <div>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/pullrequests" component={PRList} />
+        <Route path="/pullrequests/:creator/:repository" component={PRList} />
         <Route component={Home} />
       </Switch>
     </div>
