@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import getPullRequests from '../../store/actions/pullRequests';
+import { pullRequestsActions } from '../../store/actions';
 
 class PRList extends Component {
   componentDidMount() {
@@ -49,7 +49,7 @@ const mapStateToProps = state => ({
 });
 
 const mapActionsToProps = {
-  getPullRequests: page => getPullRequests(page),
+  getPullRequests: (creator, repository) => pullRequestsActions.getPullRequests(creator, repository), // eslint-disable-line
 };
 
 export default connect(mapStateToProps, mapActionsToProps)(PRList);

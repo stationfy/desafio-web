@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import getRepositories from '../../store/actions/repositories';
+import { repositoriesActions } from '../../store/actions';
 
 class Home extends Component {
   componentWillMount() {
@@ -39,7 +39,7 @@ class Home extends Component {
 const mapStateToProps = state => ({ ...state });
 
 const mapActionsToProps = {
-  getRepositories: page => getRepositories(page),
+  getRepositories: page => repositoriesActions.getRepositories(page),
 };
 
 export default connect(mapStateToProps, mapActionsToProps)(Home);
