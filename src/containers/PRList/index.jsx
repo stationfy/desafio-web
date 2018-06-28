@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { FaArrowLeft } from 'react-icons/lib/fa';
 
+// actions
 import { pullRequestsActions } from '../../store/actions';
 
+// propTypes
 import propTypes from './propTypes';
 
+// components
+import Header from '../../components/Header';
 import CardPullRequest from '../../components/CardPullRequest';
 
 class PRList extends Component {
@@ -42,22 +47,18 @@ class PRList extends Component {
 
     return (
       <div>
-        <p>
-          {repository.toUpperCase()}
-        </p>
-        <button
-          onClick={() => this.goToHome()}
-          type="button"
-        >
-          Return
-        </button>
-        <p>
-          {isError && error}
-        </p>
-        <p>
-          {isLoading ? 'Loading...' : ''}
-        </p>
-        {(pullRequests && !isLoading) && prs}
+        <Header title={repository}>
+          <FaArrowLeft onClick={() => this.goToHome()} />
+        </Header>
+        <div>
+          <p>
+            {isError && error}
+          </p>
+          <p>
+            {isLoading ? 'Loading...' : ''}
+          </p>
+          {(pullRequests && !isLoading) && prs}
+        </div>
       </div>
     );
   }

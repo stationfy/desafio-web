@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroller';
+import { FaBars } from 'react-icons/lib/fa';
 
 // actions
 import { repositoriesActions } from '../../store/actions';
@@ -9,6 +10,7 @@ import { repositoriesActions } from '../../store/actions';
 import propTypes from './propTypes';
 
 // components
+import Header from '../../components/Header';
 import CardRepository from '../../components/CardRepository';
 
 const divStyle = {
@@ -53,22 +55,24 @@ class Home extends Component {
     ));
 
     return (
-      <div style={divStyle}>
-        <h1>
-          Github JavaPop
-        </h1>
-        <InfiniteScroll
-          pageStart={1}
-          loadMore={page => this.fetchRepositories(page)}
-          hasMore={!isLoading && repos.length !== 0}
-        >
-          {repos}
-        </InfiniteScroll>
-        <div>
-          {isError && error}
-        </div>
-        <div>
-          {isLoading ? 'Loading...' : ''}
+      <div>
+        <Header title="Github JavaPop">
+          <FaBars />
+        </Header>
+        <div style={divStyle}>
+          <InfiniteScroll
+            pageStart={1}
+            loadMore={page => this.fetchRepositories(page)}
+            hasMore={!isLoading && repos.length !== 0}
+          >
+            {repos}
+          </InfiniteScroll>
+          <div>
+            {isError && error}
+          </div>
+          <div>
+            {isLoading ? 'Loading...' : ''}
+          </div>
         </div>
       </div>
     );
