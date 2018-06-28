@@ -68,6 +68,8 @@ class PRList extends Component {
 
 PRList.defaultProps = {
   pullRequests: [],
+  history: {},
+  match: {},
   error: null,
   isError: false,
   isLoading: false,
@@ -75,8 +77,8 @@ PRList.defaultProps = {
 
 PRList.propTypes = {
   pullRequests: propTypes.pullRequests,
-  history: propTypes.history.isRequired,
-  match: propTypes.match.isRequired,
+  history: propTypes.history,
+  match: propTypes.match,
   error: propTypes.error,
   isError: propTypes.isError,
   isLoading: propTypes.isLoading,

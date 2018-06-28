@@ -7,8 +7,8 @@ const PRListPropTypes = {
     params: PropTypes.shape({
       creator: PropTypes.string,
       repository: PropTypes.string,
-    }).isRequired,
-  }).isRequired,
+    }),
+  }),
   error: PropTypes.string,
   isError: PropTypes.bool,
   isLoading: PropTypes.bool,
