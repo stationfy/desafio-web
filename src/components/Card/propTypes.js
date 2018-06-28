@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 
-const CardRepositoryPropTypes = {
+const CardTypes = {
   userAvatar: PropTypes.string,
   username: PropTypes.string,
   title: PropTypes.string,
   body: PropTypes.string,
-  urlPr: PropTypes.string,
+  urlLink: PropTypes.string,
   forks: PropTypes.number,
   stars: PropTypes.number,
+  isRepo: PropTypes.bool,
+  children: PropTypes.object,
 };
 
-export default CardRepositoryPropTypes;
+export default CardTypes;

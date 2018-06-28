@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaCodeFork, FaStar } from 'react-icons/lib/fa';
 
 // propTypes
 import propTypes from './propTypes';
@@ -8,15 +7,15 @@ import propTypes from './propTypes';
 import User from '../User';
 import TextContent from '../TextContent';
 
-const CardRepository = (props) => {
+const Card = (props) => {
   const {
     userAvatar,
     username,
     title,
     body,
-    urlPr,
-    forks,
-    stars,
+    urlLink,
+    isRepo,
+    children,
   } = props;
 
   return (
@@ -25,36 +24,32 @@ const CardRepository = (props) => {
         <TextContent
           title={title}
           body={body}
-          url={urlPr}
-          isRepo
+          url={urlLink}
+          isRepo={isRepo}
         />
         <User
           url={userAvatar}
           username={username}
         />
       </div>
-      <div>
-        <span>
-          <FaCodeFork />
-          {forks}
-        </span>
-        <span>
-          <FaStar />
-          {stars}
-        </span>
-      </div>
+      {children}
     </div>
   );
 };
 
-CardRepository.propTypes = {
+Card.defaultProps = {
+  children: null,
+  body: null,
+};
+
+Card.propTypes = {
   userAvatar: propTypes.userAvatar.isRequired,
   username: propTypes.username.isRequired,
   title: propTypes.title.isRequired,
-  body: propTypes.body.isRequired,
-  urlPr: propTypes.urlPr.isRequired,
-  forks: propTypes.forks.isRequired,
-  stars: propTypes.stars.isRequired,
+  body: propTypes.body,
+  urlLink: propTypes.urlLink.isRequired,
+  isRepo: propTypes.isRepo.isRequired,
+  children: propTypes.children,
 };
 
-export default CardRepository;
+export default Card;

@@ -10,7 +10,7 @@ import propTypes from './propTypes';
 
 // components
 import Header from '../../components/Header';
-import CardPullRequest from '../../components/CardPullRequest';
+import CardPullRequest from '../../components/Card';
 
 class PRList extends Component {
   componentWillMount() {
@@ -37,18 +37,19 @@ class PRList extends Component {
     const pullRequests = prs.map(pr => (
       <CardPullRequest
         key={pr.id}
-        url={pr._links.html.href} // eslint-disable-line
         title={pr.title}
         body={pr.body}
-        userAvatar={pr.user.avatar_url}
         username={pr.user.login}
+        userAvatar={pr.user.avatar_url}
+        urlLink={pr._links.html.href} // eslint-disable-line
+        isRepo={false}
       />
     ));
 
     return (
       <div>
         <Header title={repository}>
-          <FaArrowLeft onClick={() => this.goToHome()} />
+          <FaArrowLeft onClick={() => this.goToHome()} isclickable="true" />
         </Header>
         <div>
           <div>

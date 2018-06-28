@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import InfiniteScroll from 'react-infinite-scroller';
-import { FaBars } from 'react-icons/lib/fa';
+import { FaBars, FaCodeFork, FaStar } from 'react-icons/lib/fa';
 
 // actions
 import { repositoriesActions } from '../../store/actions';
@@ -11,7 +11,7 @@ import propTypes from './propTypes';
 
 // components
 import Header from '../../components/Header';
-import CardRepository from '../../components/CardRepository';
+import CardRepository from '../../components/Card';
 
 class Home extends Component {
   componentWillMount() {
@@ -28,23 +28,33 @@ class Home extends Component {
 
   render() {
     const {
-      repositories,
+      repositories: repos,
       isLoading,
       error,
       isError,
     } = this.props;
 
-    const repos = repositories.map(repository => (
+    const repositories = repos.map(repository => (
       <CardRepository
         key={repository.id}
         title={repository.name}
         body={repository.description}
         username={repository.owner.login}
         userAvatar={repository.owner.avatar_url}
-        urlPr={`pullrequests/${repository.owner.login}/${repository.name}`}
-        forks={repository.forks_count}
-        stars={repository.stargazers_count}
-      />
+        urlLink={`pullrequests/${repository.owner.login}/${repository.name}`}
+        isRepo
+      >
+        <div>
+          <span>
+            <FaCodeFork />
+            {repository.forks_count}
+          </span>
+          <span>
+            <FaStar />
+            {repository.stargazers_count}
+          </span>
+        </div>
+      </CardRepository>
     ));
 
     return (
@@ -56,9 +66,9 @@ class Home extends Component {
           <InfiniteScroll
             pageStart={1}
             loadMore={page => this.fetchRepositories(page)}
-            hasMore={!isLoading && repos.length !== 0}
+            hasMore={!isLoading && repositories.length !== 0}
           >
-            {repos}
+            {repositories}
           </InfiniteScroll>
           <div>
             {isError && error}
