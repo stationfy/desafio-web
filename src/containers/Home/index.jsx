@@ -13,13 +13,6 @@ import propTypes from './propTypes';
 import Header from '../../components/Header';
 import CardRepository from '../../components/CardRepository';
 
-const divStyle = {
-  margin: '0px',
-  border: '1px solid pink',
-  height: '99%',
-  overflow: 'auto',
-};
-
 class Home extends Component {
   componentWillMount() {
     const { repositories, getRepositories } = this.props;
@@ -59,7 +52,7 @@ class Home extends Component {
         <Header title="Github JavaPop">
           <FaBars />
         </Header>
-        <div style={divStyle}>
+        <div>
           <InfiniteScroll
             pageStart={1}
             loadMore={page => this.fetchRepositories(page)}

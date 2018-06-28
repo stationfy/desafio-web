@@ -26,7 +26,7 @@ class PRList extends Component {
 
   render() {
     const {
-      pullRequests,
+      pullRequests: prs,
       isLoading,
       isError,
       error,
@@ -34,7 +34,7 @@ class PRList extends Component {
     } = this.props;
     const { repository } = match.params;
 
-    const prs = pullRequests.map(pr => (
+    const pullRequests = prs.map(pr => (
       <CardPullRequest
         key={pr.id}
         url={pr._links.html.href} // eslint-disable-line
@@ -51,13 +51,13 @@ class PRList extends Component {
           <FaArrowLeft onClick={() => this.goToHome()} />
         </Header>
         <div>
-          <p>
+          <div>
             {isError && error}
-          </p>
-          <p>
+          </div>
+          <div>
             {isLoading ? 'Loading...' : ''}
-          </p>
-          {(pullRequests && !isLoading) && prs}
+          </div>
+          {!isLoading && pullRequests}
         </div>
       </div>
     );
