@@ -1,47 +1,87 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import { pullRequestsActions } from '../../store/actions';
+
+import propTypes from './propTypes';
 
 class PRList extends Component {
   componentWillMount() {
-    const { props } = this;
-    const { creator, repository } = props.match.params;
-    props.getPullRequests(creator, repository);
+    const { getPullRequests, match } = this.props;
+    const { creator, repository } = match.params;
+    getPullRequests(creator, repository);
+  }
+
+  goToHome() {
+    const { history } = this.props;
+    history.push('/');
   }
 
   render() {
-    const { props } = this;
-    const { repository: repositoryTitle } = props.match.params;
+    const {
+      pullRequests,
+      isLoading,
+      isError,
+      error,
+      match,
+    } = this.props;
+    const { repository: repositoryTitle } = match.params;
+
     return (
       <div>
         <p>
           {repositoryTitle.toUpperCase()}
         </p>
+        <button
+          onClick={() => this.goToHome()}
+          type="button"
+        >
+          Return
+        </button>
         <p>
-          {props.error && props.error}
+          {isError && error}
         </p>
         <p>
-          {props.isLoading ? 'Loading...' : ''}
+          {isLoading ? 'Loading...' : ''}
         </p>
-        {(props.pullRequests && !props.isLoading) && props.pullRequests.map(repository => (
-          <div key={repository.id}>
-            {repository.title}
-            <p>
-              {repository.body}
-            </p>
-            <img src={repository.user.avatar_url} alt="" height="40px" />
-            <span>
-              {repository.user.login}
-            </span>
-            <p>
-              {repository.created_at}
-            </p>
-          </div>
-        ))}
+        {(pullRequests && !isLoading) && pullRequests.map((repository) => {
+          const { id, title, body, user, _links } = repository; // eslint-disable-line
+          return (
+            <div key={id}>
+              <a href={_links.html.href}>
+                {title}
+              </a>
+              <p>
+                {body}
+              </p>
+              <img src={user.avatar_url} alt="" height="40px" />
+              <span>
+                {user.login}
+              </span>
+            </div>
+          );
+        })}
       </div>
     );
   }
 }
+
+PRList.defaultProps = {
+  pullRequests: [],
+  error: null,
+  isError: false,
+  isLoading: false,
+};
+
+PRList.propTypes = {
+  pullRequests: propTypes.pullRequests,
+  history: propTypes.history.isRequired,
+  match: propTypes.match.isRequired,
+  error: propTypes.error,
+  isError: propTypes.isError,
+  isLoading: propTypes.isLoading,
+  getPullRequests: propTypes.getPullRequests.isRequired,
+};
 
 const mapStateToProps = state => ({
   pullRequests: state.pullRequests.items,

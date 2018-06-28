@@ -1,46 +1,65 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-// import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { repositoriesActions } from '../../store/actions';
 
+import propTypes from './propTypes';
+
+import User from '../../components/User';
+
 class Home extends Component {
   componentWillMount() {
-    const { props } = this;
-    if (!props.repositories.length) {
-      props.getRepositories();
+    const { repositories, getRepositories } = this.props;
+    if (!repositories.length) {
+      getRepositories();
     }
   }
 
   render() {
-    const { props } = this;
+    const {
+      repositories,
+      isLoading,
+      isError,
+      error,
+    } = this.props;
+
     return (
       <div>
-        Repositories
+        Github JavaPop
         <p>
-          {props.error ? props.error : ''}
+          {isError ? error : ''}
         </p>
         <p>
-          {props.isLoading ? 'Loading...' : ''}
+          {isLoading ? 'Loading...' : ''}
         </p>
-        {props.repositories && props.repositories.map(repository => (
+        {repositories && repositories.map(repository => (
           <div key={repository.id}>
             <NavLink to={`pullrequests/${repository.owner.login}/${repository.name}`}>
               {repository.name}
             </NavLink>
-            <strong>
-              {repository.id}
-            </strong>
-            <img src={repository.owner.avatar_url} alt="" height="40px" />
-            <span>
-              {repository.owner.login}
-            </span>
+            <User url={repository.owner.avatar_url} username={repository.owner.login} />
+            <hr />
           </div>
         ))}
       </div>
     );
   }
 }
+
+Home.defaultProps = {
+  repositories: [],
+  error: null,
+  isError: false,
+  isLoading: false,
+};
+
+Home.propTypes = {
+  repositories: propTypes.repositories,
+  error: propTypes.error,
+  isError: propTypes.isError,
+  isLoading: propTypes.isLoading,
+  getRepositories: propTypes.getRepositories.isRequired,
+};
 
 const mapStateToProps = state => ({
   repositories: state.repositories.items,
