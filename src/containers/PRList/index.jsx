@@ -5,6 +5,8 @@ import { pullRequestsActions } from '../../store/actions';
 
 import propTypes from './propTypes';
 
+import CardPullRequest from '../../components/CardPullRequest';
+
 class PRList extends Component {
   componentWillMount() {
     const { getPullRequests, match } = this.props;
@@ -25,12 +27,23 @@ class PRList extends Component {
       error,
       match,
     } = this.props;
-    const { repository: repositoryTitle } = match.params;
+    const { repository } = match.params;
+
+    const prs = pullRequests.map(pr => (
+      <CardPullRequest
+        key={pr.id}
+        url={pr._links.html.href} // eslint-disable-line
+        title={pr.title}
+        body={pr.body}
+        userAvatar={pr.user.avatar_url}
+        username={pr.user.login}
+      />
+    ));
 
     return (
       <div>
         <p>
-          {repositoryTitle.toUpperCase()}
+          {repository.toUpperCase()}
         </p>
         <button
           onClick={() => this.goToHome()}
@@ -44,23 +57,7 @@ class PRList extends Component {
         <p>
           {isLoading ? 'Loading...' : ''}
         </p>
-        {(pullRequests && !isLoading) && pullRequests.map((repository) => {
-          const { id, title, body, user, _links } = repository; // eslint-disable-line
-          return (
-            <div key={id}>
-              <a href={_links.html.href}>
-                {title}
-              </a>
-              <p>
-                {body}
-              </p>
-              <img src={user.avatar_url} alt="" height="40px" />
-              <span>
-                {user.login}
-              </span>
-            </div>
-          );
-        })}
+        {(pullRequests && !isLoading) && prs}
       </div>
     );
   }

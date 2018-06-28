@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+import InfiniteScroll from 'react-infinite-scroller';
+
+// actions
 import { repositoriesActions } from '../../store/actions';
 
+// propTypes
 import propTypes from './propTypes';
 
-import User from '../../components/User';
+// components
+import CardRepository from '../../components/CardRepository';
+
+const divStyle = {
+  margin: '0px',
+  border: '1px solid pink',
+  height: '99%',
+  overflow: 'auto',
+};
 
 class Home extends Component {
   componentWillMount() {
@@ -15,32 +26,50 @@ class Home extends Component {
     }
   }
 
+  fetchRepositories(page) {
+    const { getRepositories } = this.props;
+    getRepositories(page);
+  }
+
   render() {
     const {
       repositories,
       isLoading,
-      isError,
       error,
+      isError,
     } = this.props;
 
+    const repos = repositories.map(repository => (
+      <CardRepository
+        key={repository.id}
+        title={repository.name}
+        body={repository.description}
+        username={repository.owner.login}
+        userAvatar={repository.owner.avatar_url}
+        urlPr={`pullrequests/${repository.owner.login}/${repository.name}`}
+        forks={repository.forks_count}
+        stars={repository.stargazers_count}
+      />
+    ));
+
     return (
-      <div>
-        Github JavaPop
-        <p>
-          {isError ? error : ''}
-        </p>
-        <p>
+      <div style={divStyle}>
+        <h1>
+          Github JavaPop
+        </h1>
+        <InfiniteScroll
+          pageStart={1}
+          loadMore={page => this.fetchRepositories(page)}
+          hasMore={!isLoading && repos.length !== 0}
+        >
+          {repos}
+        </InfiniteScroll>
+        <div>
+          {isError && error}
+        </div>
+        <div>
           {isLoading ? 'Loading...' : ''}
-        </p>
-        {repositories && repositories.map(repository => (
-          <div key={repository.id}>
-            <NavLink to={`pullrequests/${repository.owner.login}/${repository.name}`}>
-              {repository.name}
-            </NavLink>
-            <User url={repository.owner.avatar_url} username={repository.owner.login} />
-            <hr />
-          </div>
-        ))}
+        </div>
       </div>
     );
   }
