@@ -1,18 +1,22 @@
 import React from 'react';
-
+// import { NavLink } from 'react-router-dom';
 // propTypes
 import propTypes from './propTypes';
 
 const User = ({ url, username }) => (
-  <div>
-    <img
-      src={url}
-      alt={`Img for ${username} repository`}
-      height="40px"
-    />
-    <p>
-      {username}
-    </p>
+  <div className="user-profile">
+    <div className="user-profile__header">
+      <img
+        alt={`Img for ${username} repository`}
+        className="user-profile__header--img"
+        src={url}
+      />
+    </div>
+    <div className="user-profile__body">
+      <a className="user-profile__body--text" href={`https://github.com/${username}`}>
+        {username}
+      </a>
+    </div>
     {/* <p>
       Nome Sobrenome
     </p> */}

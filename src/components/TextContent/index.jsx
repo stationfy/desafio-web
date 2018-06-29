@@ -12,28 +12,29 @@ const TextContent = (props) => {
     isRepo,
   } = props;
 
-  let nav = (
-    <NavLink to={url}>
-      {title}
-    </NavLink>
-  );
-
-  if (!isRepo) {
-    nav = (
-      <a href={url}>
+  const nav = isRepo
+    ? (
+      <NavLink className="list-item__header--link" to={url}>
+        {title}
+      </NavLink>
+    ) : (
+      <a className="list-item__header--link" href={url}>
         {title}
       </a>
     );
-  }
 
   return (
-    <div>
-      <h2>
-        {nav}
-      </h2>
-      <p>
-        {body}
-      </p>
+    <div className="list-item__box">
+      <div className="list-item__header">
+        <h2 className="list-item__header--title">
+          {nav}
+        </h2>
+      </div>
+      <div className="list-item__body">
+        <p className="list-item__body--text">
+          {body && `${body.substr(0, 75)}${body.length >= 75 ? '...' : ''}`}
+        </p>
+      </div>
     </div>
   );
 };

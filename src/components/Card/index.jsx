@@ -19,20 +19,22 @@ const Card = (props) => {
   } = props;
 
   return (
-    <div>
-      <div>
-        <TextContent
-          title={title}
-          body={body}
-          url={urlLink}
-          isRepo={isRepo}
-        />
+    <div className="list-item">
+      <div className="list-item__data">
+        <div>
+          <TextContent
+            title={title}
+            body={body}
+            url={urlLink}
+            isRepo={isRepo}
+          />
+          {children}
+        </div>
         <User
           url={userAvatar}
           username={username}
         />
       </div>
-      {children}
     </div>
   );
 };

@@ -1,0 +1,35 @@
+.header {
+  align-items: center;
+  color: $off-white;
+  background: $dark-grey;
+  display: flex;
+  height: 8rem;
+  padding: 2rem $m-size 0 $m-size;
+  
+  &__text {
+    @media (min-width: 60rem) {
+      margin: auto;
+    }
+    &--title {
+      font-size: 1.5em;
+      margin: 0;
+      text-decoration: none;
+      margin-left: 4rem;
+      @media (min-width: 60rem) {
+        margin-left: 0;
+      }
+    }
+  }
+  
+  &__icon {
+    margin-top: 1.5em;
+    svg {
+      height: 3rem;
+      width: 3rem;
+    }
+    &--hover {
+      cursor: pointer;
+    }
+  }
+  
+}

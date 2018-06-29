@@ -12,6 +12,7 @@ import propTypes from './propTypes';
 // components
 import Header from '../../components/Header';
 import CardRepository from '../../components/Card';
+import Spinner from '../../components/Spinner';
 
 class Home extends Component {
   componentWillMount() {
@@ -44,15 +45,15 @@ class Home extends Component {
         urlLink={`pullrequests/${repository.owner.login}/${repository.name}`}
         isRepo
       >
-        <div>
-          <span>
+        <div className="symbol">
+          <div className="symbol__body">
             <FaCodeFork />
             {repository.forks_count}
-          </span>
-          <span>
+          </div>
+          <div className="symbol__body">
             <FaStar />
             {repository.stargazers_count}
-          </span>
+          </div>
         </div>
       </CardRepository>
     ));
@@ -63,19 +64,25 @@ class Home extends Component {
           <FaBars />
         </Header>
         <div>
+          {isError && error}
+        </div>
+        <div
+          className="content-container"
+          style={{
+            height: '93%', overflow: 'auto', position: 'absolute',
+          }}
+        >
           <InfiniteScroll
             pageStart={1}
             loadMore={page => this.fetchRepositories(page)}
             hasMore={!isLoading && repositories.length !== 0}
+            useWindow={false}
           >
-            {repositories}
+            <div className="repository">
+              {repositories}
+            </div>
           </InfiniteScroll>
-          <div>
-            {isError && error}
-          </div>
-          <div>
-            {isLoading ? 'Loading...' : ''}
-          </div>
+          {isLoading && <Spinner />}
         </div>
       </div>
     );

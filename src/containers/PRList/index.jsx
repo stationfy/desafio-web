@@ -11,6 +11,7 @@ import propTypes from './propTypes';
 // components
 import Header from '../../components/Header';
 import CardPullRequest from '../../components/Card';
+import Spinner from '../../components/Spinner';
 
 class PRList extends Component {
   componentWillMount() {
@@ -51,14 +52,16 @@ class PRList extends Component {
         <Header title={repository}>
           <FaArrowLeft onClick={() => this.goToHome()} isclickable="true" />
         </Header>
-        <div>
+        <div className="content-container">
           <div>
             {isError && error}
           </div>
-          <div>
-            {isLoading ? 'Loading...' : ''}
-          </div>
-          {!isLoading && pullRequests}
+          {isLoading && <Spinner />}
+          {!isLoading && (
+            <div className="pull-request">
+              {pullRequests}
+            </div>
+          )}
         </div>
       </div>
     );

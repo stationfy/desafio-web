@@ -1,0 +1,28 @@
+.user-profile {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  min-width: 8.5rem;
+
+  &__header {
+    height: 4.5rem;
+    &--img {
+      border-radius: 2.0rem;
+      height: 4rem;
+    }
+  }
+
+  &__body {
+    &--text {
+      color: $blue;
+      font-size: $s-size;
+      font-weight: bold;
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $dark-blue;
+      }
+    }
+  }
+}

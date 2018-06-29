@@ -1,0 +1,11 @@
+.repository {
+    
+  .list-item {
+    &__data {
+      flex-flow: wrap-reverse;
+    }
+  }
+  .list-item__data {
+    flex-flow: wrap-reverse;
+  }
+}
