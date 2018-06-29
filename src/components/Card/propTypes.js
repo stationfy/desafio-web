@@ -10,6 +10,7 @@ const CardTypes = {
   stars: PropTypes.number,
   isRepo: PropTypes.bool,
   children: PropTypes.object,
+  createAt: PropTypes.string,
 };
 
 export default CardTypes;

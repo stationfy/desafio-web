@@ -9,6 +9,7 @@ const TextContent = (props) => {
     body,
     title,
     url,
+    createAt,
     isRepo,
   } = props;
 
@@ -34,6 +35,12 @@ const TextContent = (props) => {
         <p className="list-item__body--text">
           {body && `${body.substr(0, 75)}${body.length >= 75 ? '...' : ''}`}
         </p>
+        {createAt && (
+          <p>
+            Date:
+            {createAt}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -41,6 +48,7 @@ const TextContent = (props) => {
 
 TextContent.defaultProps = {
   body: '',
+  createAt: '',
 };
 
 TextContent.propTypes = {
@@ -48,6 +56,7 @@ TextContent.propTypes = {
   title: propTypes.title.isRequired,
   url: propTypes.url.isRequired,
   isRepo: propTypes.isRepo.isRequired,
+  createAt: propTypes.createAt,
 };
 
 export default TextContent;

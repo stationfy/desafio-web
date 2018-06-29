@@ -44,6 +44,7 @@ class PRList extends Component {
         userAvatar={pr.user.avatar_url}
         urlLink={pr._links.html.href} // eslint-disable-line
         isRepo={false}
+        createAt={new Date(pr.created_at).toLocaleDateString('pt-br')}
       />
     ));
 
@@ -53,15 +54,15 @@ class PRList extends Component {
           <FaArrowLeft onClick={() => this.goToHome()} isclickable="true" />
         </Header>
         <div className="content-container">
-          <div>
-            {isError && error}
-          </div>
-          {isLoading && <Spinner />}
           {!isLoading && (
             <div className="pull-request">
               {pullRequests}
             </div>
           )}
+          <div className="error">
+            {isError && error}
+          </div>
+          {isLoading && <Spinner />}
         </div>
       </div>
     );

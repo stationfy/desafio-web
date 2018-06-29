@@ -5,6 +5,7 @@ const TextContentPropTypes = {
   body: PropTypes.string,
   url: PropTypes.string,
   isRepo: PropTypes.bool,
+  createAt: PropTypes.string,
 };
 
 export default TextContentPropTypes;

@@ -16,6 +16,7 @@ const Card = (props) => {
     urlLink,
     isRepo,
     children,
+    createAt,
   } = props;
 
   return (
@@ -27,6 +28,7 @@ const Card = (props) => {
             body={body}
             url={urlLink}
             isRepo={isRepo}
+            createAt={createAt}
           />
           {children}
         </div>
@@ -42,6 +44,7 @@ const Card = (props) => {
 Card.defaultProps = {
   children: null,
   body: null,
+  createAt: null,
 };
 
 Card.propTypes = {
@@ -52,6 +55,7 @@ Card.propTypes = {
   urlLink: propTypes.urlLink.isRequired,
   isRepo: propTypes.isRepo.isRequired,
   children: propTypes.children,
+  createAt: propTypes.createAt,
 };
 
 export default Card;

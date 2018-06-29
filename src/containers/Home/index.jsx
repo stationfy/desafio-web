@@ -63,15 +63,7 @@ class Home extends Component {
         <Header title="Github JavaPop">
           <FaBars />
         </Header>
-        <div>
-          {isError && error}
-        </div>
-        <div
-          className="content-container"
-          style={{
-            height: '93%', overflow: 'auto', position: 'absolute',
-          }}
-        >
+        <div className="content-container">
           <InfiniteScroll
             pageStart={1}
             loadMore={page => this.fetchRepositories(page)}
@@ -82,6 +74,9 @@ class Home extends Component {
               {repositories}
             </div>
           </InfiniteScroll>
+          <div className="error">
+            {isError && error}
+          </div>
           {isLoading && <Spinner />}
         </div>
       </div>
