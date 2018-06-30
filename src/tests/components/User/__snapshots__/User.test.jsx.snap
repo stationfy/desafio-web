@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User should render User correctly 1`] = `
+<div
+  className="user-profile"
+>
+  <div
+    className="user-profile__header"
+  >
+    <img
+      alt="Img for freeCodeCamp repository"
+      className="user-profile__header--img"
+      src="https://avatars2.githubusercontent.com/u/9892522?s=200&v=4"
+    />
+  </div>
+  <div
+    className="user-profile__body"
+  >
+    <a
+      className="user-profile__body--text"
+      href="https://github.com/freeCodeCamp"
+    >
+      freeCodeCamp
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextContent should render TextContent correctly 1`] = `
+<div
+  className="list-item__box"
+>
+  <div
+    className="list-item__header"
+  >
+    <h2
+      className="list-item__header--title"
+    >
+      <NavLink
+        activeClassName="active"
+        aria-current="page"
+        className="list-item__header--link"
+        to="pullrequests/postcss/postcss"
+      >
+        postcss
+      </NavLink>
+    </h2>
+  </div>
+  <div
+    className="list-item__body"
+  >
+    <p
+      className="list-item__body--text"
+    >
+      Transforming styles with JS plugins
+    </p>
+  </div>
+</div>
+`;

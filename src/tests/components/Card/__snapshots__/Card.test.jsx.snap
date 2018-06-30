@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render Card correctly 1`] = `
+<div
+  className="list-item"
+>
+  <div
+    className="list-item__data"
+  >
+    <div>
+      <TextContent
+        body=""
+        createAt={null}
+        isRepo={true}
+        title="desafio-web"
+        url="http://localhost:3000/arielvieira/desafio-web/pulls"
+      />
+    </div>
+    <User
+      url="https://avatars0.githubusercontent.com/u/17505779?v=4"
+      username="arielvieira"
+    />
+  </div>
+</div>
+`;

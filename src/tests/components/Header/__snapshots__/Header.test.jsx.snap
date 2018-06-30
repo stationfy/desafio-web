@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render Header correctly with <FaArrowLeft /> as a children and header__icon--hover class 1`] = `
+<div
+  className="header"
+>
+  <div>
+    <span
+      className="header__icon header__icon--hover"
+    >
+      <FaArrowLeft
+        isclickable="true"
+      />
+    </span>
+  </div>
+  <div
+    className="header__text"
+  >
+    <h1
+      className="header__text--title"
+    >
+      desafio-web
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Header should render Header correctly with <FaBars /> as a children 1`] = `
+<div
+  className="header"
+>
+  <div>
+    <span
+      className="header__icon undefined"
+    >
+      <FaBars />
+    </span>
+  </div>
+  <div
+    className="header__text"
+  >
+    <h1
+      className="header__text--title"
+    >
+      Github JavaPop
+    </h1>
+  </div>
+</div>
+`;

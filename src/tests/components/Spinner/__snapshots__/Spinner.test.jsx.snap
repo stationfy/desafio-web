@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner should render Spinner correctly 1`] = `
+<div
+  className="spinner"
+>
+  <img
+    alt="Loader gif"
+    className="spinner__image"
+    src="/static/img/loader.gif"
+  />
+</div>
+`;
