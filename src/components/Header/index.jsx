@@ -3,11 +3,10 @@ import React from 'react';
 // propTypes
 import propTypes from './propTypes';
 
-
-const Header = ({ title, children }) => (
+const Header = ({ children, title }) => (
   <div className="header">
     <div>
-      <span className={`header__icon ${children.props.isclickable && 'header__icon--hover'}`}>
+      <span className={`${children.props.isclickable ? 'header__icon header__icon--hover' : 'header__icon'}`}>
         {children}
       </span>
     </div>
@@ -20,8 +19,8 @@ const Header = ({ title, children }) => (
 );
 
 Header.propTypes = {
-  title: propTypes.title.isRequired,
   children: propTypes.children.isRequired,
+  title: propTypes.title.isRequired,
 };
 
 export default Header;

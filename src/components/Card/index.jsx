@@ -9,14 +9,14 @@ import TextContent from '../TextContent';
 
 const Card = (props) => {
   const {
+    body,
+    createAt,
+    children,
+    isRepo,
+    title,
+    urlLink,
     userAvatar,
     username,
-    title,
-    body,
-    urlLink,
-    isRepo,
-    children,
-    createAt,
   } = props;
 
   return (
@@ -42,20 +42,20 @@ const Card = (props) => {
 };
 
 Card.defaultProps = {
-  children: null,
   body: null,
   createAt: null,
+  children: null,
 };
 
 Card.propTypes = {
+  body: propTypes.body,
+  createAt: propTypes.createAt,
+  children: propTypes.children,
+  isRepo: propTypes.isRepo.isRequired,
+  title: propTypes.title.isRequired,
+  urlLink: propTypes.urlLink.isRequired,
   userAvatar: propTypes.userAvatar.isRequired,
   username: propTypes.username.isRequired,
-  title: propTypes.title.isRequired,
-  body: propTypes.body,
-  urlLink: propTypes.urlLink.isRequired,
-  isRepo: propTypes.isRepo.isRequired,
-  children: propTypes.children,
-  createAt: propTypes.createAt,
 };
 
 export default Card;

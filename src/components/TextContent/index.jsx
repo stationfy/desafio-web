@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 // propTypes
 import propTypes from './propTypes';
 
+// Utils
+import { stringUtils, dateUtils } from '../../utils';
+
 const TextContent = (props) => {
   const {
     body,
@@ -24,6 +27,9 @@ const TextContent = (props) => {
       </a>
     );
 
+  const bodyText = stringUtils.limitString(body, 75);
+  const dateText = createAt && dateUtils.toLocaleDateString(createAt);
+
   return (
     <div className="list-item__box">
       <div className="list-item__header">
@@ -33,12 +39,12 @@ const TextContent = (props) => {
       </div>
       <div className="list-item__body">
         <p className="list-item__body--text">
-          {body && `${body.substr(0, 75)}${body.length >= 75 ? '...' : ''}`}
+          {bodyText}
         </p>
         {createAt && (
           <p>
             Date:
-            {createAt}
+            {dateText}
           </p>
         )}
       </div>
@@ -53,10 +59,10 @@ TextContent.defaultProps = {
 
 TextContent.propTypes = {
   body: propTypes.body,
+  createAt: propTypes.createAt,
+  isRepo: propTypes.isRepo.isRequired,
   title: propTypes.title.isRequired,
   url: propTypes.url.isRequired,
-  isRepo: propTypes.isRepo.isRequired,
-  createAt: propTypes.createAt,
 };
 
 export default TextContent;

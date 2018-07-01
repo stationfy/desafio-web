@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
 const HomePropTypes = {
-  repositories: PropTypes.array,
   error: PropTypes.string,
+  getRepositories: PropTypes.func,
   isError: PropTypes.bool,
   isLoading: PropTypes.bool,
-  getRepositories: PropTypes.func,
+  repositories: PropTypes.array,
 };
 
 export default HomePropTypes;

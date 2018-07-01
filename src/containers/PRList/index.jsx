@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FaArrowLeft } from 'react-icons/lib/fa';
 
-// actions
+// Actions
 import { pullRequestsActions } from '../../store/actions';
 
-// propTypes
+// PropTypes
 import propTypes from './propTypes';
 
-// components
-import Header from '../../components/Header';
+// Components
 import CardPullRequest from '../../components/Card';
+import Error from '../../components/Error';
+import Header from '../../components/Header';
 import Spinner from '../../components/Spinner';
 
 class PRList extends Component {
@@ -27,11 +28,11 @@ class PRList extends Component {
 
   render() {
     const {
-      pullRequests: prs,
-      isLoading,
-      isError,
       error,
+      isError,
+      isLoading,
       match,
+      pullRequests: prs,
     } = this.props;
     const { repository } = match.params;
 
@@ -44,7 +45,7 @@ class PRList extends Component {
         userAvatar={pr.user.avatar_url}
         urlLink={pr._links.html.href} // eslint-disable-line
         isRepo={false}
-        createAt={new Date(pr.created_at).toLocaleDateString('pt-br')}
+        createAt={pr.created_at}
       />
     ));
 
@@ -59,9 +60,7 @@ class PRList extends Component {
               {pullRequests}
             </div>
           )}
-          <div className="error">
-            {isError && error}
-          </div>
+          {isError && <Error error={error} />}
           {isLoading && <Spinner />}
         </div>
       </div>
@@ -70,29 +69,29 @@ class PRList extends Component {
 }
 
 PRList.defaultProps = {
-  pullRequests: [],
-  history: {},
-  match: {},
   error: null,
+  history: {},
   isError: false,
   isLoading: false,
+  match: {},
+  pullRequests: [],
 };
 
 PRList.propTypes = {
-  pullRequests: propTypes.pullRequests,
-  history: propTypes.history,
-  match: propTypes.match,
   error: propTypes.error,
+  getPullRequests: propTypes.getPullRequests.isRequired,
+  history: propTypes.history,
   isError: propTypes.isError,
   isLoading: propTypes.isLoading,
-  getPullRequests: propTypes.getPullRequests.isRequired,
+  match: propTypes.match,
+  pullRequests: propTypes.pullRequests,
 };
 
 const mapStateToProps = state => ({
-  pullRequests: state.pullRequests.items,
-  isLoading: state.pullRequests.isLoading,
-  isError: state.pullRequests.isError,
   error: state.pullRequests.error,
+  isError: state.pullRequests.isError,
+  isLoading: state.pullRequests.isLoading,
+  pullRequests: state.pullRequests.items,
 });
 
 const mapActionsToProps = {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import InfiniteScroll from 'react-infinite-scroller';
 import { FaBars, FaCodeFork, FaStar } from 'react-icons/lib/fa';
+import InfiniteScroll from 'react-infinite-scroller';
 
 // actions
 import { repositoriesActions } from '../../store/actions';
@@ -10,8 +10,9 @@ import { repositoriesActions } from '../../store/actions';
 import propTypes from './propTypes';
 
 // components
-import Header from '../../components/Header';
 import CardRepository from '../../components/Card';
+import Error from '../../components/Error';
+import Header from '../../components/Header';
 import Spinner from '../../components/Spinner';
 
 class Home extends Component {
@@ -74,9 +75,7 @@ class Home extends Component {
               {repositories}
             </div>
           </InfiniteScroll>
-          <div className="error">
-            {isError && error}
-          </div>
+          {isError && <Error error={error} />}
           {isLoading && <Spinner />}
         </div>
       </div>
@@ -85,25 +84,25 @@ class Home extends Component {
 }
 
 Home.defaultProps = {
-  repositories: [],
   error: null,
   isError: false,
   isLoading: false,
+  repositories: [],
 };
 
 Home.propTypes = {
-  repositories: propTypes.repositories,
   error: propTypes.error,
+  getRepositories: propTypes.getRepositories.isRequired,
   isError: propTypes.isError,
   isLoading: propTypes.isLoading,
-  getRepositories: propTypes.getRepositories.isRequired,
+  repositories: propTypes.repositories,
 };
 
 const mapStateToProps = state => ({
-  repositories: state.repositories.items,
-  isLoading: state.repositories.isLoading,
-  isError: state.repositories.isError,
   error: state.repositories.error,
+  isError: state.repositories.isError,
+  isLoading: state.repositories.isLoading,
+  repositories: state.repositories.items,
 });
 
 const mapActionsToProps = {

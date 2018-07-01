@@ -31,7 +31,7 @@ exports[`Header should render Header correctly with <FaBars /> as a children 1`]
 >
   <div>
     <span
-      className="header__icon undefined"
+      className="header__icon"
     >
       <FaBars />
     </span>

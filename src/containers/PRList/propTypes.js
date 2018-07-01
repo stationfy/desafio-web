@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
 
 const PRListPropTypes = {
-  pullRequests: PropTypes.array,
+  error: PropTypes.string,
+  getPullRequests: PropTypes.func,
   history: PropTypes.object,
+  isLoading: PropTypes.bool,
+  isError: PropTypes.bool,
   match: PropTypes.shape({
     params: PropTypes.shape({
       creator: PropTypes.string,
       repository: PropTypes.string,
     }),
   }),
-  error: PropTypes.string,
-  isError: PropTypes.bool,
-  isLoading: PropTypes.bool,
-  getPullRequests: PropTypes.func,
+  pullRequests: PropTypes.array,
 };
 
 export default PRListPropTypes;
