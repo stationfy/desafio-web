@@ -1,6 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextContent should render TextContent correctly 1`] = `
+exports[`TextContent should render TextContent correctly as a pullrequest body with body greater or equal 75 characters 1`] = `
+<div
+  className="list-item__box"
+>
+  <div
+    className="list-item__header"
+  >
+    <h2
+      className="list-item__header--title"
+    >
+      <a
+        className="list-item__header--link"
+        href="pullrequests/Lorem/ipsum"
+      >
+        Lorem ipsum dolor sit amet
+      </a>
+    </h2>
+  </div>
+  <div
+    className="list-item__body"
+  >
+    <p
+      className="list-item__body--text"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione hic...
+    </p>
+    <p>
+      Date:
+      2018-5-31
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TextContent should render TextContent correctly as a pullrequest with no body 1`] = `
+<div
+  className="list-item__box"
+>
+  <div
+    className="list-item__header"
+  >
+    <h2
+      className="list-item__header--title"
+    >
+      <a
+        className="list-item__header--link"
+        href="https://github.com/freeCodeCamp/freeCodeCamp/pull/17770"
+      >
+        chore(seed): Update to v3.0.1
+      </a>
+    </h2>
+  </div>
+  <div
+    className="list-item__body"
+  >
+    <p
+      className="list-item__body--text"
+    />
+    <p>
+      Date:
+      2018-6-30
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TextContent should render TextContent correctly as a repository with body lower than 75 characters 1`] = `
 <div
   className="list-item__box"
 >

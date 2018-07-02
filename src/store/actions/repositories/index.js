@@ -3,29 +3,31 @@ import * as types from './types';
 
 const URL = 'https://api.github.com/';
 
-const getRepositoriesStart = () => ({
-  type: types.SET_REPOSITORIES_START,
+export const getRepositoriesStart = () => ({
+  type: types.GET_REPOSITORIES_START,
 });
 
-const getRepositoriesSucess = payload => ({
-  type: types.SET_REPOSITORIES_SUCCESS,
+export const getRepositoriesSucess = payload => ({
+  type: types.GET_REPOSITORIES_SUCCESS,
   payload,
 });
 
-const getRepositoriesFail = payload => ({
-  type: types.SET_REPOSITORIES_FAIL,
+export const getRepositoriesFail = payload => ({
+  type: types.GET_REPOSITORIES_FAIL,
   payload,
 });
 
-const getRepositories = (page = 1, sort = 'stars', q = 'language:Javascript') => ((dispatch) => {
+export const getRepositories = (page = 1, sort = 'stars', q = 'language:Javascript') => ((dispatch) => {
   dispatch(getRepositoriesStart());
   const queryParams = `search/repositories?q=${q}&sort=${sort}&page=${page}`;
-  axios.get(`${URL}${queryParams}`)
+  return axios.get(`${URL}${queryParams}`)
     .then((response) => {
       dispatch(getRepositoriesSucess(response.data.items));
+      return response.data.items;
     })
     .catch((error) => {
       dispatch(getRepositoriesFail(error.response.data.message));
+      return error.response.data.message;
     });
 });
 

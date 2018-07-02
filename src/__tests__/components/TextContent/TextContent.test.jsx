@@ -1,24 +1,44 @@
-/* eslint-disable */
 import React from 'react';
-import enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import toJson from 'enzyme-to-json';
+import { shallow } from 'enzyme';
 
 import TextContent from '../../../components/TextContent';
 
-enzyme.configure({ adapter: new Adapter() });
-
 describe('TextContent', () => {
-  it('should render TextContent correctly', () => {
+  it('should render TextContent correctly as a repository with body lower than 75 characters', () => {
     const wrapper = shallow(
       <TextContent
         title="postcss"
         body="Transforming styles with JS plugins"
         url="pullrequests/postcss/postcss"
         isRepo
-      />
+      />,
     );
-    expect(toJson(wrapper)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
+  it('should render TextContent correctly as a pullrequest body with body greater or equal 75 characters', () => {
+    const wrapper = shallow(
+      <TextContent
+        title="Lorem ipsum dolor sit amet"
+        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione hic vel facere deleniti eius praesentium laborum sunt dicta. Voluptas temporibus recusandae quae consequuntur perferendis aut, neque dolor eos animi!"
+        url="pullrequests/Lorem/ipsum"
+        isRepo={false}
+        createAt="2018-05-31T14:42:39Z"
+      />,
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should render TextContent correctly as a pullrequest with no body', () => {
+    const wrapper = shallow(
+      <TextContent
+        title="chore(seed): Update to v3.0.1"
+        body=""
+        url="https://github.com/freeCodeCamp/freeCodeCamp/pull/17770"
+        isRepo={false}
+        createAt="2018-06-30T14:41:33Z"
+      />,
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 });

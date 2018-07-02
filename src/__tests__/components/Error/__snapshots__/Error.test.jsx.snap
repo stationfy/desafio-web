@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error should render Error correctly 1`] = `
+<div
+  className="error"
+>
+  API rate limit exceeded for 191.54.128.217.
+</div>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header should render Header correctly with <FaArrowLeft /> as a children and header__icon--hover class 1`] = `
+exports[`Header should render Header correctly with <FaArrowLeft /> as a children and has header__icon--hover class 1`] = `
 <div
   className="header"
 >

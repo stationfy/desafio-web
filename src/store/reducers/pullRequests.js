@@ -1,20 +1,20 @@
 import * as types from '../actions/pullRequests/types';
 
-const initialState = {
+export const initialState = {
   error: null,
   isError: false,
   isLoading: false,
   items: [],
 };
 
-const getPullRequestsStart = state => ({
+export const getPullRequestsStart = state => ({
   ...state,
   error: null,
   isError: false,
   isLoading: true,
 });
 
-const getPullRequestsSucess = (state, { payload }) => ({
+export const getPullRequestsSuccess = (state, { payload }) => ({
   ...state,
   error: null,
   isError: false,
@@ -22,7 +22,7 @@ const getPullRequestsSucess = (state, { payload }) => ({
   items: [...payload],
 });
 
-const getPullRequestsFail = (state, { payload }) => ({
+export const getPullRequestsFail = (state, { payload }) => ({
   ...state,
   error: payload,
   isError: true,
@@ -31,9 +31,9 @@ const getPullRequestsFail = (state, { payload }) => ({
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case types.SET_PULLREQUESTS_START: return getPullRequestsStart(state);
-    case types.SET_PULLREQUESTS_SUCCESS: return getPullRequestsSucess(state, action);
-    case types.SET_PULLREQUESTS_FAIL: return getPullRequestsFail(state, action);
+    case types.GET_PULLREQUESTS_START: return getPullRequestsStart(state);
+    case types.GET_PULLREQUESTS_SUCCESS: return getPullRequestsSuccess(state, action);
+    case types.GET_PULLREQUESTS_FAIL: return getPullRequestsFail(state, action);
     default: return { ...state };
   }
 };

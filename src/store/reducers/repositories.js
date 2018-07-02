@@ -1,20 +1,20 @@
 import * as types from '../actions/repositories/types';
 
-const initialState = {
+export const initialState = {
   error: null,
   isError: false,
   isLoading: false,
   items: [],
 };
 
-const setRepositoresStart = state => ({
+export const getRepositoresStart = state => ({
   ...state,
   error: null,
   isError: false,
   isLoading: true,
 });
 
-const setRepositoresSuccess = (state, { payload }) => ({
+export const getRepositoresSuccess = (state, { payload }) => ({
   ...state,
   error: null,
   isError: false,
@@ -22,7 +22,7 @@ const setRepositoresSuccess = (state, { payload }) => ({
   items: [...state.items, ...payload],
 });
 
-const setRepositoresFail = (state, { payload }) => ({
+export const getRepositoresFail = (state, { payload }) => ({
   ...state,
   error: payload,
   isError: true,
@@ -31,9 +31,9 @@ const setRepositoresFail = (state, { payload }) => ({
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case types.SET_REPOSITORIES_START: return setRepositoresStart(state);
-    case types.SET_REPOSITORIES_SUCCESS: return setRepositoresSuccess(state, action);
-    case types.SET_REPOSITORIES_FAIL: return setRepositoresFail(state, action);
+    case types.GET_REPOSITORIES_START: return getRepositoresStart(state);
+    case types.GET_REPOSITORIES_SUCCESS: return getRepositoresSuccess(state, action);
+    case types.GET_REPOSITORIES_FAIL: return getRepositoresFail(state, action);
     default: return { ...state };
   }
 };
