@@ -8,7 +8,7 @@ COPY . .
 
 RUN yarn install && \
 	yarn pre-build && \
-	npm run build
+	yarn run build
 
 FROM nginx:stable-alpine-perl
 
