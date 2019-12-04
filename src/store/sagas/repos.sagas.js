@@ -7,7 +7,7 @@ export default function* getRepos() {
   try {
     const response = yield call(
       api.get,
-      "/search/repositories?q=language:Javascript&sort=stars&page=1"
+      `/search/repositories?q=language:Javascript&sort=stars&page=1`
     );
     yield put(ReposActions.getSuccess(response.data.items));
   } catch (err) {

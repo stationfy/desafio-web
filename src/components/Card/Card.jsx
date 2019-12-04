@@ -8,15 +8,22 @@ import { Container } from "./Styles";
 const Card = ({
   isRepo,
   repo: {
+    id,
     full_name,
+    name,
     description,
     owner: { login, avatar_url }
   }
 }) => {
   return (
     <Container isRepo={isRepo}>
-      <Description login={login} description={description} />
-      <User fullName={full_name} login={login} avatarUrl={avatar_url} />
+      <Description name={name} title={login} description={description} />
+      <User
+        fullName={full_name}
+        login={login}
+        avatarUrl={avatar_url}
+        isRepo={isRepo}
+      />
     </Container>
   );
 };

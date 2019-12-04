@@ -9,14 +9,19 @@ export const Container = styled.header`
   background-color: #333;
 `;
 
+export const Arrow = styled.img`
+  width: 25px;
+  transform: rotate(90deg);
+  cursor: pointer;
+`;
 export const BurguerMenu = styled.div`
   width: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   div {
-    cursor: pointer;
     height: 3px;
     width: 25px;
     margin: 2px 0;

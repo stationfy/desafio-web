@@ -2,12 +2,12 @@ import React from "react";
 
 import { Container } from "./Styles";
 
-const User = ({ isRepo, avatarUrl, fullName, login }) => {
+const User = ({ isPull, avatarUrl, fullName, login }) => {
   return (
-    <Container isRepo={isRepo}>
-      <img src={avatarUrl} alt={`${fullName} avatar`} />
+    <Container isPull={isPull}>
+      <img src={avatarUrl} alt={`${login} avatar`} />
       <div>
-        <a href="git">{login}</a>
+        <span>{login}</span>
         <p>{fullName}</p>
       </div>
     </Container>

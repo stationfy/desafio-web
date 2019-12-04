@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   min-width: 90px;
   display: flex;
-  flex-direction: ${props => (props.isRepo ? "row" : "column")};
+  flex-direction: ${props => (props.isPull ? "row" : "column")};
   align-items: center;
-  justify-content: ${props => (props.isRepo ? "flex-start" : "center")};
-
+  justify-content: ${props => (props.isPull ? "flex-start" : "center")};
+  margin-top: ${props => (props.isPull ? "15px" : 0)};
   img {
     width: 50px;
     object-fit: cover;
@@ -16,8 +16,11 @@ export const Container = styled.div`
   div {
     display: flex;
     flex-direction: column;
-    align-items: ${props => (props.isRepo ? "flex-start" : "center")};
-    margin-left: ${props => (props.isRepo ? "5px" : "none")};
+    align-items: ${props => (props.isPull ? "flex-start" : "center")};
+    margin-left: ${props => (props.isPull ? "15px" : 0)};
+    span {
+      color: #4080bf;
+    }
     p {
       color: #777;
       width: 100px;
