@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroller";
 
 import { connect } from "react-redux";
@@ -41,6 +42,15 @@ const ReposPage = ({ repos, getRequest, getMoreRequest }) => {
       {repos.loading && <Loading />}
     </Container>
   );
+};
+
+ReposPage.propTypes = {
+  getRequest: PropTypes.func.isRequired,
+  getMoreRequest: PropTypes.func.isRequired,
+  pulls: PropTypes.shape({
+    id: PropTypes.number,
+    repo: PropTypes.object
+  }).isRequired
 };
 
 const mapStateToProps = state => ({

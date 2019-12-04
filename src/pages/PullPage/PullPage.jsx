@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -29,6 +30,21 @@ const PullPage = props => {
       </section>
     </Container>
   );
+};
+
+PullPage.propTypes = {
+  getRequest: PropTypes.func.isRequired,
+  login: PropTypes.string,
+  name: PropTypes.string,
+  pulls: PropTypes.shape({
+    loading: PropTypes.bool,
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number,
+        pull: PropTypes.object
+      })
+    )
+  }).isRequired
 };
 
 const mapStateToProps = state => ({

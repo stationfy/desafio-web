@@ -1,5 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+
+import PropTypes from "prop-types";
+
 import ArrowIcon from "../../assets/arrow.png";
 import { Container, Arrow, BurguerMenu, HeaderContainer } from "./Styles";
 
@@ -21,6 +24,13 @@ const Header = props => {
       </HeaderContainer>
     </Container>
   );
+};
+
+Header.propTypes = {
+  children: PropTypes.string.isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func
+  })
 };
 
 export default withRouter(Header);

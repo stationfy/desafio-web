@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import User from "../User/User";
 import Description from "../Description/Description";
@@ -8,7 +9,6 @@ import { Container } from "./Styles";
 const Card = ({
   isRepo,
   repo: {
-    id,
     full_name,
     name,
     description,
@@ -26,6 +26,19 @@ const Card = ({
       />
     </Container>
   );
+};
+
+Card.propTypes = {
+  isRepo: PropTypes.func,
+  repo: PropTypes.shape({
+    full_name: PropTypes.string,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    owner: PropTypes.shape({
+      login: PropTypes.string,
+      avatar_url: PropTypes.string
+    })
+  }).isRequired
 };
 
 export default Card;

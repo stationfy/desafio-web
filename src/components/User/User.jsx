@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { Container } from "./Styles";
 
@@ -12,6 +13,13 @@ const User = ({ isPull, avatarUrl, fullName, login }) => {
       </div>
     </Container>
   );
+};
+
+User.propTypes = {
+  isPull: PropTypes.bool,
+  avatarUrl: PropTypes.string.isRequired,
+  fullName: PropTypes.string,
+  login: PropTypes.string.isRequired
 };
 
 export default User;
