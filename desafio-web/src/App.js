@@ -2,7 +2,7 @@ import React from "react";
 import GitFeed from "./components/GitFeed.js";
 import { connect } from "react-redux";
 import PrFeed from "./components/PrFeed.js";
-import TopBanner from "./components/banner/tobBaner";
+import TopBanner from "./components/banner/topBanner";
 
 function App(props) {
   return (
