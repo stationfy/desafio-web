@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import TextTruncate from "react-text-truncate";
 import InfiniteScroll from "react-infinite-scroll-component";
 import LoadContainer from "../components/container/loadContainer";
 import Loader from "react-loader-spinner";
-import { connect } from "react-redux";
 import { showPrFeed } from "../store/actions/showPrFeed";
 import Card from "./card/card.js";
 import Header from "./card-parts/header";
@@ -15,7 +16,6 @@ import GenericInfo from "./infos/genericInfo";
 import Button from "./button/button.js";
 import Footer from "./card-parts/footer.js";
 import TextContainer from "./container/textContainer";
-import TextTruncate from "react-text-truncate";
 import { goBackToStream } from "../store/actions/goBacktoStream";
 
 function PrFeed(props) {

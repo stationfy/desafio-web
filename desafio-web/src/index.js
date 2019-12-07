@@ -14,9 +14,10 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 
-ReactDOM.render(
+const RootApp = () => (
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
 );
+
+ReactDOM.render(<RootApp />).document.getElementById("root");
