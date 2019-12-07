@@ -20,6 +20,7 @@ import LoadContainer from "../components/container/loadContainer";
 function App(props) {
   useEffect(() => {
     props.getRepos(props.pageRepos);
+    window.scrollTo(0, 0);
   }, []);
 
   const fetchPullRequests = (ownerOfRepo, repo) => {

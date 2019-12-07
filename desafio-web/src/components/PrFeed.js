@@ -27,6 +27,7 @@ function PrFeed(props) {
       props.currentRepo,
       props.pagePullRequests
     );
+    window.scrollTo(0, 0);
   }, []);
 
   const goBackToStream = () => {

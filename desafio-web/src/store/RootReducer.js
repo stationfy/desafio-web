@@ -31,7 +31,8 @@ const rootReducer = (state = initState, action) => {
     case "GO_BACK_TO_STREAM":
       return {
         ...state,
-        showPrFeed: false
+        showPrFeed: false,
+        pullRequests: []
       };
 
     default:
