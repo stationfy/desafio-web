@@ -95,17 +95,10 @@ function PrFeed(props) {
                       goBackToStream();
                     }}
                   >
-                    <h4>Go Back to Repo Stream</h4>
+                    <h2>Go Back to Repos Stream</h2>
                   </Button>
                 </GenericInfoContainer>
               </Footer>
-              {
-                // (pr.title,
-                // pr.author_association,
-                // pr.body,
-                // pr.user.avatar_url,
-                // pr.html_url)
-              }
             </Card>
           );
         })}

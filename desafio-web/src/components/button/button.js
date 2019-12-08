@@ -16,6 +16,10 @@ const button = styled.a`
   &:hover {
     background: #d46868;
   }
+
+  @media only screen and (max-width: 1250px) {
+    font-size: 0.7rem;
+  }
 `;
 
 export default button;

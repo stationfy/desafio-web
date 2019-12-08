@@ -87,7 +87,7 @@ function GitFeed(props) {
                         props.pagePullRequests
                       )}
                     >
-                      <h4>Check Pull Requests</h4>
+                      <h2>Check Pull Requests</h2>
                     </Button>
                   </GenericInfoContainer>
                 </Footer>

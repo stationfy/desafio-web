@@ -27,4 +27,6 @@ const header = styled.div`
 
 `;
 
+header.displayName = "header";
+
 export default header;
