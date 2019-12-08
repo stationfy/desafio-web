@@ -5,11 +5,12 @@ import PrFeed from "./components/PrFeed.js";
 import TopBanner from "./components/banner/topBanner";
 
 export function App(props) {
-  console.log("these are props in app", props);
   return (
-    <div>
+    <div data-test="component-app">
       <TopBanner>
-        <h1 style={{ padding: "0" }}>Most Popular JS Repos!</h1>
+        <h1 data-set="banner-text" style={{ padding: "0" }}>
+          Most Popular JS Repos!
+        </h1>
       </TopBanner>
       {props.showPrFeed ? <PrFeed /> : <GitFeed />}
     </div>

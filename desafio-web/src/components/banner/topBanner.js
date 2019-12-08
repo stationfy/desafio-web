@@ -20,4 +20,6 @@ const topBanner = styled.div`
   }
 `;
 
+topBanner.displayName = "topBanner";
+
 export default topBanner;

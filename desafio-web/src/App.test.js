@@ -1,21 +1,21 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import TopBanner from "./components/banner/topBanner";
-import PrFeed from "./components/PrFeed";
 import GitFeed from "./components/GitFeed";
-import styled from "styled-components";
+import { goBackToStream } from "./store/actions/goBackToStream";
 import "jest-styled-components";
 import { App } from "./App";
-import reducer from "./store/RootReducer";
-import configureStore from "redux-mock-store";
 import { storeFactory } from "../src/setupTests";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 const setup = (initialState = {}) => {
   const store = storeFactory(initialState);
-  let wrapper = mount(<GitFeed store={store} />);
+  let wrapper = shallow(<GitFeed store={store} />).dive();
   return wrapper;
 };
+
+test("test", () => {
+  return undefined;
+});
 
 describe("testing GitFeed", () => {
   var wrapper;
@@ -41,15 +41,28 @@ describe("testing GitFeed", () => {
   });
 });
 
-describe("Initial Render the top banner", () => {
-  test("It Should Render the top banner", () => {
-    const wrapper = shallow(<TopBanner />);
-    expect(wrapper).toBeTruthy;
-  });
+// describe("redux props", () => {
+//   test("has success piece of state as a prop", () => {
+//     const initialState = {
+//       repos: [],
+//       pageRepos: 1,
+//       pagePullRequests: 1,
+//       showPrFeed: null,
+//       pullRequests: [],
+//       currentRepoOwner: null,
+//       currentRepo: null
+//     };
+//     const success = true;
+//     const wrapper = setup(initialState);
+//     const successProp = wrapper.instance().props.success;
+//     console.log(successProp);
+//   });
+// });
 
-  test("App should have 2 children initially", () => {
-    const wrapper = shallow(<App />);
-    var size = wrapper.children().length;
-    expect(size).toBe(2);
-  });
-});
+// describe("Action creators", () => {
+//   test("Should have an Action creator to return to repo feed", () => {
+//     expect(goBackToStream()).toEqual({
+//       type: "GO_BACK_TO_STREAM"
+//     });
+//   });
+// });
