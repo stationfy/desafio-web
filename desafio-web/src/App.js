@@ -18,7 +18,6 @@ export function App(props) {
 }
 
 const MapStateToProps = state => {
-  console.log("this is the state", state);
   return {
     showPrFeed: state.showPrFeed
   };

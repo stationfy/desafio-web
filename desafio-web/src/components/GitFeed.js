@@ -107,7 +107,6 @@ const mapDispatchToProps = dispatch => {
       dispatch(getRepos(page));
     },
     getPrFeed: (ownerOfRepo, repo, page) => {
-      console.log("WTFFFFFFFFFFFFF", ownerOfRepo, repo, page);
       dispatch(getPrFeed(ownerOfRepo, repo, page));
     }
   };

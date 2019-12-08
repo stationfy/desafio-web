@@ -1,7 +1,6 @@
 import Axios from "axios";
 
 export const getPrFeed = (repoOwner, repo, page) => {
-  console.log("these are the arguments", repoOwner, repo, page);
   return dispatch =>
     Axios.get(
       `https://api.github.com/repos/${repoOwner}/${repo}/pulls?state=all&page=${page}`
@@ -12,7 +11,6 @@ export const getPrFeed = (repoOwner, repo, page) => {
           currentRepoOwner: repoOwner,
           currentRepo: repo
         };
-        console.log("THESE ARE RESULTS PR", results);
         dispatch({
           type: "SHOW_PR_FEED",
           payload: prInfo

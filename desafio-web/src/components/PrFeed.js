@@ -20,8 +20,6 @@ import { goBackToStream } from "../store/actions/goBacktoStream";
 
 function PrFeed(props) {
   useEffect(() => {
-    console.log("this is pagepullrequests", props.pagePullRequests);
-
     props.getPrFeed(
       props.currentRepoOwner,
       props.currentRepo,
