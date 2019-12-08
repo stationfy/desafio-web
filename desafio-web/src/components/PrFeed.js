@@ -4,7 +4,7 @@ import TextTruncate from "react-text-truncate";
 import InfiniteScroll from "react-infinite-scroll-component";
 import LoadContainer from "../components/container/loadContainer";
 import Loader from "react-loader-spinner";
-import { showPrFeed } from "../store/actions/showPrFeed";
+import { getPrFeed } from "../store/actions/getPrFeed";
 import Card from "./card/card.js";
 import Header from "./card-parts/header";
 import Picture from "./picture/picture";
@@ -22,7 +22,7 @@ function PrFeed(props) {
   useEffect(() => {
     console.log("this is pagepullrequests", props.pagePullRequests);
 
-    props.showPrFeed(
+    props.getPrFeed(
       props.currentRepoOwner,
       props.currentRepo,
       props.pagePullRequests
@@ -38,7 +38,7 @@ function PrFeed(props) {
     <div>
       <InfiniteScroll
         dataLength={props.pullRequests.length} //This is important field to render the next data
-        next={props.showPrFeed.bind(
+        next={props.getPrFeed.bind(
           this,
           props.currentRepoOwner,
           props.currentRepo,
@@ -116,8 +116,8 @@ function PrFeed(props) {
 
 const mapDispatchToProps = dispatch => {
   return {
-    showPrFeed: (ownerOfRepo, repo, page) => {
-      dispatch(showPrFeed(ownerOfRepo, repo, page));
+    getPrFeed: (ownerOfRepo, repo, page) => {
+      dispatch(getPrFeed(ownerOfRepo, repo, page));
     },
     goBackToStream: () => {
       dispatch(goBackToStream());

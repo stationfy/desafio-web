@@ -4,7 +4,8 @@ import { connect } from "react-redux";
 import PrFeed from "./components/PrFeed.js";
 import TopBanner from "./components/banner/topBanner";
 
-function App(props) {
+export function App(props) {
+  console.log("these are props in app", props);
   return (
     <div>
       <TopBanner>
@@ -16,6 +17,7 @@ function App(props) {
 }
 
 const MapStateToProps = state => {
+  console.log("this is the state", state);
   return {
     showPrFeed: state.showPrFeed
   };

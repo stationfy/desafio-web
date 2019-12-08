@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { getRepos } from "../store/actions/getRepos";
-import { showPrFeed } from "../store/actions/showPrFeed";
+import { getPrFeed } from "../store/actions/getPrFeed";
 import { connect } from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Card from "./card/card.js";
@@ -17,7 +17,7 @@ import Footer from "./card-parts/footer.js";
 import Loader from "react-loader-spinner";
 import LoadContainer from "../components/container/loadContainer";
 
-function App(props) {
+function GitFeed(props) {
   useEffect(() => {
     props.getRepos(props.pageRepos);
     window.scrollTo(0, 0);
@@ -25,7 +25,7 @@ function App(props) {
 
   const fetchPullRequests = (ownerOfRepo, repo) => {
     ownerOfRepo = ownerOfRepo.split("/")[0];
-    props.showPrFeed(ownerOfRepo, repo);
+    props.getPrFeed(ownerOfRepo, repo, props.pagePullRequests);
   };
 
   // Cada repositório deve exibir Nome do repositório, Descrição do Repositório, Nome / Foto do autor, Número de Stars, Número de Forks
@@ -83,7 +83,8 @@ function App(props) {
                       onClick={fetchPullRequests.bind(
                         this,
                         repo.full_name,
-                        repo.name
+                        repo.name,
+                        props.pagePullRequests
                       )}
                     >
                       <h4>Check Pull Requests</h4>
@@ -105,8 +106,9 @@ const mapDispatchToProps = dispatch => {
     getRepos: page => {
       dispatch(getRepos(page));
     },
-    showPrFeed: (ownerOfRepo, repo) => {
-      dispatch(showPrFeed(ownerOfRepo, repo));
+    getPrFeed: (ownerOfRepo, repo, page) => {
+      console.log("WTFFFFFFFFFFFFF", ownerOfRepo, repo, page);
+      dispatch(getPrFeed(ownerOfRepo, repo, page));
     }
   };
 };
@@ -114,8 +116,9 @@ const mapDispatchToProps = dispatch => {
 const MapStateToProps = state => {
   return {
     repos: state.repos,
-    pageRepos: state.pageRepos
+    pageRepos: state.pageRepos,
+    pagePullRequests: state.pagePullRequests
   };
 };
 
-export default connect(MapStateToProps, mapDispatchToProps)(App);
+export default connect(MapStateToProps, mapDispatchToProps)(GitFeed);

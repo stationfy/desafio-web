@@ -15,5 +15,5 @@ const card = styled.div`
     margin: 19% auto;
   }
 `;
-
+card.displayName = "card";
 export default card;

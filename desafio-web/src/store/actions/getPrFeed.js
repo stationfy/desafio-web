@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-export const showPrFeed = (repoOwner, repo, page) => {
+export const getPrFeed = (repoOwner, repo, page) => {
   console.log("these are the arguments", repoOwner, repo, page);
   return dispatch =>
     Axios.get(
