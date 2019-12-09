@@ -7,6 +7,7 @@ import {
 	fetchRepos,
 	fetchPulls,
 	clearPullsState,
+	scrolling,
 	setReposPageCount,
 	setPullsPageCount
 } from './actions'
@@ -26,9 +27,11 @@ class App extends Component {
 	}
 
 	getCurrentData = isRepo => {
-		if (isRepo) return this.getRepos()
+		const { dispatch } = this.props
+		dispatch(scrolling(true))
 		const { pullsState: { full_name } } = this.props
-		this.getPulls(full_name)
+		if (isRepo) this.getRepos()
+		else if (full_name) this.getPulls(full_name)
 	}
 
 	getRepos = () => {
@@ -44,12 +47,6 @@ class App extends Component {
 		dispatch(setPullsPageCount(1))
 	}
 
-	handleClick = full_name => {
-		const { dispatch } = this.props
-		dispatch(clearPullsState(false))
-		this.getPulls(full_name)
-	}
-
 	handleBack = getting => {
 		window.scrollTo(0,0)
 		const { dispatch } = this.props
@@ -59,11 +56,11 @@ class App extends Component {
 	render () {
 		const { reposState, pullsState } = this.props
 		const { repos } = reposState,
-			{ pulls, getting } = pullsState
+			{ pulls, getting, isScrolling } = pullsState
 		const value = getting ? pulls.length : repos.length
 
 		return (
-			<div>
+			<>
 				<Header>
 					<Nav>
 					<NavBar handleBack={this.handleBack} getting={getting}/>
@@ -74,22 +71,22 @@ class App extends Component {
 					<InfiniteScroll
 						dataLength={value}
 						next={() => this.getCurrentData(!getting)}
-						hasMore={true}
+						hasMore={true || false}
 						loader={<Loader />}
 						style={{ overflow: 'initial' }}
 					>
 						<Route
 							exact
 							path='/'
-							component={() => <Repo repos={repos} handleClick={this.handleClick} />}
+							component={() => <Repo repos={repos} handleClick={this.getPulls} />}
 						/>
 						<Route
 							path='/pulls'
-							component={() => <PullRequest pulls={pulls} />}
+							component={() => <PullRequest isScrolling={isScrolling} pulls={pulls} />}
 						/>
 					</InfiniteScroll>
 				</ItemsWrapper>
-			</div>
+			</>
 		)
 	}
 }

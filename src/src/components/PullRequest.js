@@ -14,7 +14,7 @@ import {
 	Loader
 } from './StyledComponents'
 
-export default ({ pulls }) => {
+export default ({ pulls, isScrolling }) => {
     return pulls.length ? pulls.map(pull =>
         <ListItem key={ pull.id }>
             <LinkToPulls funcParam={pull.link} handleClick={window.open}>
@@ -30,5 +30,5 @@ export default ({ pulls }) => {
                     <ContentName>{ pull.authorLogin }</ContentName>
                 </RightContent>
             </LinkToPulls>
-        </ListItem>) : <Loader />
+        </ListItem>) : isScrolling ? null : <Loader />
 }
