@@ -109,7 +109,6 @@ const ItemsWrapper = styled.ul`
 `
 const ListItem = styled.li`
 	border-bottom: 1px solid #d2d2d2;
-	padding: 20px;
 	transition: background .25s ease;
 
 	&:last-child {
@@ -118,10 +117,6 @@ const ListItem = styled.li`
 
 	&:hover {
 		background-color: #f7f7f7;
-	}
-
-	@media (max-width: 398px) {	
-		padding: 20px 10px;
 	}
 `
 
@@ -132,12 +127,20 @@ const Clickable = ({ className, children, funcParam, handleClick }) =>
 
 const LinkToPulls = styled(Clickable)`
 	display: flex;
+	justify-content: space-between;
+	padding: 20px;
 	text-decoration: navajowhite;
 	color: #343438;
+	
+	@media (max-width: 398px) {	
+		padding: 20px 10px;
+	}
 `;
 
 const LeftContent = styled.div`
-	flex: 1 1 70%;
+	display: flex;
+	flex-direction: column;
+	width: 620px;
 `
 
 const RightContent = styled.div`
@@ -145,12 +148,13 @@ const RightContent = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex: 1 1;
+	width: 120px;
 `
 
 const ContentTitle = styled.h3`
 	margin: 0 0 5px;
 	color: #3977aa;
+	word-break: break-all;
 
 	@media (max-width: 710px) {
 		font-size: 16.72px;
@@ -226,6 +230,7 @@ const UserImage = styled.img`
 const ContentName = styled.span`
 	margin: 0 0 5px;
 	color: #3977aa;
+	word-break: break-all;
 
 	@media (max-width: 710px) {
 		font-size: 12px;
