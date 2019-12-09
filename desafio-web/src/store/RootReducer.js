@@ -21,6 +21,8 @@ const rootReducer = (state = initState, action) => {
     case "SHOW_PR_FEED":
       return {
         ...state,
+        repos: [],
+        pageRepos: 1,
         pagePullRequests: state.pagePullRequests + 1,
         showPrFeed: true,
         pullRequests: state.pullRequests.concat(action.payload.listOfRepos),
@@ -32,7 +34,8 @@ const rootReducer = (state = initState, action) => {
       return {
         ...state,
         showPrFeed: false,
-        pullRequests: []
+        pullRequests: [],
+        pagePullRequests: 1
       };
 
     default:
