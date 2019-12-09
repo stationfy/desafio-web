@@ -7,6 +7,7 @@ import {
     RECEIVE_PULLS_ERROR,
     RECEIVE_REPOS_PAGE_COUNT,
     RECEIVE_PULLS_PAGE_COUNT,
+    SET_SCROLLING,
     CLEAR_PULLS
 } from '../actionTypes.json'
 
@@ -40,6 +41,10 @@ function receiveRepoPageCount(count) {
 
 function receivePullsPageCount(count) {
     return { type: RECEIVE_PULLS_PAGE_COUNT, count }
+}
+
+function setScrolling(isScrolling) {
+    return { type: SET_SCROLLING, isScrolling }
 }
 
 function clearPulls(getting) {
@@ -124,6 +129,10 @@ export function setReposPageCount(count) {
 
 export function setPullsPageCount(count) {
     return dispatch => dispatch(receivePullsPageCount(count))
+}
+
+export function scrolling(isScrolling) {
+    return dispatch => dispatch(setScrolling(isScrolling))
 }
 
 export function clearPullsState(getting) {

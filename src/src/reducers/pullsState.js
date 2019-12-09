@@ -3,7 +3,7 @@ import {
 	RECEIVE_PULLS,
 	RECEIVE_PULLS_ERROR,
 	RECEIVE_PULLS_PAGE_COUNT,
-
+	SET_SCROLLING,
 	CLEAR_PULLS
 } from '../actionTypes.json'
 
@@ -16,6 +16,7 @@ export default (state = { ...defGetting, pulls: [], full_name: '', page: 1 }, ac
 		error = '',
 		full_name = '',
 		getting = false,
+		isScrolling = false,
 		count = 0
 	} = action,
 		{ pulls: oldPulls } = state
@@ -32,6 +33,8 @@ export default (state = { ...defGetting, pulls: [], full_name: '', page: 1 }, ac
 			return { ...state,isFetching: false, ...defGetting, pulls: error, full_name }
 		case RECEIVE_PULLS_PAGE_COUNT:
 			return { ...state, isFetching: false,...defGetting, pulls: filteredPulls, full_name, page }
+		case SET_SCROLLING:
+			return { ...state, isFetching: false, isScrolling }
 		case CLEAR_PULLS:
 			return { pulls: [],isFetching: false, full_name: '', getting, page: 1 }
 		default:
