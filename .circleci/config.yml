@@ -7,9 +7,9 @@ jobs:
       - checkout
       - run: echo "A first hello"
   sally:
-     docker:
+    docker:
       - image: circleci/ruby:2.4.1
-      steps:
+    steps:
       - checkout
       - run: echo "Double trouble"
 workflows:
