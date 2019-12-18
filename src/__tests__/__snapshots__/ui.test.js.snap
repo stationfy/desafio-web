@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components should render correctly <Header /> 1`] = `ShallowWrapper {}`;
+
+exports[`Components should render correctly <Loading /> 1`] = `ShallowWrapper {}`;
+
+exports[`Components should render correctly <PullRequest /> 1`] = `ShallowWrapper {}`;
+
+exports[`Components should render correctly <PullsPage> 1`] = `ReactWrapper {}`;
+
+exports[`Components should render correctly <Repo /> 1`] = `ShallowWrapper {}`;
+
+exports[`Components should render correctly <ReposPage> 1`] = `ReactWrapper {}`;
