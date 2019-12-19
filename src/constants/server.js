@@ -1,1 +1,1 @@
-export const SERVER_URL = "https://api.github.com";
+export const SERVER_URL = "https://api.github.com/";

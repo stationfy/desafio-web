@@ -1,18 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux'; 
-
 import store from './store';
-import App2 from './components/home/App2';
-class App extends Component {
-  render() {
-    return(
-      <div>
-        <Provider store={store}>
-          <App2 />
-        </Provider>
-      </div>
-    )
-  }
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import routes from "./routes";
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Switch  >
+        {routes.map(r => (
+            <Route key={r.path} {...r}/>
+        ))}
+        </Switch>
+      </BrowserRouter>
+    </Provider>
+  )
 }
 
 export default App;
