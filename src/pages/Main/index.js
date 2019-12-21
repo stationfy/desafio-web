@@ -6,7 +6,7 @@ import HeaderLayout from '../../layouts/header';
 
 export default function Main() {
   return (
-    <HeaderLayout>
+    <HeaderLayout title="GitHub Pops" mainPage>
       <Container>
         <h1>main</h1>
         <p>

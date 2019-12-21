@@ -2,16 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useLocation } from 'react-router-dom';
-import { Wrapper, HeaderContainer } from './styles';
+import { Wrapper } from './styles';
+import Header from '../../components/Header';
 
-export default function HeaderLayout({ children }) {
+export default function HeaderLayout({ children, title, mainPage = false }) {
   const location = useLocation();
 
   console.log(location);
 
   return (
     <Wrapper>
-      <HeaderContainer />
+      <Header title={title} mainPage={mainPage} />
       {children}
     </Wrapper>
   );
