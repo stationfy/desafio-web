@@ -1,19 +1,6 @@
-export function updateProfileRequest(data) {
+export function selectRepository(data) {
   return {
-    type: '@user/UPDATE_PROFILE_REQUEST',
+    type: '@repository/UPDATE_SELECTED_REPOSITORY',
     payload: { data },
-  };
-}
-
-export function updateProfileSuccess(profile) {
-  return {
-    type: '@user/UPDATE_PROFILE_SUCCESS',
-    payload: { profile },
-  };
-}
-
-export function updateProfileFailure() {
-  return {
-    type: '@user/UPDATE_PROFILE_REQUEST',
   };
 }
