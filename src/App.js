@@ -4,6 +4,7 @@ import { Router } from 'react-router-dom';
 
 import Routes from './routes';
 import history from './services/history';
+import GlobalStyle from './styles/global';
 import { store } from './store';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Provider store={store}>
       <Router history={history}>
         <Routes />
+        <GlobalStyle />
       </Router>
     </Provider>
   );
