@@ -10,7 +10,7 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Main} />
-      <Route path="/repositories" component={Repository} />
+      <Route path="/repository" component={Repository} />
     </Switch>
   );
 }
