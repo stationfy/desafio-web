@@ -1,23 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FaArrowLeft } from 'react-icons/fa';
+import BackIcon from '@material-ui/icons/KeyboardArrowLeft';
+import Grid from '@material-ui/core/Grid';
 
-import { useLocation } from 'react-router-dom';
-import { HeaderContainer } from './styles';
+import { Toolbar, Typography } from './styles';
+import history from '../../services/history';
 
 export default function Header({ title, mainPage }) {
-  const location = useLocation();
-
-  console.log(location);
+  function handleBackHistory() {
+    history.goBack();
+  }
 
   return (
-    <HeaderContainer>
-      {mainPage && <FaArrowLeft size={50} color="#fff" />}
-      <strong>{title}</strong>
-    </HeaderContainer>
+    <Grid container x>
+      <Toolbar>
+        {!mainPage && (
+          <BackIcon
+            onClick={handleBackHistory}
+            style={{ fontSize: 50 }}
+            color="#fff"
+          />
+        )}
+        <Typography variant="h5" color="inherit">
+          {title}
+        </Typography>
+      </Toolbar>
+    </Grid>
   );
 }
 
+Header.defaultProps = {
+  mainPage: false,
+};
+
 Header.propTypes = {
-  children: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+  mainPage: PropTypes.bool,
 };
