@@ -1,6 +1,6 @@
-export function selectRepository(data) {
+export function selectRepository(repository) {
   return {
     type: '@repository/UPDATE_SELECTED_REPOSITORY',
-    payload: { data },
+    payload: { repository },
   };
 }
