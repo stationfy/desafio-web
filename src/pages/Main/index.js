@@ -9,15 +9,14 @@ import { useDispatch } from 'react-redux';
 import { LoopCircleLoading } from 'react-loadingg';
 import { Waypoint } from 'react-waypoint';
 import api from '../../services/api';
+import { selectRepository } from '../../store/modules/repositories/actions';
+import history from '../../services/history';
 
 import List from '../../components/List';
 import ListItemRepository from '../../components/ListItemRepository';
 
-import { Container } from './styles';
 import HeaderLayout from '../../layouts/header';
-
-import { selectRepository } from '../../store/modules/repositories/actions';
-import history from '../../services/history';
+import { Container } from './styles';
 
 export default function Main() {
   const page = useRef(1);
@@ -47,7 +46,6 @@ export default function Main() {
   useEffect(() => {
     setLoading(true);
     async function getFirstPage() {
-      // console.log(page);
       const response = await getApiData(1);
       setRepositories([...repositories, ...response]);
       setLoading(false);
