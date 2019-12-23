@@ -4,13 +4,13 @@ import { Switch, Route } from 'react-router-dom';
 import '../config/ReactotronConfig';
 
 import Main from '../pages/Main';
-import Repository from '../pages/Repository';
+import PullRequests from '../pages/PullRequests';
 
 export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Main} />
-      <Route path="/repository" component={Repository} />
+      <Route path="/pullrequests" component={PullRequests} />
     </Switch>
   );
 }
