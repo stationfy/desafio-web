@@ -1,19 +1,36 @@
-import { formattedDescription, formattedTitle } from './StringUtil';
+import {
+  getFirst250CharsDescription,
+  getFirst100CharsTitle,
+} from './StringUtil';
 
-test('jest is working', () => {
-  expect(true).toBe(false);
+test('Should return "No description provided." when input is null or blank', () => {
+  const expected = 'No description provided.';
+
+  const input1 = null;
+  const output1 = getFirst250CharsDescription(input1);
+  expect(output1).toBe(expected);
+
+  const input2 = '';
+  const output2 = getFirst250CharsDescription(input2);
+  expect(output2).toBe(expected);
 });
-test('todos os espaços são removidos da string', () => {
-  // para manter nossos testes organizados é bom
-  //  isolar os inputs, outputs e o valor que
-  //  esperamos que o output receba após executado a função
-  const input = 'testes são bons'; // como vai entrar na função
-  const expected = 'testessãobons'; // como deve sair da função
 
-  const output = removeSpaces(input); // resultado da função
+test('Should return only first 250 characters + "..." of a long description', () => {
+  const expectedLength = 253;
 
-  // aqui é onde acontece a magia, verificamos se o
-  //  output realmente é igual ao valor esperado
-  //  com o matcher `.toBe` que é basicamente um `===`
-  expect(output).toBe(expected);
+  const input = `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`;
+  const output = getFirst250CharsDescription(input);
+  expect(output.length).toBe(expectedLength);
+});
+
+test('Should return only first 100 characters + "..." of a long title', () => {
+  const expectedLength = 103;
+
+  const input = `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`;
+  const output = getFirst100CharsTitle(input);
+  expect(output.length).toBe(expectedLength);
 });
