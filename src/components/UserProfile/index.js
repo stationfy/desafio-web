@@ -1,18 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Profile } from './styles';
 
-export default function UserProfile() {
+export default function UserProfile({ avatarUrl, name }) {
   return (
-    <Profile>
-      <img
-        src="https://api.adorable.io/avatars/70/abott@adorable.png"
-        alt="User"
-      />
+    <Profile container>
+      <img src={avatarUrl} alt="User" />
       <div>
-        <strong>user name</strong>
-        <p>nome e sobrenome</p>
+        <strong>{name}</strong>
       </div>
     </Profile>
   );
 }
+
+UserProfile.propTypes = {
+  avatarUrl: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
