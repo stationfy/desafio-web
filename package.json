@@ -6,7 +6,7 @@
     "build": "webpack -p",
     "start": "webpack-dev-server --hot --inline --port 3000",
     "start-lan": "webpack-dev-server --hot --inline --port 3000 --host 192.168.0.102",
-    "test": "jest --watch"
+    "test": "jest --watch --watchAll"
   },
   "babel": {
     "presets": [
