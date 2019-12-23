@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BackIcon from '@material-ui/icons/KeyboardArrowLeft';
-import Grid from '@material-ui/core/Grid';
+import { GoArrowLeft as BackIcon } from 'react-icons/go';
 
-import { Toolbar, Typography } from './styles';
 import history from '../../services/history';
+import { Grid, Toolbar, Typography } from './styles';
 
 export default function Header({ title, mainPage }) {
   function handleBackHistory() {
@@ -12,15 +11,9 @@ export default function Header({ title, mainPage }) {
   }
 
   return (
-    <Grid container x>
+    <Grid container direction="column" justify="center" alignItems="stretch">
       <Toolbar>
-        {!mainPage && (
-          <BackIcon
-            onClick={handleBackHistory}
-            style={{ fontSize: 50 }}
-            color="#fff"
-          />
-        )}
+        {!mainPage && <BackIcon onClick={handleBackHistory} />}
         <Typography variant="h5" color="inherit">
           {title}
         </Typography>
